@@ -3,7 +3,7 @@ var gulp = require("gulp"),
 
 gulp.task('deploy', function () {
   return gulp.src("_book/**/*.*")
-    .pipe(deploy())
+    .pipe(deploy({cname:"fe-base.books.mafengshe.com"}))
     .on("error", function(err){
       console.log(err)
     })
