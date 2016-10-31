@@ -3,7 +3,7 @@
 码蜂社版权所有，如需转载，请附上版权声明
 
 ```
-转载自码蜂社([www.mafengshe.com](http://www.mafengshe.com))，版权归码蜂社所有，转载请附上版权声明
+转载自码蜂社（[www.mafengshe.com](http://www.mafengshe.com)），版权归码蜂社所有，转载请附上版权声明
 ```
 
 未经书面同意，严禁用于商业行为。
