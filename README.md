@@ -6,7 +6,7 @@
 
 ### 克隆此仓库
 ```
-git clone 
+git clone https://github.com/mafengshe-book/front-end.git
 ```
 ### 安装依赖
 
