@@ -2,10 +2,7 @@
 
 * [码蜂社前端讲义](index.md)
 
-* [第零部分：前端必读](start/README.md)
-    * [起步](start/README.md)
-    * [环境搭建](start/README.md)
-
+* [第零部分：前端起步](start/README.md)
 - 第一部分：HTML
 	- 编辑器sublime使用、Html构成、理解html、js、css关系
 	- HTML基础、HTML元素、浏览器查看html结构
