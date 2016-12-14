@@ -1,0 +1,8 @@
+{
+  "structure": {
+    "readme": "index.md"
+  },
+  "styles": {
+	"website": "styles/website.css"
+}
+}

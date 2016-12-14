@@ -1,98 +1,133 @@
-# Summary
-
-* [码蜂社前端讲义](index.md)
-
-* [第零部分：前端起步](start/README.md)
-- 第一部分：HTML
-	- 编辑器sublime使用、Html构成、理解html、js、css关系
-	- HTML基础、HTML元素、浏览器查看html结构
-	- HTML属性、html常见标签、注释
-	- html格式化、html样式的引入
-	- html链接、html图像
-	- html表格
-	- html列表、块级元素、行内元素
-	- html表单
-	- html内联框架
-	- 认识javascript、html常见事件
-	- chrome调试工具使用
-	- doctype、meta、头部元素
-	- 搭建本地web服务器、svn命令、在云平台创建web应用
-	- 颜色、字符编码、服务器状态码
-
-- 第二部分：CSS
-	- CSS简介、引入方式
-	- CSS语法、常见样式属性、样式继承与覆盖
-	- 元素选择器、选择器分组
-	- 类选择器、id选择器
-	- 属性选择器、后代选择器、
-	- 子元素选择器、兄弟选择器、伪类选择器
-	- 背景、透明、渐变阴影
-	- 文本、字体
-	- 链接样式、列表样式
-	- 边框、表格样式
-	- 盒模型、内边距、外边距、边距合并
-	- 定位、相对定位、绝对定位
-	- 浮动、清除浮动、文档流概念
-	- 栅格概念、典型布局实例讲解
-	- 水平居中、垂直居中、div做三角形，display几种值、zoom用法
-	- CSS hack
-	- CSS实战点点网、PM百科
-
-- 第三部分：Javascript基础
-	- JavaScript简介、引入方式
-	- JavaScript的基本数据类型、运算符
-	- JavaScript表达式、函数
-	- 判断语句、循环语句
-	- 字符串操作，数组操作
-	- 日期、数学函数、布尔
-	- 正则表达式
-	- 基本类型、引用类型
-	- 函数声明、函数表达式、arguments、call、apply
-	- setTimeout、setInterval、同步异步
-	- dom简介 dom方法
-	- dom属性 DOM事件 事件冒泡 事件捕获 事件代理
-	- BOM: 窗口、location、History、Navigator、Cookie
-	- ajax
-	- jquery选择器
-	- jquery事件
-	- jquery效果动画
-	- jquery添加、删除元素
-	- jquery设置样式、获取、设置元素尺寸
-	- Jquery遍历方法
-	- jquery ajax、跨域、jsonp
-	- jquery 实战练习
-
-
-- 第四部分 JavaScript高级
-	- 轮播
-	- 懒加载
-	- 瀑布流布局
-	- git使用、github创建项目
-	- 作用域、this
-	- 原型与原型链
-	- 面向对象、继承
-	- 常用设计模式
-	- CMD规范
-	- 模块管理之Sea.js
-	- 构建工具之Grunt
-	- npm包管理器
-	- hexo+github搭建个人博客
-	- 性能优化
-
-- 第五部分 HTML5、CSS3、移动端
-	- HTML5简介
-	- h5新标签、输入表单
-	- 离线存储
-	- Geolocation定位
-	- H5其他功能介绍：web workers、视频api、canvas
-	- CSS3选择器
-	- 边框、圆角、边框阴影
-	- CSS3背景、文本效果
-	- CSS3变形——移动、缩放、旋转、拉伸
-	- 过渡效果、CSS3动画
-	- CSS3布局
-	- 移动端新特性：终端检测、屏幕方向、触控事件
-	- 响应式web设计
-	- 前端常用框架简介
-	- 笔试面试题讲解
-	- 实战练习
+*   [本书介绍](./index.md)
+*   [**1.** 前端必修](./前端基础/index.md)
+    *  [**1.1.** Git的使用](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+    *   [**1.2.** HTML](./前端基础/HTML/index.md)
+        *   [**1.2.1.** 语法](./前端基础/HTML/语法.md)
+        *   [**1.2.2.** 常见标签及其属性](./前端基础/HTML/标签及属性.md)
+        *   [**1.2.3.** 全局属性](./前端基础/HTML/全局属性.md)
+        *   [**1.2.4.** 表单](./前端基础/HTML/表单.md)
+        *   [**1.2.5.** 外部资源引入](./前端基础/HTML/外部资源.md)
+        *   [**1.2.6.** iframe](./前端基础/HTML/iframe.md)
+        *   [**1.2.7.** meta](./前端基础/HTML/meta.md)
+        *   [**1.2.8.** 转义字符](http:/tool.oschina.net/commons?type=2)
+        *   [**1.2.9.** Markdown](http:/wowubuntu.com/markdown/)
+    *   [**1.3.** CSS](./前端基础/CSS/index.md)
+        *   [**1.3.1.** CSS基本概念](./前端基础/CSS/css.md)
+        *   [**1.3.2.** 语法](./前端基础/CSS/语法.md)
+        *   [**1.3.3.** 常用属性](./前端基础/CSS/常用属性.md)
+        *   [**1.3.4.** 盒模型](./前端基础/CSS/盒模型.md)
+        *   [**1.3.5.** 选择器](./前端基础/CSS/CSS选择器.md)
+        *   [**1.3.6.** 定位](./前端基础/CSS/定位.md)
+        *   [**1.3.7.** z-index](http:/www.cnblogs.com/dolphinX/p/3262469.md)
+        *   [**1.3.8.** 浮动](./前端基础/CSS/浮动.md)
+        *   [**1.3.9.** 负边距](./前端基础/CSS/负边距.md)
+        *   [**1.3.10.** 布局](./前端基础/CSS/布局.md)
+        *   [**1.3.11.** CSS hack与条件注释](./前端基础/CSS/条件注释和CSShack.md)
+        *   [**1.3.12.** CSS查缺补漏](./前端基础/CSS/css查缺补漏.md)
+    *   [**1.4.** Javascript](./前端基础/Javascript/index.md)
+        *   [**1.4.1.** 基本概念](./前端基础/Javascript/基础概念.md)
+        *   [**1.4.2.** 数据类型](./前端基础/Javascript/数据类型.md)
+        *   [**1.4.3.** 运算符](./前端基础/Javascript/运算符.md)
+        *   [**1.4.4.** 流程控制语句](./前端基础/Javascript/语句.md)
+        *   [**1.4.5.** 函数和作用域](./前端基础/Javascript/函数和作用域.md)
+        *   [**1.4.6.** 引用类型](./前端基础/Javascript/引用类型.md)
+        *   [**1.4.7.** Array](./前端基础/Javascript/数组.md)
+        *   [**1.4.8.** ES5数组拓展](./前端基础/Javascript/es5array.md)
+        *   [**1.4.9.** 字符串](./前端基础/Javascript/字符串.md)
+        *   [**1.4.10.** Math](./前端基础/Javascript/math.md)
+        *   [**1.4.11.** Date](./前端基础/Javascript/date.md)
+        *   [**1.4.12.** JSON](./前端基础/Javascript/json.md)
+        *   [**1.4.13.** RegExp 基本语法](./前端基础/Javascript/正则基本语法.md)
+        *   [**1.4.14.** RegExp 相关方法](./前端基础/Javascript/正则相关方法.md)
+        *   [**1.4.15.** 定时器](./前端基础/Javascript/定时器.md)
+        *   [**1.4.16.** DOM](./前端基础/Javascript/dom.md)
+        *   [**1.4.17.** 事件](./前端基础/Javascript/event.md)
+        *   [**1.4.18.** BOM](./前端基础/Javascript/bom.md)
+        *   [**1.4.19.** Ajax](./前端基础/Javascript/ajax.md)
+        *   [**1.4.20.** 跨域](./前端基础/Javascript/跨域.md)
+        *   [**1.4.21.** jsonp](./前端基础/Javascript/jsonp.md)
+        *   [**1.4.22.** 逗号、冒号与括号](./前端基础/Javascript/逗号、冒号与括号.md)
+        *   [**1.4.23.** 闭包](./前端基础/Javascript/闭包.md)
+        *   [**1.4.24.** 表达式](./前端基础/Javascript/表达式.md)
+    *   [**1.5.** JQuery](./前端基础/JQuery/index.md)
+        *   [**1.5.1.** 选择器](./前端基础/JQuery/获取元素.md)
+        *   [**1.5.2.** DOM操作](./前端基础/JQuery/DOM操作.md)
+        *   [**1.5.3.** 属性&CSS](./前端基础/JQuery/属性&CSS.md)
+        *   [**1.5.4.** 常用函数](./前端基础/JQuery/核心方法.md)
+        *   [**1.5.5.** 事件处理](./前端基础/JQuery/事件.md)
+        *   [**1.5.6.** 动画](./前端基础/JQuery/动画.md)
+        *   [**1.5.7.** Ajax](./前端基础/JQuery/ajax.md)
+        *   [**1.5.8.** jsonp](./前端基础/JQuery/jsonp.md)
+    *   [**1.6.** HTML5和CSS3](./前端进阶/HTML5和CSS3/index.md)
+        *   [**1.6.1.** HTML5简介](./前端进阶/HTML5和CSS3/h5.md)
+        *   [**1.6.2.** HTML5元素](./前端进阶/HTML5和CSS3/elements.md)
+        *   [**1.6.3.** CSS3简介](./前端进阶/HTML5和CSS3/css3.md)
+        *   [**1.6.4.** CSS3文本](./前端进阶/HTML5和CSS3/text.md)
+        *   [**1.6.5.** CSS3边框](./前端进阶/HTML5和CSS3/border.md)
+        *   [**1.6.6.** CSS3背景](./前端进阶/HTML5和CSS3/background.md)
+        *   [**1.6.7.** CSS3渐变](./前端进阶/HTML5和CSS3/gradient.md)
+        *   [**1.6.8.** CSS3过渡和动画](./前端进阶/HTML5和CSS3/过渡和动画.md)
+        *   [**1.6.9.** CSS3变形](./前端进阶/HTML5和CSS3/变形.md)
+        *   [**1.6.10.** 3D](./前端进阶/HTML5和CSS3/3d.md)
+        *   [**1.6.11.** fontface](./前端进阶/HTML5和CSS3/font-face.md)
+        *   [**1.6.12.** 字体图标](./前端进阶/HTML5和CSS3/iconfont.md)
+        *   [**1.6.13.** 响应式](./前端进阶/HTML5和CSS3/media_query.md)
+        *   [**1.6.14.** 多列](./前端进阶/HTML5和CSS3/column.md)
+        *   [**1.6.15.** Flex布局](./前端进阶/HTML5和CSS3/flex.md)
+*   [**2.** 前端进阶](./前端进阶/index.md)
+    *   <span>**2.1.** 面向对象</span>
+        *   [**2.1.1.** 理解对象](./前端进阶/面向对象/理解对象.md)
+        *   [**2.1.2.** 构造对象](./前端进阶/面向对象/构造对象.md)
+        *   [**2.1.3.** this](./前端进阶/面向对象/this.md)
+        *   [**2.1.4.** 原型与原型链](./前端进阶/面向对象/原型与原型链.md)
+        *   [**2.1.5.** 继承](./前端进阶/面向对象/继承.md)
+    *   [**2.2.** 常见JS组件](./前端进阶/常用组件/index.md)
+        *   [**2.2.1.** Tab切换](./前端进阶/常用组件/Tab切换组件.md)
+        *   [**2.2.2.** 轮播](./前端进阶/常用组件/轮播组件.md)
+        *   [**2.2.3.** 懒加载](./前端进阶/常用组件/懒加载组件.md)
+        *   [**2.2.4.** Modal](./前端进阶/常用组件/Dialog组件.md)
+        *   [**2.2.5.** 瀑布流](./前端进阶/常用组件/瀑布流组件.md)
+        *   <span>**2.2.6.** 木桶布局</span>
+        *   <span>**2.2.7.** 分页</span>
+        *   <span>**2.2.8.** 日历</span>
+    *   [**2.3.** 模块化](./前端进阶/模块化/index.md)
+        *   [**2.3.1.** 模块化初探](./前端进阶/模块化/模块化.md)
+        *   [**2.3.2.** AMD&CMD&CommonJS](./前端进阶/模块化/AMD与CMD规范.md)
+        *   [**2.3.3.** RequireJS](./前端进阶/模块化/RequireJS.md)
+        *   <span>**2.3.4.** WebPack</span>
+    *   [**2.4.** 前端工程化](./前端进阶/前端工程化/index.md)
+        *   [**2.4.1.** 工程化的意义](./前端进阶/前端工程化/工程化的意义.md)
+        *   [**2.4.2.** Gulp实例](./前端进阶/前端工程化/Gulp介绍.md)
+        *   <span>**2.4.3.** WebPack实例</span>
+        *   [**2.4.4.** nodejs 入门](./前端进阶/前端工程化/npm的使用.md)
+        *   [**2.4.5.** NPM script实例](./前端进阶/前端工程化/npmscripts.md)
+    *   [**2.5.** 设计模式浅析](./前端进阶/设计模式与组件化/index.md)
+        *   [**2.5.1.** 构造器模式](./前端进阶/设计模式与组件化/常见设计模式.md)
+        *   <span>**2.5.2.** 模块模式</span>
+        *   <span>**2.5.3.** 混合模式</span>
+        *   <span>**2.5.4.** 单例模式</span>
+        *   <span>**2.5.5.** 发布订阅模式</span>
+    *   <span>**2.6.** Bootstrap</span>
+        *   <span>**2.6.1.** CSS预处理器</span>
+        *   <span>**2.6.2.** Bootstrap的使用</span>
+        *   <span>**2.6.3.** 一个响应式页面</span>
+    *   <span>**2.7.** HTTP</span>
+    *   [**2.8.** 开发工具](./前端基础/开发工具/index.md)
+        *   [**2.8.1.** Chrome调试](./前端基础/开发工具/Chrome调试.md)
+        *   [**2.8.2.** 编辑器](./前端基础/开发工具/编辑器.md)
+        *   [**2.8.3.** Git与GitHub](./前端基础/开发工具/Git与GitHub.md)
+        *   [**2.8.4.** 服务器搭建](./前端基础/开发工具/服务器搭建.md)
+        *   <span>**2.8.5.** MOCK数据</span>
+        *   <span>**2.8.6.** Linux基础命令</span>
+        *   <span>**2.8.7.** 开发环境搭建</span>
+*   <span>**3.** [综合能力]</span>
+    *   [**3.1.** 简历](./综合能力/www/简历.md)
+    *   [**3.2.** 面试](./综合能力/www/面试.md)
+*   [**4.** 专题扩展](./专题扩展/index.md)
+    *   [**4.1.** 移动端入门](./前端进阶/移动端/移动端开发介绍.md)
+        *   [**4.1.1.** 移动端入门ppt](./前端进阶/移动端/www/移动端开发介绍.md)
+    *   <span>**4.2.** NodeJS</span>
+    *   <span>**4.3.** ES6</span>
+    *   <span>**4.4.** 常见数据结构</span>
+    *   <span>**4.5.** AngularJS</span>
+*   <span>**5.** 代码代码与作业</span>
