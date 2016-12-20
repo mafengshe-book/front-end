@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2.4. 表单 · GitBook</title>
+        <title>1.2.3. 表单 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -47,10 +47,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="外部资源.html" />
+    <link rel="next" href="iframe.html" />
     
     
-    <link rel="prev" href="全局属性.html" />
+    <link rel="prev" href="标签及属性.html" />
     
 
     </head>
@@ -133,12 +133,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="语法.html">
+        <li class="chapter " data-level="1.2.2.1" data-path="HTML结构.html">
             
-                <a href="语法.html">
+                <a href="HTML结构.html">
             
                     
-                    1.2.1. 语法
+                    1.2.1. HTML结构
             
                 </a>
             
@@ -159,25 +159,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3" data-path="全局属性.html">
-            
-                <a href="全局属性.html">
-            
-                    
-                    1.2.3. 全局属性
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.2.2.4" data-path="表单.html">
+        <li class="chapter active" data-level="1.2.2.3" data-path="表单.html">
             
                 <a href="表单.html">
             
                     
-                    1.2.4. 表单
+                    1.2.3. 表单
             
                 </a>
             
@@ -185,25 +172,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.5" data-path="外部资源.html">
-            
-                <a href="外部资源.html">
-            
-                    
-                    1.2.5. 外部资源引入
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2.6" data-path="iframe.html">
+        <li class="chapter " data-level="1.2.2.4" data-path="iframe.html">
             
                 <a href="iframe.html">
             
                     
-                    1.2.6. iframe
+                    1.2.4. iframe
             
                 </a>
             
@@ -211,12 +185,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.7" data-path="meta.html">
+        <li class="chapter " data-level="1.2.2.5" data-path="认识HTML头部.html">
             
-                <a href="meta.html">
+                <a href="认识HTML头部.html">
             
                     
-                    1.2.7. meta
+                    1.2.5. HTML头部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="外部资源.html">
+            
+                <a href="外部资源.html">
+            
+                    
+                    1.2.6. 外部资源引入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="语义化标签.html">
+            
+                <a href="语义化标签.html">
+            
+                    
+                    1.2.7. 语义化标签
             
                 </a>
             
@@ -229,7 +229,7 @@
                 <a target="_blank" href="http:/tool.oschina.net/commons?type=2">
             
                     
-                    1.2.8. 转义字符
+                    1.2.8. HTML5
             
                 </a>
             
@@ -1519,7 +1519,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.2.4. 表单</a>
+        <a href="../.." >1.2.3. 表单</a>
     </h1>
 </div>
 
@@ -1534,97 +1534,103 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html-&#x8868;&#x5355;">HTML &#x8868;&#x5355;</h1>
-<p>&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x586B;&#x5199;&#x7684;&#x7EB8;&#x8D28;&#x8868;&#x5355;&#x4E00;&#x6837;&#xFF0C;HTML &#x8868;&#x5355;&#x7528;&#x4E8E;&#x641C;&#x96C6;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7528;&#x6237;&#x8F93;&#x5165;</p>
-<p>&#x8868;&#x5355;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8868;&#x5355;&#x5143;&#x7D20;&#x7684;&#x533A;&#x57DF; &#x8868;&#x5355;&#x5143;&#x7D20;&#x662F;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x8868;&#x5355;&#x4E2D;&#xFF08;&#x6BD4;&#x5982;&#xFF1A;&#x6587;&#x672C;&#x57DF;&#x3001;&#x4E0B;&#x62C9;&#x5217;&#x8868;&#x3001;&#x5355;&#x9009;&#x6846;&#x3001;&#x590D;&#x9009;&#x6846;&#x7B49;&#x7B49;&#xFF09;&#x8F93;&#x5165;&#x4FE1;&#x606F;&#x7684;&#x5143;&#x7D20;</p>
-<p><a href="demo/form.html">demo</a></p>
-<pre><code>&lt;form action=&quot;xxx.php&quot; method=&quot;post&quot;&gt;
-            &lt;h3&gt;&#x8F93;&#x5165;&#x6846;&lt;/h3&gt;
-            &lt;label for=&quot;input_username&quot;&gt;&#x7528;&#x6237;&#x540D;&#xFF1A;&lt;/label&gt; &lt;input id=&quot;input_username&quot; name=&quot;username&quot; type=&quot;text&quot; placeholder=&quot;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&quot; autofocus/&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;input_pass&quot;&gt;&#x5BC6;&#x7801;&#xFF1A;&lt;/label&gt; &lt;input id=&quot;input_pass&quot; name=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;&#x8F93;&#x5165;&#x5BC6;&#x7801;&quot;/&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;&#x5355;&#x9009;&#x6846;&lt;/h3&gt;
-            &lt;label for=&quot;ck1&quot;&gt;ra1&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra1&quot; name=&quot;ra&quot; value=&quot;1&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra2&quot;&gt;ra2&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra2&quot; name=&quot;ra&quot; value=&quot;2&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra3&quot;&gt;ra3&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra3&quot; name=&quot;ra&quot; value=&quot;3&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra4&quot;&gt;ra4&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra4&quot; name=&quot;ra&quot; value=&quot;4&quot; /&gt;
-            &lt;br/&gt;&lt;br/&gt;
-            &lt;label for=&quot;ck5&quot;&gt;ra5&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra5&quot; name=&quot;radio&quot; value=&quot;1&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra6&quot;&gt;ra6&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra6&quot; name=&quot;radio&quot; value=&quot;2&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra7&quot;&gt;ra7&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra7&quot; name=&quot;radio&quot; value=&quot;3&quot; checked=&quot;checked&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ra8&quot;&gt;ra8&#xFF1A;&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;ra8&quot; name=&quot;radio&quot; value=&quot;4&quot; /&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;&#x590D;&#x9009;&#x6846;&lt;/h3&gt;
-            &lt;label for=&quot;ck1&quot;&gt;CK1&#xFF1A;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;ck1&quot; name=&quot;ck&quot; value=&quot;1&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ck2&quot;&gt;CK2&#xFF1A;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;ck2&quot; name=&quot;ck&quot; value=&quot;2&quot; checked /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ck3&quot;&gt;CK3&#xFF1A;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;ck3&quot; name=&quot;ck&quot; value=&quot;3&quot; /&gt;
-            &lt;br/&gt;
-            &lt;label for=&quot;ck4&quot;&gt;CK4&#xFF1A;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;ck4&quot; name=&quot;ck&quot; value=&quot;4&quot; /&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;File&lt;/h3&gt;
-            &lt;input type=&quot;file&quot; accept=&quot;image/gif, image/jpeg&quot;/&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;image &#x6309;&#x94AE;&lt;/h3&gt;
-            &lt;input type=&quot;image&quot; src=&quot;xxx.jpg&quot; alt=&quot;Submit Form&quot;/&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;&#x9690;&#x85CF;&#x57DF;&lt;/h3&gt;
-            &lt;input type=&quot;hidden&quot; value=&quot;xxx&quot; /&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&lt;/h3&gt;
-            &lt;select id=&quot;input_select&quot;&gt;
-                &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
-                &lt;option value=&quot;2&quot; selected=&quot;selected&quot;&gt;2&lt;/option&gt;
-                &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
-                &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
-            &lt;/select&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;h3&gt;&#x591A;&#x884C;&#x6587;&#x672C;&lt;/h3&gt;
-            &lt;textarea cols=&quot;60&quot; rows=&quot;5&quot;&gt;123&lt;/textarea&gt;
-            &lt;br/&gt;&lt;br/&gt;
-
-            &lt;input type=&quot;button&quot; value=&quot;Buttom&quot; /&gt; &amp;nbsp;&amp;nbsp;
-            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;  &amp;nbsp;&amp;nbsp;
-            &lt;input type=&quot;reset&quot; value=&quot;Reset&quot; /&gt;
-
-        &lt;/form&gt;
-</code></pre><h2 id="form">form</h2>
-<p>form&#x6807;&#x7B7E;&#x662F;&#x8868;&#x5355;&#x7684;&#x5916;&#x58F3;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;</p>
-<ol>
-<li>action&#xFF1A; &#x8868;&#x5355;&#x63D0;&#x4EA4;&#x7684;&#x5730;&#x5740;</li>
-<li>method&#xFF1A;&#x63D0;&#x4EA4;&#x4FDD;&#x5355;&#x7684;&#x65B9;&#x6CD5;</li>
-<li>target&#xFF1A;&#x5728;&#x4F55;&#x5904;&#x6253;&#x5F00;action</li>
-<li>enctype:<ul>
-<li>application/x-www-form-urlencoded&#xFF1A;&#x5728;&#x53D1;&#x9001;&#x524D;&#x7F16;&#x7801;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</li>
-<li>text/plain&#xFF1A;&#x7A7A;&#x683C;&#x8F6C;&#x6362;&#x4E3A; &quot;+&quot; &#x52A0;&#x53F7;&#xFF0C;&#x4F46;&#x4E0D;&#x5BF9;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x7F16;&#x7801;</li>
-<li>multipart/form-data&#xFF1A;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x63A7;&#x4EF6;&#x7684;&#x8868;&#x5355;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x8BE5;&#x503C;</li>
+                                <p><strong> &#x672A;&#x5B8C;&#x5F85;&#x7EED;</strong></p>
+<h1 id="&#x8868;&#x5355;">&#x8868;&#x5355;</h1>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x8868;&#x5355;">&#x4EC0;&#x4E48;&#x662F;&#x8868;&#x5355;</h2>
+<p>&#x5C31;&#x50CF;&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x4F1A;&#x901A;&#x8FC7;&#x586B;&#x7EB8;&#x8D28;&#x7684;&#x8868;&#x641C;&#x96C6;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x5F80;&#x5F80;&#x4E5F;&#x901A;&#x8FC7;&#x586B;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x641C;&#x96C6;&#x7528;&#x6237;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x767B;&#x9646;&#x6CE8;&#x518C;&#x3002;&#x8FD9;&#x6837;&#x7528;&#x4E8E;&#x5C06;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x63D0;&#x4EA4;&#x5230;&#x540E;&#x53F0;&#x7684;&#x4E00;&#x5F20;&#x8868;&#x53EB;&#x505A;&#x8868;&#x5355;&#x3002;</p>
+<p>HTML&#x901A;&#x8FC7;<code>&lt;form&gt;</code>&#x6807;&#x7B7E;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#xFF0C;&#x57FA;&#x672C;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;form action=&quot;Script URL&quot; method=&quot;GET|POST&quot;&gt;
+    form elements like input, textarea etc.
+&lt;/form&gt;
+</code></pre><h2 id="&#x8868;&#x5355;&#x7684;&#x57FA;&#x672C;&#x5C5E;&#x6027;">&#x8868;&#x5355;&#x7684;&#x57FA;&#x672C;&#x5C5E;&#x6027;</h2>
+<p>&#x8868;&#x5355;&#x6709;&#x5F88;&#x591A;&#x5C5E;&#x6027;&#xFF0C;&#x4F46;&#x8FD9;&#x91CC;&#x53EA;&#x4ECB;&#x7ECD;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x51E0;&#x4E2A;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x4F7F;&#x7528;&#x9891;&#x7387;&#x5F88;&#x4F4E;&#xFF0C;&#x8BE6;&#x7EC6;&#x53C2;&#x8003;<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Forms" target="_blank">&#x8FD9;&#x91CC;</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">action</td>
+<td style="text-align:left">&#x540E;&#x53F0;&#x5904;&#x7406;&#x8FD9;&#x4E2A;form&#x4FE1;&#x606F;&#x7684;&#x7A0B;&#x5E8F;&#x6240;&#x5728;URL</td>
+</tr>
+<tr>
+<td style="text-align:left">method</td>
+<td style="text-align:left">&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x6240;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x5E38;&#x7528;&#x7684;&#x662F;GET&#x548C;POST&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">target</td>
+<td style="text-align:left">&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x540E;&#xFF0C;&#x663E;&#x793A;&#x56DE;&#x590D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x53C2;&#x6570;&#x6709;<code>_self</code>,<code>_blank</code>,<code>_parent</code>,<code>_top</code>,<code>iframename</code></td>
+</tr>
+<tr>
+<td style="text-align:left">enctype</td>
+<td style="text-align:left">&#x5F53; method &#x5C5E;&#x6027;&#x503C;&#x4E3A; post &#x65F6;, enctype &#x662F;&#x63D0;&#x4EA4;form&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5185;&#x5BB9;&#x7684; <a href="https://en.wikipedia.org/wiki/Media_type" target="_blank">MIME &#x7C7B;&#x578B;</a>&#x3002;&#x53EF;&#x80FD;&#x7684;&#x503C;&#x6709;application/x-www-form-urlencoded&#xFF08;&#x5C5E;&#x6027;&#x672A;&#x6307;&#x5B9A;&#x65F6;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#xFF0C;multipart/form-data:&#xFF08; type &#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A; &quot;file&quot; &#x7684; <input> &#x5143;&#x7D20;&#xFF09;&#xFF0C;text/plain&#xFF08;html5&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8868;&#x5355;&#x63A7;&#x4EF6;">&#x8868;&#x5355;&#x63A7;&#x4EF6;</h2>
+<ul>
+<li>Text Input&#xFF08;&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;&#xFF09;</li>
+<li>Checkboxes (&#x590D;&#x9009;&#x6846;&#xFF09;</li>
+<li>Radio Box &#xFF08;&#x5355;&#x9009;&#x6309;&#x94AE;&#xFF09;</li>
+<li>Select Box (&#x4E0B;&#x62C9;&#x6846;&#x3001;&#x591A;&#x9009;&#x83DC;&#x5355;)</li>
+<li>File Select&#xFF08;&#x6587;&#x4EF6;&#x9009;&#x62E9;&#xFF09;</li>
+<li>Hidden &#xFF08;&#x9690;&#x85CF;&#x57DF;&#xFF09;</li>
+<li>Clickable Buttons&#xFF08;&#x53EF;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#xFF09;</li>
+<li>Submit and Reset Button&#xFF08;&#x63D0;&#x4EA4;&#x6309;&#x94AE;&#x3001;&#x590D;&#x4F4D;&#x6309;&#x94AE;&#xFF09;</li>
 </ul>
-</li>
-</ol>
-<h2 id="password">password</h2>
-<p>&#x8F93;&#x5165;&#x5185;&#x5BB9;&#x81EA;&#x52A8;&#x53D8;&#x6210;&#x5706;&#x70B9;</p>
-<h2 id="checkbox">checkbox</h2>
-<p>&#x9760;<code>name</code>&#x5C5E;&#x6027;&#x5206;&#x7EC4;&#xFF0C;&#x63D0;&#x4EA4;&#x5230;&#x540E;&#x7AEF;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x9009;&#x4E2D;&#x7684;value&#x662F;&#x4EE5;<code>,</code>&#x5206;&#x5272;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x901A;&#x8FC7;name&#x5C5E;&#x6027;&#x83B7;&#x5F97;</p>
-<h2 id="file">file</h2>
-<p>accept&#xFF1A;mime &#x7C7B;&#x578B;&#xFF0C;&#x591A;&#x4E2A;&#x4EE5;<code>,</code>&#x5206;&#x5272;</p>
-<p><a href="http://www.w3school.com.cn/media/media_mimeref.asp" target="_blank">MIME</a></p>
-<h2 id="select">select</h2>
-<p>&#x540E;&#x7AEF;&#x4EE5;select&#x6807;&#x7B7E;&#x7684;name&#x83B7;&#x53D6;&#x9009;&#x4E2D;&#x7684;option&#x7684;value</p>
+<h3 id="&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;">&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;</h3>
+<p>&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;&#x5206;&#x4E3A;<strong>&#x5355;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;</strong>&#x548C;<strong>&#x591A;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;</strong></p>
+<h4 id="&#x5355;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;">&#x5355;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;</h4>
+<p>&#x5E38;&#x7528;&#x7684;&#x5355;&#x884C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;&#x662F;&#x6807;&#x7B7E;<code>input</code>&#x3002;&#x5355;&#x884C;&#x610F;&#x5473;&#x7740;&#x8F93;&#x5165;&#x7684;&#x6587;&#x672C;&#x4E0D;&#x4F1A;&#x6298;&#x884C;&#x3002;</p>
+<p><code>&lt;input&gt;</code>&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">Indicates the type of input control and for password input control it will be set to password</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">Used to give a name to the control which is sent to the server to be recognized and get the value</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">This can be used to provide an initial value inside the control</td>
+</tr>
+<tr>
+<td style="text-align:left">size</td>
+<td style="text-align:left">Allows to specify the width of the text-input control in terms of characters</td>
+</tr>
+<tr>
+<td style="text-align:left">maxlength</td>
+<td style="text-align:left">Allows to specify the maximum number of characters a user can enter into the text box</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;HTMl5&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;<code>&lt;input&gt;</code>&#x6807;&#x7B7E;<code>type</code>&#x5C5E;&#x6027;&#x53EA;&#x652F;&#x6301;&#x6587;&#x672C;&#x548C;&#x5BC6;&#x7801;&#x4E24;&#x79CD;&#xFF0C;HTML5&#x7684;&#x5230;&#x6765;&#x7ED9;<code>&lt;input&gt;</code>&#x6807;&#x7B7E;&#x6DFB;&#x52A0;&#x4E86;&#x66F4;&#x591A;&#x7684;<code>type</code>&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x5982;&#x4E0B;&#x7C7B;&#x578B;:</p>
+<ul>
+<li><input type="text">&#x662F;&#x6807;&#x51C6;&#x7684;&#x6587;&#x672C;&#x6846;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x503C;&#x5C5E;&#x6027;value&#xFF0C;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x6846;&#x91CC;&#x7684;&#x9ED8;&#x8BA4;&#x6587;&#x672C;&#x3002;</li>
+<li><input type="password"> &#x50CF;&#x6587;&#x672C;&#x6846;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x4EE5;&#x661F;&#x53F7;&#x4EE3;&#x66FF;&#x7528;&#x6237;&#x6240;&#x8F93;&#x5165;&#x7684;&#x5B9E;&#x9645;&#x5B57;&#x7B26;&#x3002;</li>
+<li><input type="checkbox">&#x662F;&#x590D;&#x9009;&#x6846;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x7684;&#x9009;&#x62E9;&#x6216;&#x8005;&#x4E0D;&#x9009;&#x4E00;&#x4E2A;&#x6761;&#x76EE;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x9884;&#x9009;&#x5C5E;&#x6027;checked&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x683C;&#x5F0F;<input type="checkbox" checked="checked">.</li>
+<li><input type="radio"> &#x4E0E;&#x590D;&#x9009;&#x6846;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x6237;&#x53EA;&#x53EF;&#x5728;&#x4E00;&#x4E2A;&#x7EC4;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5355;&#x9009;&#x6309;&#x94AE;&#x3002;&#x5B83;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x9884;&#x9009;&#x5C5E;&#x6027;checked&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x8DDF;&#x590D;&#x9009;&#x6846;&#x4E00;&#x6837;&#x3002;</li>
+<li><input type="file"> &#x662F;&#x5C55;&#x793A;&#x4F60;&#x7535;&#x8111;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#xFF0C;&#x5C31;&#x50CF;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x4E2D;&#x6253;&#x5F00;&#x6216;&#x8005;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x4E00;&#x6837;&#x3002;</li>
+<li><input type="submit"> &#x662F;&#x4E00;&#x4E2A;&#x88AB;&#x70B9;&#x51FB;&#x540E;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x7684;&#x6309;&#x94AE;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x503C;&#x5C5E;&#x6027;value&#x6765;&#x63A7;&#x5236;&#x6309;&#x94AE;&#x4E0A;&#x663E;&#x793A;&#x7684;&#x6587;&#x672C;&#xFF08;&#x4E0B;&#x9762;&#x7684;button&#x548C;reset&#x7C7B;&#x578B;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#xFF0C;&#x7A0D;&#x540E;&#x4ECB;&#x7ECD;&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A; <input type="submit" value="Ooo. Look. Text on a button. Wow">.</li>
+<li><input type="image">&#x4EE5;&#x56FE;&#x50CF;&#x4EE3;&#x66FF;&#x6309;&#x94AE;&#x6587;&#x672C;&#xFF0C;src&#x5C5E;&#x6027;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x50CF;img&#x6807;&#x7B7E;&#x4E00;&#x6837;&#x3002;</li>
+<li><input type="button">&#x662F;&#x4E00;&#x4E2A;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#x7684;&#x8BDD;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x505A;&#x7684;&#x6309;&#x94AE;&#x3002;</li>
+<li><input type="reset"> &#x662F;&#x4E00;&#x4E2A;&#x70B9;&#x51FB;&#x540E;&#x4F1A;&#x91CD;&#x7F6E;&#x8868;&#x5355;&#x5185;&#x5BB9;&#x7684;&#x6309;&#x94AE;&#x3002;</li>
+<li><input type="hidden"> &#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#xFF0C;&#x5B83;&#x7528;&#x6765;&#x4F20;&#x8F93;&#x8BF8;&#x5982;&#x7528;&#x6237;&#x6B63;&#x5728;&#x7528;&#x7684;&#x9875;&#x9762;&#x7684;&#x540D;&#x5B57;&#x6216;&#x8005;Email&#x5730;&#x5740;&#x7B49;&#x8868;&#x5355;&#x5FC5;&#x987B;&#x4F20;&#x8F93;&#x7684;&#x4E1C;&#x897F;&#x3002;</li>
+</ul>
+<p>&#x53C2;&#x8003;<a href="http://fireyy.com/doc/html-css/guides/htmlbeginner/forms.htm" target="_blank">&#x8FD9;&#x91CC;</a></p>
+<h4 id="&#x591A;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;">&#x591A;&#x884C;&#x6587;&#x672C;&#x8F93;&#x5165;&#x63A7;&#x4EF6;</h4>
 
                                 
                                 </section>
@@ -1652,12 +1658,12 @@
 
             
                 
-                <a href="全局属性.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.3. 全局属性">
+                <a href="标签及属性.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.2. 常见标签及其属性">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="外部资源.html" class="navigation navigation-next " aria-label="Next page: 1.2.5. 外部资源引入">
+                <a href="iframe.html" class="navigation navigation-next " aria-label="Next page: 1.2.4. iframe">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1668,7 +1674,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2.4. 表单","level":"1.2.2.4","depth":3,"next":{"title":"1.2.5. 外部资源引入","level":"1.2.2.5","depth":3,"path":"前端基础/HTML/外部资源.md","ref":"./前端基础/HTML/外部资源.md","articles":[]},"previous":{"title":"1.2.3. 全局属性","level":"1.2.2.3","depth":3,"path":"前端基础/HTML/全局属性.md","ref":"./前端基础/HTML/全局属性.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/表单.md","mtime":"2016-12-15T08:48:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-15T10:59:35.139Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.3. 表单","level":"1.2.2.3","depth":3,"next":{"title":"1.2.4. iframe","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/iframe.md","ref":"./前端基础/HTML/iframe.md","articles":[]},"previous":{"title":"1.2.2. 常见标签及其属性","level":"1.2.2.2","depth":3,"path":"前端基础/HTML/标签及属性.md","ref":"./前端基础/HTML/标签及属性.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/表单.md","mtime":"2016-12-19T16:52:02.235Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-19T17:24:10.936Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1676,6 +1682,10 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

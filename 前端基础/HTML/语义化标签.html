@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2.3. 全局属性 · GitBook</title>
+        <title>1.2.7. 语义化标签 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -47,10 +47,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="表单.html" />
     
-    
-    <link rel="prev" href="标签及属性.html" />
+    <link rel="prev" href="外部资源.html" />
     
 
     </head>
@@ -133,12 +131,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="语法.html">
+        <li class="chapter " data-level="1.2.2.1" data-path="HTML结构.html">
             
-                <a href="语法.html">
+                <a href="HTML结构.html">
             
                     
-                    1.2.1. 语法
+                    1.2.1. HTML结构
             
                 </a>
             
@@ -159,25 +157,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2.3" data-path="全局属性.html">
-            
-                <a href="全局属性.html">
-            
-                    
-                    1.2.3. 全局属性
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2.4" data-path="表单.html">
+        <li class="chapter " data-level="1.2.2.3" data-path="表单.html">
             
                 <a href="表单.html">
             
                     
-                    1.2.4. 表单
+                    1.2.3. 表单
             
                 </a>
             
@@ -185,25 +170,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.5" data-path="外部资源.html">
-            
-                <a href="外部资源.html">
-            
-                    
-                    1.2.5. 外部资源引入
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2.6" data-path="iframe.html">
+        <li class="chapter " data-level="1.2.2.4" data-path="iframe.html">
             
                 <a href="iframe.html">
             
                     
-                    1.2.6. iframe
+                    1.2.4. iframe
             
                 </a>
             
@@ -211,12 +183,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.7" data-path="meta.html">
+        <li class="chapter " data-level="1.2.2.5" data-path="认识HTML头部.html">
             
-                <a href="meta.html">
+                <a href="认识HTML头部.html">
             
                     
-                    1.2.7. meta
+                    1.2.5. HTML头部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="外部资源.html">
+            
+                <a href="外部资源.html">
+            
+                    
+                    1.2.6. 外部资源引入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.7" data-path="语义化标签.html">
+            
+                <a href="语义化标签.html">
+            
+                    
+                    1.2.7. 语义化标签
             
                 </a>
             
@@ -229,7 +227,7 @@
                 <a target="_blank" href="http:/tool.oschina.net/commons?type=2">
             
                     
-                    1.2.8. 转义字符
+                    1.2.8. HTML5
             
                 </a>
             
@@ -1519,7 +1517,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.2.3. 全局属性</a>
+        <a href="../.." >1.2.7. 语义化标签</a>
     </h1>
 </div>
 
@@ -1534,71 +1532,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html-&#x5168;&#x5C40;&#x5C5E;&#x6027;">HTML &#x5168;&#x5C40;&#x5C5E;&#x6027;</h1>
-<p>HTML &#x5B9A;&#x4E49;&#x4E86;&#x5C11;&#x91CF;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7684;HTML elements&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7528;&#x5728;&#x6240;&#x6709;&#x7684;element&#x4E2D;&#xFF0C;&#x5C3D;&#x7BA1;&#x6709;&#x4E9B;&#x5C5E;&#x6027;&#x5BF9;&#x4E00;&#x4E9B;element&#x6CA1;&#x4EC0;&#x4E48;&#x4F5C;&#x7528;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th>&#x5C5E;&#x6027;</th>
-<th>&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>accesskey</td>
-<td>&#x89C4;&#x5B9A;&#x6FC0;&#x6D3B;&#x5143;&#x7D20;&#x7684;&#x5FEB;&#x6377;&#x952E;</td>
-</tr>
-<tr>
-<td>class</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x540D;&#xFF08;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#x7684;&#x7C7B;&#xFF09;</td>
-</tr>
-<tr>
-<td>contenteditable</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x53EF;&#x7F16;&#x8F91;</td>
-</tr>
-<tr>
-<td>data-*</td>
-<td>&#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;</td>
-</tr>
-<tr>
-<td>dir</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x4E2D;&#x5185;&#x5BB9;&#x7684;&#x6587;&#x672C;&#x65B9;&#x5411;</td>
-</tr>
-<tr>
-<td>draggable</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x662F;&#x5426;&#x53EF;&#x62D6;&#x52A8;</td>
-</tr>
-<tr>
-<td>id</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x552F;&#x4E00; id</td>
-</tr>
-<tr>
-<td>lang</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x7684;&#x8BED;&#x8A00;</td>
-</tr>
-<tr>
-<td>spellcheck</td>
-<td>&#x89C4;&#x5B9A;&#x662F;&#x5426;&#x5BF9;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x62FC;&#x5199;&#x548C;&#x8BED;&#x6CD5;&#x68C0;&#x67E5;</td>
-</tr>
-<tr>
-<td>style</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x884C;&#x5185; CSS &#x6837;&#x5F0F;</td>
-</tr>
-<tr>
-<td>tabindex</td>
-<td>&#x89C4;&#x5B9A;&#x5143;&#x7D20;&#x7684; tab &#x952E;&#x6B21;&#x5E8F;</td>
-</tr>
-<tr>
-<td>title</td>
-<td>&#x89C4;&#x5B9A;&#x6709;&#x5173;&#x5143;&#x7D20;&#x7684;&#x989D;&#x5916;&#x4FE1;&#x606F;</td>
-</tr>
-<tr>
-<td>translate</td>
-<td>&#x89C4;&#x5B9A;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x7FFB;&#x8BD1;&#x5143;&#x7D20;&#x5185;&#x5BB9;</td>
-</tr>
-</tbody>
-</table>
-
+                                
                                 
                                 </section>
                             
@@ -1625,14 +1559,10 @@
 
             
                 
-                <a href="标签及属性.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.2. 常见标签及其属性">
+                <a href="外部资源.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1.2.6. 外部资源引入">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="表单.html" class="navigation navigation-next " aria-label="Next page: 1.2.4. 表单">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1641,7 +1571,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2.3. 全局属性","level":"1.2.2.3","depth":3,"next":{"title":"1.2.4. 表单","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/表单.md","ref":"./前端基础/HTML/表单.md","articles":[]},"previous":{"title":"1.2.2. 常见标签及其属性","level":"1.2.2.2","depth":3,"path":"前端基础/HTML/标签及属性.md","ref":"./前端基础/HTML/标签及属性.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/全局属性.md","mtime":"2016-12-15T08:48:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-15T10:59:35.139Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.7. 语义化标签","level":"1.2.2.7","depth":3,"next":{"title":"1.2.8. HTML5","level":"1.2.2.8","depth":3,"url":"http:/tool.oschina.net/commons?type=2","ref":"http:/tool.oschina.net/commons?type=2","articles":[]},"previous":{"title":"1.2.6. 外部资源引入","level":"1.2.2.6","depth":3,"path":"前端基础/HTML/外部资源.md","ref":"./前端基础/HTML/外部资源.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/语义化标签.md","mtime":"2016-12-19T17:13:30.824Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-19T17:24:10.936Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1649,6 +1579,10 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
