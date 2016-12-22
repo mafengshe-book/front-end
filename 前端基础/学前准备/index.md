@@ -15,13 +15,19 @@
 * 如何安装插件？
 
 ### [Sublime Text3](http://www.sublimetext.com/3)
+
+#### 安装Package Control
+
+```
+import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
+
 常用插件：
+
+- [emmet](https://packagecontrol.io/packages/Emmet)
+  前端神器。一个可以极大提高web开发者HTML和CSS工作效率的工具箱组件。
 
 ### [WebStorm](https://www.jetbrains.com/webstorm/)
-常用插件：
-
-
-
 
 ## Chrome 浏览器
 常用功能：
