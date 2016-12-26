@@ -13,31 +13,31 @@
 
 ## HTML `<base>` 元素
 `<base>` 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:
-```
-`<head>`
-`<base href="http://www.runoob.com/images/" target="_blank">`
-`</head>`
+```html
+<head>
+    <base href="http://www.runoob.com/images/" target="_blank">
+</head>
 
 ```
 ## HTML `<link>` 元素
 `<link>` 标签定义了文档与外部资源之间的关系,通常用于链接到样式表:
 
-```
-`<head>`
-`<link rel="stylesheet" type="text/css" href="mystyle.css">`
-`</head>`
+```html
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
 ```
 
 ## HTML `<style>` 元素
 `<style>` 标签定义了HTML文档的样式文件引用地址,指定样式文件来渲染HTML文档:
 
-```
-`<head>`
-`<style type="text/css">`
-body {background-color:yellow}
-p {color:blue}
-`</style>`
-`</head>`
+```html
+<head>
+    <style type="text/css">
+        body {background-color:yellow}
+        p {color:blue}
+    </style>
+</head>
 ```
 
 ## HTML `<meta>` 元素
@@ -48,45 +48,45 @@ meta标签描述了一些基本的元数据。
 
 定义文档的字符集：
 
-```
-`<meta charset="UTF-8">`
+```html
+<meta charset="UTF-8">
 ```
 为搜索引擎定义关键词:
 
-```
-`<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">`
+```html
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
 ```
 
 为网页定义描述内容:
 
-```
-`<meta name="description" content="Free Web tutorials on HTML and CSS">`
+```html
+<meta name="description" content="Free Web tutorials on HTML and CSS">
 ```
 
 定义网页作者:
 
-```
-`<meta name="author" content="Hege Refsnes">`
+```html
+<meta name="author" content="Hege Refsnes">
 ```
 
 每30秒中刷新当前页面:
 
-```
-`<meta http-equiv="refresh" content="30">`
+```html
+<meta http-equiv="refresh" content="30">
 ```
 
 ## HTML `<script>` 元素
 
 `<script>`标签用于加载脚本文件，如： JavaScript。在标签内部书写脚本或引入脚本文件位置。如下：
 
-```
-`<script type="text/javascript">`
-document.write("Hello World!")
-`</script>`
+```html
+<script type="text/javascript">
+    document.write("Hello World!")
+</script>
 ```
 
-```
-`<script type="text/javascript" src="myscripts.js">`</script>`
+```html
+<script type="text/javascript" src="myscripts.js"></script>
 ```
 
 ## 总结
