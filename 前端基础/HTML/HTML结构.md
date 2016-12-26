@@ -6,12 +6,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+   <meta charset="utf-8">
+   <title>码蜂社前端</title>
 </head>
 <body>
-<h1>我的第一个标题</h1>
-<p>我的第一个段落。</p>
+   <h1>我的第一个标题</h1>
+   <p>我的第一个段落。</p>
 </body>
 </html>
 ```
@@ -21,7 +21,6 @@
 * `<head>` 元素包含了文档的元（meta）数据，不会在浏览器窗口中显示，定义文档的标题、编码格式、引入样式文件和脚本以及其他元数据。
 * `<body>` 元素包含了可见的页面内容，body里的元素在浏览器窗口中
 
-__标签__ ， __元素__
 
 ## <!DOCTYPE>声明
 
