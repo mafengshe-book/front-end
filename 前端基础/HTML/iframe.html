@@ -50,7 +50,7 @@
     <link rel="next" href="HTML头部.html" />
     
     
-    <link rel="prev" href="表单下.html" />
+    <link rel="prev" href="表单二.html" />
     
 
     </head>
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3" data-path="表单上.html">
+        <li class="chapter " data-level="1.2.2.3" data-path="表单一.html">
             
-                <a href="表单上.html">
+                <a href="表单一.html">
             
                     
                     1.2.3. 表单（上）
@@ -172,9 +172,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.4" data-path="表单下.html">
+        <li class="chapter " data-level="1.2.2.4" data-path="表单二.html">
             
-                <a href="表单下.html">
+                <a href="表单二.html">
             
                     
                     1.2.4. 表单（下）
@@ -243,6 +243,19 @@
             
                     
                     1.2.9. HTML5新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="常见问题总结.html">
+            
+                <a href="常见问题总结.html">
+            
+                    
+                    1.2.10. 常见问题
             
                 </a>
             
@@ -1545,10 +1558,18 @@
 &lt;body&gt;
     &lt;p&gt;&#x4E0B;&#x9762;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;iframe&lt;/p&gt;
 
-    &lt;iframe src=&quot;./inner.html&quot; width=&quot;500&quot; height=&quot;300&quot; frameborder=&quot;1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;./frames/inner.html&quot; width=&quot;500&quot; height=&quot;300&quot; frameborder=&quot;1&quot;&gt;&lt;/iframe&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p><a href="demo/iframe.html">demo</a></p>
+</code></pre><body>
+    <p>&#x4E0B;&#x9762;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;iframe</p>
+
+    <iframe src="./frames/inner.html" width="500" height="300" frameborder="1"></iframe>
+</body>
+
+
+
+
 <h2 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h2>
 <ul>
 <li>frameborder&#xFF1A;&#x53EF;&#x7528;&#x503C;&#x4E3A;1&#x548C;0&#xFF0C;&#x89C4;&#x5B9A;&#x662F;&#x5426;&#x663E;&#x793A;&#x6846;&#x67B6;&#x5468;&#x56F4;&#x7684;&#x8FB9;&#x6846;</li>
@@ -1557,8 +1578,42 @@
 <li>src&#xFF1A;&#x5F15;&#x5165;&#x7684;&#x8D44;&#x6E90;&#xFF08;&#x9875;&#x9762;&#x3001;&#x56FE;&#x7247;&#x7B49;&#xFF09;url</li>
 </ul>
 <h2 id="&#x7236;&#x5B50;&#x5173;&#x7CFB;">&#x7236;&#x5B50;&#x5173;&#x7CFB;</h2>
-<p>&#x5728;&#x7236;&#x7A97;&#x4F53;&#x4E2D;&#xFF0C;Iframe&#x662F;document&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x8BBF;&#x95EE;&#x5B50;&#x7A97;&#x4F53;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;</p>
-<p>&#x5728;&#x5B50;&#x7A97;&#x4F53;&#x5185;<code>parent</code>&#x5BF9;&#x8C61;&#x5C31;&#x4EE3;&#x8868;&#x7236;&#x7A97;&#x4F53;&#xFF0C;&#x8981;&#x5728;&#x5B50;&#x7A97;&#x4F53;&#x4E2D;&#x8BBF;&#x95EE;&#x7236;&#x7A97;&#x4F53;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x65E0;&#x4E00;&#x4F8B;&#x5916;&#x90FD;&#x901A;&#x8FC7;parent&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C;</p>
+<p>&#x5728;&#x7236;&#x7A97;&#x4F53;&#x4E2D;&#xFF0C;Iframe&#x662F;document&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x8BBF;&#x95EE;&#x5B50;&#x7A97;&#x4F53;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5728;&#x5B50;&#x7A97;&#x4F53;&#x5185;<code>parent</code>&#x5BF9;&#x8C61;&#x5C31;&#x4EE3;&#x8868;&#x7236;&#x7A97;&#x4F53;&#xFF0C;&#x8981;&#x5728;&#x5B50;&#x7A97;&#x4F53;&#x4E2D;&#x8BBF;&#x95EE;&#x7236;&#x7A97;&#x4F53;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x65E0;&#x4E00;&#x4F8B;&#x5916;&#x90FD;&#x901A;&#x8FC7;parent&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C;&#x3002;</p>
+<p>iframe&#x7684;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;&#x8981;&#x6D89;&#x53CA; JS &#x7528;&#x6CD5;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x6709;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x6982;&#x5FF5;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="iframe--frame">iframe &amp; frame</h2>
+<p>&#x533A;&#x522B;&#xFF1A;</p>
+<ol>
+<li>frame&#x4E0D;&#x80FD;&#x8131;&#x79BB;frameSet&#x5355;&#x72EC;&#x4F7F;&#x7528;&#xFF0C;iframe&#x53EF;&#x4EE5;&#x3002;</li>
+<li>frame&#x4E0D;&#x80FD;&#x653E;&#x5728;body&#x4E2D;,&#x5426;&#x5219;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x663E;&#x793A;&#x3002;</li>
+<li>&#x5D4C;&#x5957;&#x5728;frameSet&#x4E2D;&#x7684;iframe&#x5FC5;&#x9700;&#x653E;&#x5728;body&#x4E2D;,&#x4E0D;&#x5D4C;&#x5957;&#x5728;frameSet&#x4E2D;&#x7684;iframe&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x4F7F;&#x7528;&#x3002;</li>
+<li><p>frame&#x7684;&#x9AD8;&#x5EA6;&#x53EA;&#x80FD;&#x901A;&#x8FC7;frameSet&#x63A7;&#x5236;&#xFF1B;iframe&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x63A7;&#x5236;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;frameSet&#x63A7;&#x5236;&#x3002;</p>
+<pre><code> &lt;!--&lt;body&gt;--&gt;
+ &lt;frameset rows=&quot;50%,*&quot;&gt;
+    &lt;frame   name=&quot;frame1&quot;   src=&quot;test1.htm&quot;/&gt; 
+    &lt;frame   name=&quot;frame2&quot;   src=&quot;test2.htm&quot;/&gt; 
+ &lt;/frameset&gt;
+ &lt;!--&lt;/body&gt;--&gt;
+
+ &lt;body&gt;
+ &lt;frameset&gt;
+    &lt;iframe height=&quot;30%&quot;  name=&quot;frame1&quot;   src=&quot;test1.htm&quot;/&gt; 
+    &lt;iframe height=&quot;100&quot;  name=&quot;frame2&quot;   src=&quot;test2.htm&quot;/&gt; 
+ &lt;/frameset&gt;
+ &lt;/body&gt;
+</code></pre></li>
+<li>&#x5982;&#x679C;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;iframe&#xFF0C;&#x5728;IE&#x4E2D;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x663E;&#x793A;&#xFF0C;&#x5728;firefox&#x548C;chrome&#x4E2D;&#x53EA;&#x80FD;&#x663E;&#x793A;&#x51FA;&#x7B2C;&#x4E00;&#x4E2A;&#xFF1B;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;frame&#x5728;IE&#x548C;firefox&#x4E2D;&#x5747;&#x53EF;&#x6B63;&#x5E38;&#x3002;</li>
+</ol>
+<h2 id="&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x6027;">&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x6027;</h2>
+<ul>
+<li>HTML 4.1 Strict DTD &#x548C; XHTML 1.0 Strict DTD &#x4E2D;&#xFF0C;&#x4E0D;&#x652F;&#x6301; iframe &#x5143;&#x7D20;&#x3002;</li>
+<li>HTML5 &#x4E0D;&#x652F;&#x6301; <code>&lt;frame&gt;</code> &#x6807;&#x7B7E;&#xFF0C;HTML 4.01 &#x652F;&#x6301; <code>&lt;frame&gt;</code> &#x6807;&#x7B7E;&#x3002;</li>
+</ul>
+<h2 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5;</h2>
+<p><a href="http://www.w3schools.com/html/html_iframe.asp" target="_blank">Iframe &#x6807;&#x7B7E;</a></p>
+<p><a href="https://www.w3.org/wiki/HTML/Elements/iframe" target="_blank">w3c HTML/Elements/iframe</a></p>
+<p><a href="http://www.w3school.com.cn/tags/tag_iframe.asp" target="_blank">w3c &#x4E2D;&#x6587;&#x53C2;&#x8003;</a></p>
+<p><a href="http://www.cnblogs.com/jiechn/p/4018722.html" target="_blank">frame&#x4E0E;iframe&#x7684;&#x533A;&#x522B;&#xFF1F;</a></p>
 
                                 
                                 </section>
@@ -1586,7 +1641,7 @@
 
             
                 
-                <a href="表单下.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.4. 表单（下）">
+                <a href="表单二.html" class="navigation navigation-prev " aria-label="Previous page: 1.2.4. 表单（下）">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1602,7 +1657,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2.5. iframe","level":"1.2.2.5","depth":3,"next":{"title":"1.2.6. HTML头部","level":"1.2.2.6","depth":3,"path":"前端基础/HTML/HTML头部.md","ref":"./前端基础/HTML/HTML头部.md","articles":[]},"previous":{"title":"1.2.4. 表单（下）","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/表单下.md","ref":"./前端基础/HTML/表单下.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/iframe.md","mtime":"2016-12-14T19:18:45.602Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-29T10:17:51.900Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.5. iframe","level":"1.2.2.5","depth":3,"next":{"title":"1.2.6. HTML头部","level":"1.2.2.6","depth":3,"path":"前端基础/HTML/HTML头部.md","ref":"./前端基础/HTML/HTML头部.md","articles":[]},"previous":{"title":"1.2.4. 表单（下）","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/表单二.md","ref":"./前端基础/HTML/表单二.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/iframe.md","mtime":"2017-01-05T10:34:29.385Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-05T10:35:43.888Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
