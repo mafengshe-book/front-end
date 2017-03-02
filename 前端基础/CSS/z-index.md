@@ -56,18 +56,99 @@ HTML文档元素除了在水平（X轴）和垂直（Y轴）方向进行布局�
 
 ### 堆叠顺序
 
-堆叠顺序是当前元素位于z轴上的值。数值越大表明元素的堆叠顺序越高，越靠近屏幕。如果未指定 z-index 的属性，元素的堆叠顺序基于它所在的文档树。默认情况下，文档中后来声明的元素具有更高的堆叠顺序。
+#### 单个层叠上下文中
 
-计算堆叠顺序
-除了指定的 z-index，元素的堆叠顺序是由大量的因素控制的。元素按照下面表格顺序进行堆叠。
+在一个层叠上下文中一共可以有7种层叠等级，但__处于同一层级的元素，按照HTML元素的书写顺序排列__, 列举如下：
 
-|位置	| 描述	|  CSS |
-| 1 (bottom) | 元素构成堆叠上下文 | z-index: < integer > |
-| 2	负堆叠顺序的子元素 | `z-index: < negative integer > ` | `position: relative | absolute | fixed`|
-| 3 文档流中，非内联，非定位子元素	| display: /* not inline */ position: static
-4	非定位浮动子元素	float: left | right position: static
-5	内联流，非定位子元素	display: /* inline */ position: static
-6	堆叠顺序为0的子元素	z-index: auto | 0 position: relative | absolute | fixed
-7(top)	堆叠顺序为正的子元素	z-index: < position intege > position: relative | absolute | fixed
+1. __背景和边框__ —— 形成层叠上下文的元素的背景和边框。层叠上下文中的最低等级。
+2. __负z-index值__ —— 层叠上下文内有着负z-index值的子元素。
+3. __块级盒__ —— 文档流中非行内非定位子元素。
+4. __浮动盒__ —— 非定位浮动元素。
+5. __行内盒__ —— 文档流中行内级别非定位子元素。
+6. __z-index: 0/auto__ —— 定位元素。 这些元素形成了新的层叠上下文。
+7. __正z-index值__ —— 定位元素。 层叠上下文中的最高等级。
 
-### 一个例子
+[](https://cdn.tutsplus.com/webdesign/uploads/2013/11/stacking-order1.png)
+
+（图片来自网络，侵删）
+
+例子
+
+注意这里讲的顺序是指的同一个层叠上下文中，层叠上下文之间是可以嵌套的，那多个层叠上下文之间是如何排序的？
+
+#### 多个层叠上下文
+
+* 多个层叠上下文可以看做他们共同所在的层叠上下文中的两个层叠层，按照单个层叠上下文内部的层叠顺序层叠；
+* 每个层叠上下文与其包含的子层叠层作为一个整体与其他层叠层进行排布。
+
+通过一个例子来理解这两点：
+
+```html
+<div class="one">
+  <div class="two"></div>
+  <div class="three"></div>
+</div>
+<div class="four"></div>
+```
+
+```css
+div {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+ 
+.one, .two, .three, .four {
+  position: absolute;
+}
+  
+.one {
+  background: #f00;
+  outline: 5px solid #000;
+  top: 100px;
+  left: 200px;
+  z-index: 10;
+}
+  
+.two {
+  background: #0f0;
+  outline: 5px solid #000;
+  top: 50px;
+  left: 75px;
+  z-index: 100;
+}
+ 
+.three {
+  background: #0ff;
+  outline: 5px solid #000;
+  top: 125px;
+  left: 25px;
+  z-index: 150;
+}
+ 
+.four {
+  background: #00f;
+  outline: 5px solid #ff0;
+  top: 200px;
+  left: 350px;
+  z-index: 50;
+}
+```
+例子：
+
+[](./images/stacking1.png)
+
+由于`div.two`被包含在`div.one`中，它的`z-index`值也是相对于`div.one`的层叠上下文来说的。 事实上，我们真正得到的是如下结果：
+```
+.one — z-index = 10
+.two — z-index = 10.100
+.three — z-index = 10.150
+.four — z-index = 50
+```
+
+我们所做的其实是把`div.one`和它所包含的一切放在了`div.four`之下。 不管我们给`div.one`中的元素设置了什么`z-index`值，他们永远都会显示在`div.four`的下面。
+
+参考链接：
+
+![没人告诉你关于z-index的一些事](https://www.w3cplus.com/css/what-no-one-told-you-about-z-index.html)
+![关于z-index 那些你不知道的事](https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892)
