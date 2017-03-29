@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.3.9. 负边距 · GitBook</title>
+        <title>1.3.9. z-index · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -50,7 +50,7 @@
     <link rel="next" href="布局.html" />
     
     
-    <link rel="prev" href="浮动.html" />
+    <link rel="prev" href="定位.html" />
     
 
     </head>
@@ -287,7 +287,7 @@
                 <a href="css.html">
             
                     
-                    1.3.1. CSS基本概念
+                    1.3.1. 基本概念
             
                 </a>
             
@@ -326,7 +326,7 @@
                 <a href="常用属性.html">
             
                     
-                    1.3.4. 常用属性
+                    1.3.4. 属性
             
                 </a>
             
@@ -347,12 +347,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.6" data-path="定位.html">
+        <li class="chapter " data-level="1.2.3.6" data-path="元素渲染.html">
             
-                <a href="定位.html">
+                <a href="元素渲染.html">
             
                     
-                    1.3.6. 定位
+                    1.3.6. 元素渲染
             
                 </a>
             
@@ -360,25 +360,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.7" >
-            
-                <a target="_blank" href="http:/www.cnblogs.com/dolphinX/p/3262469.md">
-            
-                    
-                    1.3.7. z-index
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3.8" data-path="浮动.html">
+        <li class="chapter " data-level="1.2.3.7" data-path="浮动.html">
             
                 <a href="浮动.html">
             
                     
-                    1.3.8. 浮动
+                    1.3.7. 浮动
             
                 </a>
             
@@ -386,12 +373,25 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3.9" data-path="负边距.html">
+        <li class="chapter " data-level="1.2.3.8" data-path="定位.html">
             
-                <a href="负边距.html">
+                <a href="定位.html">
             
                     
-                    1.3.9. 负边距
+                    1.3.8. 定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.9" data-path="z-index.html">
+            
+                <a href="z-index.html">
+            
+                    
+                    1.3.9. z-index
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="布局.html">
             
                     
-                    1.3.10. 布局
+                    1.3.10. 常见布局
             
                 </a>
             
@@ -412,12 +412,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.11" data-path="条件注释和CSShack.html">
+        <li class="chapter " data-level="1.2.3.11" data-path="媒体.html">
+            
+                <a href="媒体.html">
+            
+                    
+                    1.3.11. 媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="条件注释和CSShack.html">
             
                 <a href="条件注释和CSShack.html">
             
                     
-                    1.3.11. CSS hack与条件注释
+                    1.3.12. 常见bug与修复
             
                 </a>
             
@@ -425,12 +438,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.12" data-path="css查缺补漏.html">
+        <li class="chapter " data-level="1.2.3.13" data-path="CSS查漏补缺.html">
             
-                <a href="css查缺补漏.html">
+                <a href="CSS查漏补缺.html">
             
                     
-                    1.3.12. CSS查缺补漏
+                    1.3.13. CSS查漏补缺
             
                 </a>
             
@@ -1532,7 +1545,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.3.9. 负边距</a>
+        <a href="../.." >1.3.9. z-index</a>
     </h1>
 </div>
 
@@ -1547,244 +1560,144 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8D1F;&#x8FB9;&#x8DDD;">&#x8D1F;&#x8FB9;&#x8DDD;</h1>
-<p>&#x8D1F;&#x8FB9;&#x8DDD;&#x5373;<code>margin</code>&#x5C5E;&#x6027;&#x7684;&#x503C;&#x8BBE;&#x4E3A;&#x8D1F;&#x503C;&#xFF0C;&#x5728;CSS&#x5E03;&#x5C40;&#x4E2D;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x6709;&#x7528;&#x7684;&#x6280;&#x5DE7;&#x3002;&#x503C;&#x4E3A;&#x6B63;&#x7684;&#x573A;&#x666F;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x5F88;&#x719F;&#x6089;&#x5176;&#x8868;&#x73B0;</p>
+                                <h1 id="z-index">z-index</h1>
+<p>HTML&#x6587;&#x6863;&#x5143;&#x7D20;&#x9664;&#x4E86;&#x5728;&#x6C34;&#x5E73;&#xFF08;X&#x8F74;&#xFF09;&#x548C;&#x5782;&#x76F4;&#xFF08;Y&#x8F74;&#xFF09;&#x65B9;&#x5411;&#x8FDB;&#x884C;&#x5E03;&#x5C40;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x4F1A;&#x5728;&#x7B2C;&#x4E09;&#x7EF4;&#x5EA6;Z&#x8F74;&#x8FDB;&#x884C;&#x5E03;&#x5C40;&#xFF0C;&#x5728;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7528;&#x6765;&#x51B3;&#x5B9A;&#x5C42;&#x53E0;&#x5173;&#x7CFB;&#xFF08;&#x8C01;&#x5728;&#x4E0A;&#x9762;&#xFF0C;&#x8C01;&#x5728;&#x4E0B;&#x9762;&#xFF09;&#x3002;</p>
+<h3 id="z-index&#x5C5E;&#x6027;">z-index&#x5C5E;&#x6027;</h3>
+<p>&#x8BE5;&#x5C5E;&#x6027;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x3002;&#x5373;&#x5143;&#x7D20;&#x7684;<code>position</code>&#x5C5E;&#x6027;&#x4E3A;&#x9664;<code>static</code>&#x4EE5;&#x5916;&#x7684;&#x503C;&#x3002;</p>
+<p><code>z-index</code>&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x60C5;&#x51B5;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x503C;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>auto</code></td>
+<td style="text-align:center">&#x9ED8;&#x8BA4;, &#x4F1A;&#x5904;&#x7406;&#x6210;<code>z-index=0</code>, &#x5806;&#x53E0;&#x987A;&#x5E8F;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x76F8;&#x7B49;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>&lt;integer&gt;</code></td>
+<td style="text-align:center">&#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x7684;&#x5806;&#x53E0;&#x987A;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BB2;&#xFF0C;&#x5143;&#x7D20;&#x7684;&#x5C42;&#x53E0;&#x987A;&#x5E8F;&#x53EF;&#x4EE5;&#x6839;&#x636E;<code>z-index</code>&#x7684;&#x503C;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5F53;<code>z-index</code>&#x7684;&#x503C;&#x8D8A;&#x5927;&#x5219;&#x8D8A;&#x5728;&#x4E0A;&#x5C42;&#xFF0C;&#x8D8A;&#x5C0F;&#x8D8A;&#x5728;&#x4E0B;&#x5C42;&#x3002;</p>
+<p>&#x4F46;&#x4ECD;&#x65E7;&#x6709;&#x5F88;&#x591A;&#x590D;&#x6742;&#x60C5;&#x51B5;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;&#xFF1A;</p>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E86;z-index&#x503C;&#x5F97;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x4E0E;&#x5E38;&#x89C4;&#x6587;&#x6863;&#x6D41;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x76F8;&#x4E92;&#x91CD;&#x53E0;&#xFF0C;&#x8C01;&#x4F1A;&#x88AB;&#x7F6E;&#x4E8E;&#x4E0A;&#x65B9;&#xFF1F;</li>
+<li>&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x4E0E;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x76F8;&#x4E92;&#x91CD;&#x53E0;&#xFF0C;&#x8C01;&#x4F1A;&#x88AB;&#x7F6E;&#x4E8E;&#x4E0A;&#x65B9;&#xFF1F;</li>
+<li>&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x88AB;&#x5D4C;&#x5957;&#x5728;&#x5176;&#x4ED6;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x4E2D;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1F;</li>
+</ul>
+<p>&#x8981;&#x60F3;&#x56DE;&#x7B54;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x9700;&#x8981;&#x7406;&#x89E3;z-index&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;<strong>&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;</strong>&#x3001;<strong>&#x5C42;&#x53E0;&#x5C42;</strong>&#x3001;<strong>&#x5C42;&#x53E0;&#x6B21;&#x5E8F;</strong>&#x3002;</p>
+<h3 id="&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x548C;&#x5C42;&#x53E0;&#x5C42;">&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x548C;&#x5C42;&#x53E0;&#x5C42;</h3>
+<p><a href="stacking-contexts.png">&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;</a></p>
+<p>&#x56FE;&#x7247;&#x5F15;&#x7528;&#x81EA;<img src="https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892" alt="&#x5173;&#x4E8E;z-index&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x7684;&#x4E8B;">&#x3002;</p>
+<p>&#x501F;&#x52A9;&#x4E0A;&#x56FE;&#x7406;&#x89E3;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x548C;&#x5C42;&#x53E0;&#x5C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6574;&#x4E2A;HTML&#x6587;&#x6863;&#x770B;&#x4F5C;&#x4E00;&#x5F20;&#x5927;&#x684C;&#x5B50;&#xFF0C;&#x5927;&#x684C;&#x5B50;&#x4E0A;&#x6709;&#x4E24;&#x5757;&#x73BB;&#x7483;&#xFF0C;&#x73BB;&#x7483;&#x4E0A;&#x5206;&#x522B;&#x6709;&#x4E24;&#x672C;&#x4E66;&#x3002; &#x5927;&#x684C;&#x5B50;&#x662F;&#x4E24;&#x5757;&#x73BB;&#x7483;&#x548C;&#x4E66;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4E24;&#x5757;&#x73BB;&#x7483;&#x548C;&#x4E66;&#x662F;&#x5927;&#x684C;&#x5B50;&#x4E0A;&#x7684;&#x4E24;&#x4E2A;&#x5C42;&#x53E0;&#x5C42;&#x3002;&#x540C;&#x7406;&#xFF0C;&#x73BB;&#x7483;&#x662F;&#x4E66;&#x672C;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4E66;&#x672C;&#x662F;&#x73BB;&#x7483;&#x7684;&#x5C42;&#x53E0;&#x5C42;&#x3002;</p>
+<p>&#x5BF9;&#x5E94;&#x5230;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x7684;HTML&#x6587;&#x6863;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;HTML&#x6587;&#x6863;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;html&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x5728;&#x8FD9;&#x4E2A;&#x9ED8;&#x8BA4;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x4E00;&#x4E2A;&#x5C42;&#x53E0;&#x5C42;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x5143;&#x7D20;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x8FD9;&#x4E9B;&#x6761;&#x4EF6;&#x6709;&#xFF1A;</p>
+<ul>
+<li>&#x7ED9;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x3001;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x6216;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x91CC;&#x7684;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;<code>z-index</code>&#x7684;&#x503C;&#x4F46;&#x4E0D;&#x4E3A;<code>auto</code>&#x3002;</li>
+<li><code>opacity</code>&#x503C;&#x5C0F;&#x4E8E;1&#x3002;</li>
+<li>&#x56FA;&#x5B9A;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x3002;</li>
+<li><code>transform</code>&#x503C;&#x4E0D;&#x4E3A;<code>none</code>&#x3002;</li>
+<li><code>mix-blend-mode</code>&#x503C;&#x4E0D;&#x4E3A;<code>normal</code>&#x3002;</li>
+<li><code>filter</code>&#x503C;&#x4E0D;&#x4E3A;<code>none</code>&#x3002;</li>
+<li><code>perspective</code>&#x503C;&#x4E0D;&#x4E3A;<code>none</code>&#x3002;</li>
+<li><code>isolation</code>&#x503C;&#x8BBE;&#x4E3A;<code>isolate</code>&#x3002;</li>
+<li><code>will-change</code>&#x503C; <strong>&#x5F85;&#x8865;&#x5145;</strong>&#x3002;</li>
+<li>&#x8BBE;&#x7F6E;<code>-webkit-overflow-scrolling</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>touch</code>&#x3002;</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x5982;&#x679C;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0A;&#x89C4;&#x5219;&#x4E2D;&#x7684;&#x4E00;&#x6761;&#xFF0C;&#x5219;&#x4F1A;&#x751F;&#x6210;&#x65B0;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4E00;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x53CA;&#x5176;&#x6240;&#x5305;&#x542B;&#x7684;&#x5C42;&#x53E0;&#x5C42;&#x5728;&#x5176;&#x4E0A;&#x5C42;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x5C06;&#x4F1A;&#x88AB;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x3002;</p>
+<p>&#x8981;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5B9A;&#x4F4D;&#x65B9;&#x5F0F;&#x548C;<code>z-index</code>&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</li>
+<li>&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x662F;&#x548C;&#x5B83;&#x7684;&#x5144;&#x5F1F;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x5B8C;&#x5168;&#x72EC;&#x7ACB;&#x7684;</li>
+<li>&#x6BCF;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x662F;&#x81EA;&#x5305;&#x542B;&#x7684;&#x3002;</li>
+</ul>
+<h3 id="&#x5806;&#x53E0;&#x987A;&#x5E8F;">&#x5806;&#x53E0;&#x987A;&#x5E8F;</h3>
+<h4 id="&#x5355;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;">&#x5355;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;</h4>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x4E00;&#x5171;&#x53EF;&#x4EE5;&#x6709;7&#x79CD;&#x5C42;&#x53E0;&#x7B49;&#x7EA7;&#xFF0C;&#x4F46;<strong>&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x5C42;&#x7EA7;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6309;&#x7167;HTML&#x5143;&#x7D20;&#x7684;&#x4E66;&#x5199;&#x987A;&#x5E8F;&#x6392;&#x5217;</strong>, &#x5217;&#x4E3E;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ol>
-<li><p>&#x5F53;<code>margin-top</code>&#x3001;<code>margin-left</code>&#x4E3A;&#x8D1F;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x628A;&#x5143;&#x7D20;&#x4E0A;&#x79FB;&#x3001;&#x5DE6;&#x79FB;&#xFF0C;&#x540C;&#x65F6;&#x6587;&#x6863;&#x6D41;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x4E5F;&#x53D1;&#x751F;&#x76F8;&#x5E94;&#x53D8;&#x5316;,&#x8FD9;&#x70B9;&#x4E0E;<code>position:relative</code>&#x7684;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;top&#x3001;left&#x540E;&#x5143;&#x7D20;&#x8FD8;&#x5360;&#x636E;&#x539F;&#x6765;&#x4F4D;&#x7F6E;&#x4E0D;&#x540C;</p>
-</li>
-<li><p>&#x5F53;<code>margin-bottom</code>&#x3001;<code>margin-right</code>&#x8BBE;&#x4E3A;&#x8D1F;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5143;&#x7D20;&#x672C;&#x8EAB;&#x6CA1;&#x6709;&#x4F4D;&#x7F6E;&#x53D8;&#x5316;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x4E0A;&#x79FB;&#x3001;&#x5DE6;&#x79FB;</p>
-</li>
+<li><strong>&#x80CC;&#x666F;&#x548C;&#x8FB9;&#x6846;</strong> &#x2014;&#x2014; &#x5F62;&#x6210;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x548C;&#x8FB9;&#x6846;&#x3002;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x6700;&#x4F4E;&#x7B49;&#x7EA7;&#x3002;</li>
+<li><strong>&#x8D1F;z-index&#x503C;</strong> &#x2014;&#x2014; &#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x5185;&#x6709;&#x7740;&#x8D1F;z-index&#x503C;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x3002;</li>
+<li><strong>&#x5757;&#x7EA7;&#x76D2;</strong> &#x2014;&#x2014; &#x6587;&#x6863;&#x6D41;&#x4E2D;&#x975E;&#x884C;&#x5185;&#x975E;&#x5B9A;&#x4F4D;&#x5B50;&#x5143;&#x7D20;&#x3002;</li>
+<li><strong>&#x6D6E;&#x52A8;&#x76D2;</strong> &#x2014;&#x2014; &#x975E;&#x5B9A;&#x4F4D;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x3002;</li>
+<li><strong>&#x884C;&#x5185;&#x76D2;</strong> &#x2014;&#x2014; &#x6587;&#x6863;&#x6D41;&#x4E2D;&#x884C;&#x5185;&#x7EA7;&#x522B;&#x975E;&#x5B9A;&#x4F4D;&#x5B50;&#x5143;&#x7D20;&#x3002;</li>
+<li><strong>z-index: 0/auto</strong> &#x2014;&#x2014; &#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x3002; &#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x5F62;&#x6210;&#x4E86;&#x65B0;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</li>
+<li><strong>&#x6B63;z-index&#x503C;</strong> &#x2014;&#x2014; &#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x3002; &#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x6700;&#x9AD8;&#x7B49;&#x7EA7;&#x3002;</li>
 </ol>
-<p>&#x770B;&#x51E0;&#x4E2A;&#x5E94;&#x7528;&#x573A;&#x666F;</p>
-<h2 id="&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;">&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;</h2>
-<p>&#x5F53;&#x5143;&#x7D20;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x7684;&#x65F6;&#x5019;&#x5176;top&#x3001;right&#x3001;bottom&#x3001;left&#x503C;&#x662F;&#x6307;&#x79BB;&#x6700;&#x8FD1;&#x7684;&#x975E;static&#x5143;&#x7D20;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x7ECF;&#x5178;&#x7684;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x6B63;&#x662F;&#x5229;&#x7528;&#x7684;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x7684;&#x8D1F;&#x8FB9;&#x8DDD;&#x5B9E;&#x73B0;&#x7684;</p>
-<pre><code>&lt;style&gt;
-.wrap4{
-    position:relative;
-    margin:10px;
-    width:200px;
-    height:200px;
-    border:dashed 1px orange;
-}
-
-.wrap4 .content{
-    position:absolute;
-    width:100px;
-    height:100px;
-    top:50%;
-    left:50%;
-    margin-top:-50px;
-    margin-left:-50px;
-    background:orange;
-}
-&lt;/style&gt;
-
-&lt;div class=&quot;wrap4&quot;&gt;
-    &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p>&#x628A;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;top&#x548C;left&#x4E3A;50%&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5143;&#x7D20;&#x7684;&#x4E0A;&#x8FB9;&#x3001;&#x5DE6;&#x8FB9;&#x5C31;&#x5230;&#x4E86;&#x7236;&#x5143;&#x7D20;&#x7684;50%&#x5904;&#xFF0C;&#x518D;&#x5BF9;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x5176;&#x81EA;&#x8EAB;&#x9AD8;&#x5EA6;&#x3001;&#x957F;&#x5EA6;&#x4E00;&#x534A;&#x7684;&#x8D1F;&#x8FB9;&#x8DDD;&#xFF0C;&#x4F7F;&#x5143;&#x7D20;&#x4E2D;&#x5FC3;&#x79FB;&#x52A8;&#x5230;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x5FC3;&#xFF0C;&#x5B9E;&#x73B0;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;</p>
-<style>.wrap4{ position:relative; margin:10px; width:200px; height:200px; border:dashed 1px orange; } .wrap4 .content{ position:absolute; width:100px; height:100px; top:50%; left:50%; margin-top:-50px; margin-left:-50px; background:orange; }</style>
-
-<h2 id="float&#x5143;&#x7D20;">float&#x5143;&#x7D20;</h2>
-<p>&#x8D1F;&#x8FB9;&#x8DDD;&#x5BF9;float&#x5143;&#x7D20;&#x7684;&#x5F71;&#x54CD;&#x4E5F;&#x662F;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x8BF4;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#x6709;&#x5176;&#x7279;&#x6B8A;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x4E2A;&#x4F8B;&#x5B50;&#x5C31;&#x5F88;&#x6E05;&#x695A;&#x4E86;</p>
-<pre><code>&lt;style&gt;
-.float{
-    overflow:hidden;
-    width:280px;
-    border:dashed 1px orange;
-}
-
-.float .item{
-    width:100px;
-    height:100px;
-    float:left;
-}
-
-.float .item:nth-child(1){
-    background:red;
-}
-.float .item:nth-child(2){
-    background:grey;
-}
-.float .item:nth-child(3){
-    background:blue;
-}
-&lt;/style&gt;
-
-&lt;div class=&quot;float&quot;&gt;
-    &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p>&#x5728;&#x4E00;&#x4E2A;&#x5BBD;&#x5EA6;&#x4E3A;280px&#x7684;div&#x4E2D;&#x53F3;3&#x4E2A;float:left&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x5BBD;&#x5EA6;&#x4E3A;100px&#xFF0C;&#x7531;&#x4E8E;&#x4E00;&#x6392;&#x653E;&#x4E0D;&#x4E0B;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x4E86;&#x4E0B;&#x4E00;&#x884C;</p>
-<p>&#x6211;&#x4EEC;&#x5BF9;&#x4EE3;&#x7801;&#x7A0D;&#x4F5C;&#x4FEE;&#x6539;</p>
-<pre><code>.float .item:nth-child(3){
-    background:blue;
-    margin-left:-40px;
-}
-</code></pre><p>&#x8FD9;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x79FB;&#x4E0A;&#x53BB;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x8986;&#x76D6;&#x4E86;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;20px&#xFF0C;&#x7ECF;&#x5178;&#x7684;&#x591A;&#x5217;&#x5E03;&#x5C40;&#x6B63;&#x662F;&#x5229;&#x7528;&#x6B64;&#x539F;&#x7406;</p>
-<h2 id="&#x591A;&#x5217;&#x5E03;&#x5C40;">&#x591A;&#x5217;&#x5E03;&#x5C40;</h2>
-<pre><code>&lt;style&gt;
-.body{
-    width:500px;
-    margin:10px;
-    border:dashed 1px orange;
-    overflow:hidden;
-}
-
-.wrap3{
-    float:left;
-    width:100%;
-}
-
-.wrap3 .content{
-    height:200px;
-    margin-right:100px;
-    background:rgba(255,0,0,0.5);
-}
-
-.body .right{
-    width:100px;
-    height:200px;
-    float:left;
-    margin-left:-100px;
-    background:rgba(0,255,0,0.5);
-}
-&lt;/style&gt;
-
-&lt;div class=&quot;body&quot;&gt;
-    &lt;div class=&quot;wrap3&quot;&gt;
-        &lt;div class=&quot;content&quot;&gt;
-            Content Content Content Content Content Content Content
-            Content Content Content Content Content Content Content Content
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;right&quot;&gt;Right&lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p>&#x4EE3;&#x7801;&#x5F88;&#x7B80;&#x5355;</p>
+<p><a href="https://cdn.tutsplus.com/webdesign/uploads/2013/11/stacking-order1.png" target="_blank"></a></p>
+<p>&#xFF08;&#x56FE;&#x7247;&#x6765;&#x81EA;&#x7F51;&#x7EDC;&#xFF0C;&#x4FB5;&#x5220;&#xFF09;</p>
+<p>&#x4F8B;&#x5B50;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8BB2;&#x7684;&#x987A;&#x5E8F;&#x662F;&#x6307;&#x7684;&#x540C;&#x4E00;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E4B;&#x95F4;&#x662F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x7684;&#xFF0C;&#x90A3;&#x591A;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x6392;&#x5E8F;&#x7684;&#xFF1F;</p>
+<h4 id="&#x591A;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;">&#x591A;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;</h4>
 <ul>
-<li>&#x4E3A;<code>content</code>&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x7236;&#x5143;&#x7D20;&#xFF0C;&#x8BBE;&#x7F6E;&#x5DE6;&#x6D6E;&#x52A8;&#xFF0C;&#x5BBD;&#x5EA6;100%</li>
-<li>content&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x53F3;&#x8FB9;&#x8DDD;&#xFF0C;&#x503C;&#x7B49;&#x4E8E;<code>right</code>&#x7684;&#x5BBD;&#x5EA6;</li>
-<li><code>right</code>&#x5DE6;&#x6D6E;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x5176;&#x5BBD;&#x5EA6;&#x7684;&#x8D1F;&#x8FB9;&#x8DDD;</li>
+<li>&#x591A;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x4ED6;&#x4EEC;&#x5171;&#x540C;&#x6240;&#x5728;&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x5C42;&#x53E0;&#x5C42;&#xFF0C;&#x6309;&#x7167;&#x5355;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x5185;&#x90E8;&#x7684;&#x5C42;&#x53E0;&#x987A;&#x5E8F;&#x5C42;&#x53E0;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x4E0E;&#x5176;&#x5305;&#x542B;&#x7684;&#x5B50;&#x5C42;&#x53E0;&#x5C42;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x4E0E;&#x5176;&#x4ED6;&#x5C42;&#x53E0;&#x5C42;&#x8FDB;&#x884C;&#x6392;&#x5E03;&#x3002;</li>
 </ul>
-<p>&#x672C;&#x6765;right&#x5E94;&#x8BE5;&#x5728;&#x7B2C;&#x4E8C;&#x884C;&#x663E;&#x793A;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x5BBD;&#x5EA6;&#x7684;&#x5DE6;&#x6D6E;&#x52A8;&#x4F7F;&#x5B83;&#x5230;&#x4E86;&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x6700;&#x53F3;&#x8FB9;&#xFF0C;&#x8986;&#x76D6;&#x4E86;wrap&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x662F;content&#x6709;right&#x5BBD;&#x5EA6;&#x7684;&#x53F3;&#x8FB9;&#x8DDD;&#xFF0C;&#x8986;&#x76D6;&#x533A;&#x57DF;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x7ECF;&#x5178;&#x7684;&#x53F3;&#x4FA7;&#x56FA;&#x5B9A;&#x5BBD;&#x5EA6;&#xFF0C;&#x5DE6;&#x4FA7;&#x5145;&#x6EE1;&#x5269;&#x4F59;&#x90E8;&#x5206;&#x7684;&#x4E24;&#x5217;&#x5E03;&#x5C40;</p>
-<div style="width:500px;margin:10px;border:dashed 1px orange;overflow:hidden;">
-
-<div style="float:left;width:100%;">
-
-<div style="height:200px;margin-right:100px;background:rgba(255,0,0,0.5);">Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content</div>
-
-<p>&lt;/div&gt;</p>
-<div style="width:100px; height:200px;float:left;margin-left:-100px;background:rgba(0,255,0,0.5)">Right</div>
-
-<p>&lt;/div&gt;</p>
-<p>PS. &#x5176;&#x5B83;&#x6B64;&#x7C7B;&#x66F4;&#x590D;&#x6742;&#x7684;&#x5E03;&#x5C40;&#x539F;&#x7406;&#x7C7B;&#x4F3C;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x770B;<a href="http://blog.html.it/layoutgala/" target="_blank">&#x8FD9;&#x91CC;</a>&#x5B66;40&#x79CD;&#x3002;&#x3002;&#x3002;</p>
-<h2 id="&#x666E;&#x901A;&#x5143;&#x7D20;">&#x666E;&#x901A;&#x5143;&#x7D20;</h2>
-<p>&#x8D1F;&#x8FB9;&#x8DDD;&#x5BF9;&#x4E0D;&#x540C;&#x5757;&#x5143;&#x7D20;&#x7684;&#x5F71;&#x54CD;&#x5F88;&#x6709;&#x610F;&#x601D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x770B;&#x4E00;&#x4E0B;</p>
-<pre><code>&lt;style&gt;
-li{
-    line-height:2em;
+<p>&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x7406;&#x89E3;&#x8FD9;&#x4E24;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;one&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;two&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;three&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;four&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
 }
 
-.col2{
-    margin-left:150px;
+<span class="hljs-selector-class">.one</span>, <span class="hljs-selector-class">.two</span>, <span class="hljs-selector-class">.three</span>, <span class="hljs-selector-class">.four</span> {
+  <span class="hljs-attribute">position</span>: absolute;
 }
 
-.col3{
-    margin-left:300px;
+<span class="hljs-selector-class">.one</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#f00</span>;
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">10</span>;
 }
 
-li.top{
-    margin-top:-6em;
-}
-&lt;/style&gt;
-
-&lt;ul&gt;
-    &lt;li class=&quot;col1&quot;&gt;aaa&lt;/li&gt;
-    &lt;li class=&quot;col1&quot;&gt;bbb&lt;/li&gt;
-    &lt;li class=&quot;col1&quot;&gt;ccc&lt;/li&gt;
-    &lt;li class=&quot;col2 top&quot;&gt;ddd&lt;/li&gt;
-    &lt;li class=&quot;col2&quot;&gt;eee&lt;/li&gt;
-    &lt;li class=&quot;col2&quot;&gt;fff&lt;/li&gt;
-    &lt;li class=&quot;col3 top&quot;&gt;ggg&lt;/li&gt;
-    &lt;li class=&quot;col3&quot;&gt;hhh&lt;/li&gt;
-    &lt;li class=&quot;col3&quot;&gt;iii&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre><p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x4E09;&#x5217;&#x663E;&#x793A;</p>
-<ul>
-<li>aaa</li>
-<li>bbb</li>
-<li>ccc</li>
-<li>ddd</li>
-<li>eee</li>
-<li>fff</li>
-<li>ggg</li>
-<li>hhh</li>
-<li>iii</li>
-</ul>
-<p>&#x666E;&#x901A;&#x7684;&#x505A;&#x6CD5;&#x6211;&#x4EEC;&#x80AF;&#x5B9A;&#x662F;&#x901A;&#x8FC7;&#x6D6E;&#x52A8;&#x5B9E;&#x73B0;&#xFF0C;&#x901A;&#x8FC7;&#x521A;&#x624D;&#x4ECB;&#x7ECD;&#x7684;&#x77E5;&#x8BC6;&#x5E94;&#x8BE5;&#x4E0D;&#x96BE;&#x7406;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x6837;&#x4E5F;&#x884C;&#x3002;&#x770B;&#x8D77;&#x6765;&#x5728;&#x666E;&#x901A;&#x5143;&#x7D20;&#x4E0A;&#x6CA1;&#x4EC0;&#x4E48;&#x7A00;&#x5947;&#x7684;</p>
-<h2 id="&#x653E;&#x5927;&#x5143;&#x7D20;">&#x653E;&#x5927;&#x5143;&#x7D20;</h2>
-<p>&#x4EC0;&#x4E48;&#xFF1F;&#x8D1F;&#x8FB9;&#x8DDD;&#x8FD8;&#x53EF;&#x4EE5;&#x653E;&#x5927;&#x5143;&#x7D20;&#xFF01;&#xFF01;&#xFF01;</p>
-<pre><code>&lt;style&gt;
-.wrap{
-    width:300px;
-    border:dashed 5px orange;
+<span class="hljs-selector-class">.two</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#0f0</span>;
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">75px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">100</span>;
 }
 
-.wrap .inner{
-    height:50px;
-    margin:0 -50px;
-    background:blue;
-    opacity:0.5;
-}
-&lt;/style&gt;
-
-&lt;div class=&quot;wrap&quot;&gt;
-  &lt;div class=&quot;inner&quot;&gt;
-      inner inner inner inner inner inner inner inner inner inner inner inner
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x770B;&#x8D77;&#x6765;&#x5E73;&#x6DE1;&#x65E0;&#x5947;&#xFF0C;&#x6548;&#x679C;&#x5374;&#x5F88;&#x60CA;&#x4EBA;&#xFF0C;&#x5185;&#x5C42;&#x7684;div&#x8BBE;&#x7F6E;&#x4E86;&#x6C34;&#x5E73;&#x7684;&#x8D1F;&#x8FB9;&#x8DDD;&#x540E;&#x7ADF;&#x7136;&#x53D8;&#x5927;&#x4E86;</p>
-<div style=" width:300px;border:dashed 5px orange;margin:20px 100px;">
-
-<div style="height:50px;margin:0 -50px;background:blue;opacity:0.5;">inner inner inner inner inner inner inner inner inner inner inner inner</div>
-
-<p>&lt;/div&gt;</p>
-<p>PS. &#x6548;&#x679C;&#x80FD;&#x5B9E;&#x73B0;&#x7684;&#x524D;&#x63D0;&#x662F;&#x5143;&#x7D20;&#x7684;&#x5BBD;&#x5EA6;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x4E3A;auto&#x4EE5;&#x5916;&#x7684;&#x503C;</p>
-<h2 id="&#x5E26;&#x6709;&#x53F3;&#x8FB9;&#x8DDD;&#x7684;&#x6D6E;&#x52A8;&#x5B50;&#x5143;&#x7D20;&#x5217;&#x8868;">&#x5E26;&#x6709;&#x53F3;&#x8FB9;&#x8DDD;&#x7684;&#x6D6E;&#x52A8;&#x5B50;&#x5143;&#x7D20;&#x5217;&#x8868;</h2>
-<p>&#x770B;&#x5230;&#x8FD9;&#x79CD;&#x6548;&#x679C;&#x4F60;&#x7B2C;&#x4E00;&#x60F3;&#x6CD5;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4F1A;&#x4E0D;&#x4F1A;&#x662F;&#x5B50;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;margin-right&#xFF0C;&#x5728;&#x904D;&#x5386;&#x7684;&#x65F6;&#x5019;nth-child(3n)&#x8FD8;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A;0&#xFF0C;&#x770B;&#x770B;&#x5229;&#x7528;&#x4E0A;&#x9762;&#x77E5;&#x8BC6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x5904;&#x7406;</p>
-<pre><code>&lt;style&gt;
-.wrap2{
-    width:322px;
-    border:dashed 1px orange;
+<span class="hljs-selector-class">.three</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#0ff</span>;
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">125px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">150</span>;
 }
 
-.wrap2 .inner{
-  overflow:hidden;
-  margin-right:-10px;
+<span class="hljs-selector-class">.four</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#00f</span>;
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">5px</span> solid <span class="hljs-number">#ff0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">350px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">50</span>;
 }
+</code></pre>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p><a href="images/stacking1.png"></a></p>
+<p>&#x7531;&#x4E8E;<code>div.two</code>&#x88AB;&#x5305;&#x542B;&#x5728;<code>div.one</code>&#x4E2D;&#xFF0C;&#x5B83;&#x7684;<code>z-index</code>&#x503C;&#x4E5F;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;<code>div.one</code>&#x7684;&#x5C42;&#x53E0;&#x4E0A;&#x4E0B;&#x6587;&#x6765;&#x8BF4;&#x7684;&#x3002; &#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x771F;&#x6B63;&#x5F97;&#x5230;&#x7684;&#x662F;&#x5982;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>.one &#x2014; z-index = 10
+.two &#x2014; z-index = 10.100
+.three &#x2014; z-index = 10.150
+.four &#x2014; z-index = 50
+</code></pre><p>&#x6211;&#x4EEC;&#x6240;&#x505A;&#x7684;&#x5176;&#x5B9E;&#x662F;&#x628A;<code>div.one</code>&#x548C;&#x5B83;&#x6240;&#x5305;&#x542B;&#x7684;&#x4E00;&#x5207;&#x653E;&#x5728;&#x4E86;<code>div.four</code>&#x4E4B;&#x4E0B;&#x3002; &#x4E0D;&#x7BA1;&#x6211;&#x4EEC;&#x7ED9;<code>div.one</code>&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x4E86;&#x4EC0;&#x4E48;<code>z-index</code>&#x503C;&#xFF0C;&#x4ED6;&#x4EEC;&#x6C38;&#x8FDC;&#x90FD;&#x4F1A;&#x663E;&#x793A;&#x5728;<code>div.four</code>&#x7684;&#x4E0B;&#x9762;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x94FE;&#x63A5;&#xFF1A;</p>
+<p><img src="https://www.w3cplus.com/css/what-no-one-told-you-about-z-index.html" alt="&#x6CA1;&#x4EBA;&#x544A;&#x8BC9;&#x4F60;&#x5173;&#x4E8E;z-index&#x7684;&#x4E00;&#x4E9B;&#x4E8B;">
+<img src="https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892" alt="&#x5173;&#x4E8E;z-index &#x90A3;&#x4E9B;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x7684;&#x4E8B;"></p>
 
-.wrap2 .item{
-    float:left;
-    width:100px;
-    height:100px;
-    margin:10px 10px 10px 0;
-    background:blue;
-}
-&lt;/style&gt;
-
-&lt;div class=&quot;wrap2&quot;&gt;
-    &lt;div class=&quot;inner&quot;&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre><p>&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;nth-child(3n)&#x7684;&#x8FB9;&#x8DDD;&#x4E3A;0&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x8D1F;&#x8FB9;&#x8DDD;&#x4F7F;&#x7236;&#x5143;&#x7D20;&#x201C;&#x53D8;&#x5927;&#x201D;</p>
-</div></div></div>
                                 
                                 </section>
                             
@@ -1811,12 +1724,12 @@ li.top{
 
             
                 
-                <a href="浮动.html" class="navigation navigation-prev " aria-label="Previous page: 1.3.8. 浮动">
+                <a href="定位.html" class="navigation navigation-prev " aria-label="Previous page: 1.3.8. 定位">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="布局.html" class="navigation navigation-next " aria-label="Next page: 1.3.10. 布局">
+                <a href="布局.html" class="navigation navigation-next " aria-label="Next page: 1.3.10. 常见布局">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1827,7 +1740,7 @@ li.top{
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.3.9. 负边距","level":"1.2.3.9","depth":3,"next":{"title":"1.3.10. 布局","level":"1.2.3.10","depth":3,"path":"前端基础/CSS/布局.md","ref":"./前端基础/CSS/布局.md","articles":[]},"previous":{"title":"1.3.8. 浮动","level":"1.2.3.8","depth":3,"path":"前端基础/CSS/浮动.md","ref":"./前端基础/CSS/浮动.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/CSS/负边距.md","mtime":"2016-12-14T19:18:45.587Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-16T11:27:16.034Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.3.9. z-index","level":"1.2.3.9","depth":3,"next":{"title":"1.3.10. 常见布局","level":"1.2.3.10","depth":3,"path":"前端基础/CSS/布局.md","ref":"./前端基础/CSS/布局.md","articles":[]},"previous":{"title":"1.3.8. 定位","level":"1.2.3.8","depth":3,"path":"前端基础/CSS/定位.md","ref":"./前端基础/CSS/定位.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/CSS/z-index.md","mtime":"2017-03-29T10:00:57.837Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-29T10:01:54.540Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
