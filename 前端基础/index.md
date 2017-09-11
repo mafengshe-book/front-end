@@ -77,9 +77,9 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 
 正则表达式是一种描述文本规则的代码，可以利用比较简单的代码对复杂模式描述。
 
-* 服务器脚本语言（PHP,ASP,NET,JSP）
+* 服务器脚本语言（Node.js,PHP,ASP,JSP）
 
-前端工程师需要与后台提供的接口配合，通过GET／POST方法完成页面提交、数据库增删改查等操作，懂得一门后台语言会大大便利自己的开发。服务器脚本语言用的比较多的是PHP，也比较适合新手入门。
+前端工程师需要与后台提供的接口配合，通过GET／POST方法完成页面提交、数据库增删改查等操作，懂得一门后台语言会大大便利自己的开发。对于前端工程师，推荐使用 Node.js。
 
 掌握这些知识，你已经是一个合格前端工程师，可以胜任一个普通前端工程师的岗位。接下来的学习会帮助你成为一名优秀的前端工程师。
 
@@ -88,18 +88,18 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 *   页面性能优化，SEO站内优化……
 *   模块化
     *   **AMD** (Asynchronous Module Definition) `RequireJS`
-    *   **CMD** (Common Module Definition) `SeaJS`、`NodeJS`
+    *   **CMD** (Common Module Definition) `NodeJS`
 
 *   框架化
     *   `underscore`、`jQuery`、`BootStrap`
-    *   **MV*** (MVC、MVVM) `Backbone`、`Vue.js`、`AngularJS`
-    *   `Web Components`、`Flux`
+    *   **MV*** (MVC、MVVM) `Backbone`、`Vue.js`、`Angular`、`React`
+    *   `Web Components`、`Redux`
 
 *   自动化
     *   CoffeeScript、TypeScript
-    *   Sass、Less
+    *   Sass、Stylus、Less
     *   模板引擎
-    *   Grunt、Gulp
+    *   Grunt、Gulp、Webpack
 
 前端知识日新月异，前端的学习也不是一劳永逸，要成为一名优秀的前端工程师，就要不断接受新的知识、新的思想。此时的你已经学会可以独自扬帆起航、满载而归——自学，学无止境！
 
@@ -113,9 +113,6 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 * 兴趣是最好的老师，保持学习的热情，不可急于求成！
 
 这些技能虽不属于前端知识的范畴，但对学习前端来讲都有着举足轻重的作用，是一个程序开发人员的必备技能。
-
-
-
 
 
 # 如何学习前端
@@ -144,7 +141,7 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 *   ……
 ### 团队博客：
 
-*	[ 腾讯AlloyTeam Blog，腾讯全端 AlloyTeam 团队 Blog](http://www.alloyteam.com/)
+*	[腾讯AlloyTeam Blog，腾讯全端 AlloyTeam 团队 Blog](http://www.alloyteam.com/)
 *	[百度：首页 - FEX](http://fex.baidu.com/)
 *	[360团队，奇舞团博客](http://www.75team.com/about)
 *	[奇舞团：奇舞团博客](https://75team.com/)
@@ -175,16 +172,14 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 
 ## 课前准备
 
-1.  安装文本编辑器 [Sublime text3](http://www.sublimetext.com/3) 或者 [WebStrom](https://www.jetbrains.com/webstorm/) 。
+1.  安装文本编辑器 [Sublime text3](http://www.sublimetext.com/3) 或者 [WebStrom](https://www.jetbrains.com/webstorm/)  或者 [VSCode](https://code.visualstudio.com/))。
 2.  安装 Chrome 浏览器，[官方下载地址](http://www.google.cn/chrome/browser/desktop/index.html)、[QQ群文件](https://jq.qq.com/?_wv=1027&k=42GqFSj)
-
-
 
 ## 教学内容和方式
 
-- 教学内容共分13个课时，每课时时长1.5小时，共计20小时左右。
-- 第1节前端起步、第2-4节HTML、第5-9节CSS、第10节实战、第11-12节JS基础，完成后掌握HTMl、CSS基础，拥有搭建网页能力。
-- 每周四晚19：00-20：30 腾讯课堂直播。
+- 每课时时长1.5小时。
+- 课程教授HTMl、CSS和 JS 基础，学完后拥有搭建静态网站能力。
+- 每周三节课，晚20：00-21：30 码蜂社论坛直播。
 - 上课前一天在群里给出下节课要讲的内容、参考的网上资料。
 
 # 或许你还有这些问题？
