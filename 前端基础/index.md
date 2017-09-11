@@ -141,39 +141,39 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 *   ……
 ### 团队博客：
 
-*	[腾讯AlloyTeam Blog，腾讯全端 AlloyTeam 团队 Blog](http://www.alloyteam.com/)
-*	[百度：首页 - FEX](http://fex.baidu.com/)
-*	[360团队，奇舞团博客](http://www.75team.com/about)
-*	[奇舞团：奇舞团博客](https://75team.com/)
-*	[大搜车：大搜车前端团队博客](http://f2e.souche.com/blog/)
+* [腾讯AlloyTeam Blog，腾讯全端 AlloyTeam 团队 Blog](http://www.alloyteam.com/)
+* [百度：首页 - FEX](http://fex.baidu.com/)
+* [360团队，奇舞团博客](http://www.75team.com/about)
+* [奇舞团：奇舞团博客](https://75team.com/)
+* [大搜车：大搜车前端团队博客](http://f2e.souche.com/blog/)
 
 ### 前端网站：
 
-*   [echojs，英文](http://www.echojs.com/)
-*   [div.io](http://div.io)
-*   [w3cplus](http://www.w3cplus.com/)
-*   [伯乐在线：WEB前端 - 伯乐在线](http://web.jobbole.com/)
-*   [前端乱炖](http://www.html-js.com/)
-*   [stackoverflow](http://stackoverflow.com/)
-*   [SegmentFault](https://segmentfault.com/)
-*   [CSDN](http://www.csdn.net/)
-*   ……
+* [echojs，英文](http://www.echojs.com/)
+* [div.io](http://div.io)
+* [w3cplus](http://www.w3cplus.com/)
+* [伯乐在线：WEB前端 - 伯乐在线](http://web.jobbole.com/)
+* [前端乱炖](http://www.html-js.com/)
+* [stackoverflow](http://stackoverflow.com/)
+* [SegmentFault](https://segmentfault.com/)
+* [CSDN](http://www.csdn.net/)
+* ……
 
 ### 书籍
 
-*   图解 HTTP
-*   JavaScript 高级程序设计
-*   JavaScript 权威指南
-*   JavaScript 设计模式
-*   高性能网站建设指南
-*   ...
+* 图解 HTTP
+* JavaScript 高级程序设计
+* JavaScript 权威指南
+* JavaScript 设计模式
+* 高性能网站建设指南
+*  ...
 
 # 关于课程
 
 ## 课前准备
 
-1.  安装文本编辑器 [Sublime text3](http://www.sublimetext.com/3) 或者 [WebStrom](https://www.jetbrains.com/webstorm/)  或者 [VSCode](https://code.visualstudio.com/))。
-2.  安装 Chrome 浏览器，[官方下载地址](http://www.google.cn/chrome/browser/desktop/index.html)、[QQ群文件](https://jq.qq.com/?_wv=1027&k=42GqFSj)
+1. 安装文本编辑器 [Sublime text3](http://www.sublimetext.com/3) 或者 [WebStrom](https://www.jetbrains.com/webstorm/)  或者 [VSCode](https://code.visualstudio.com/))。
+2. 安装 Chrome 浏览器，[官方下载地址](http://www.google.cn/chrome/browser/desktop/index.html)、[QQ群文件](https://jq.qq.com/?_wv=1027&k=42GqFSj)
 
 ## 教学内容和方式
 
@@ -184,8 +184,8 @@ JSON是一种轻量级的数据交换文本格式，是前后端进行数据交�
 
 # 或许你还有这些问题？
 
-*   我是零基础能转行前端吗？
-*   学习多久能够成为一名可以入职的前端工程师？
-*   前端跟后端相比很LOW么？
+* 我是零基础能转行前端吗？
+* 学习多久能够成为一名可以入职的前端工程师？
+* 前端跟后端相比很LOW么？
 
 加入码蜂社前端交流群[QQ群: 180251611](https://jq.qq.com/?_wv=1027&k=42GqFSj)，和Mark老师、热爱学习的同学们交吧！

@@ -19,7 +19,7 @@
 #### 安装Package Control
 
 ```
-import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
 常用插件：
@@ -125,63 +125,70 @@ __版本控制系统__：记录内容的增删改，不同版本的同步、回�
 
 * 标题
 
-```
-     # 一级标题
-     ## 二级标题
-     ### 三级标题
-```
+    ```
+    # 一级标题
+    ## 二级标题
+    ### 三级标题
+    ```
 
 * 列表
 
-```
-    * - 无序列表
-    1. 2. 3. 有序列表
-```
+    ```
+    * 无序列表
+    * 无序列表
+
+    - 无序列表
+    - 无序列表
+
+    1. 有序列表 
+    2. 有序列表 
+    3. 有序列表
+    ```
 
 * 代码块
 
-```
-    ``` html/css/javascript/……语言类型，可省略
+    <pre>
+    ```html/css/javascript/……语言类型，可省略
     代码部分
-    \`\`\`
-```
+    ```
+    </pre>
 
 
 * 链接
 
-```
+    ```
     [链接文字](网址)
     [百度](baidu.com)
-```
+    ```
 
 * 图片
 
-```
+    ```
     ![图片描述](图片地址)
-```
+    ```
 
 * 表格
 
-```
+    ```
     | Item      |    Value | Qty  |
     | :-------- | --------:| :--: |
     | Computer  | 1600 USD |  5   |
     | Phone     |   12 USD |  12  |
     | Pipe      |    1 USD | 234  |
-```
+    ```
 
 * 引用
 
-```
+    ```
     > 引用的文字
-``` 
+    ``` 
 
 * 强调
 
-```
- 斜体：_文字_,*文字*
- 黑体：__文字__,**文字**
-```
+    ```
+    斜体：_文字_,*文字*
+    黑体：__文字__,**文字**
+    ```
 
 > **注意**：不同的编辑器对markdown的语法支持可能不同；回车换行对解析非常重要。
 
