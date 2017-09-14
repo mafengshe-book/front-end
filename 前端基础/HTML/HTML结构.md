@@ -24,78 +24,77 @@
 
 ## <!DOCTYPE>声明
 
-<!DOCTYPE> 声明必须是 HTML 文档的第一行，位于
-
-标签之前。
-<!DOCTYPE> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。在 HTML 4.01 中，<!DOCTYPE> 声明引用 DTD，因为 HTML 4.01 基于 SGML（一种很强大但很复杂的标记语言，HTML、XML 就是从中衍生出来的）。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容,而HTML5 不基于 SGML，所以不需要引用 DTD。
-
-### 常用的 DOCTYPE 声明
-
-   HTML 5
-
-   ```
-   <!DOCTYPE html>
-   ```
-
-   HTML 4.01 Strict
-
-   该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。
-
-   ```
-   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-   HTML 4.01 Transitional
-   ```
-
-   该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。
-
-   ```
-   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-   ```
-
-   HTML 4.01 Frameset
-
-   该 DTD 等同于 HTML 4.01 Transitional，但允许框架集内容。
-
-   ```
-   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
-   "http://www.w3.org/TR/html4/frameset.dtd">
-   ```
-
-   XHTML 1.0 Strict
-
-   该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。
-
-   ```
-   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-   ```
-
-   XHTML 1.0 Transitional
-
-   该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如 font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。
-
-   ```
-   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "
-   http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-   ```
-
-   XHTML 1.0 Frameset
-
-   该 DTD 等同于 XHTML 1.0 Transitional，但允许框架集内容。
-
-   ```
-   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-   ```
-
-   XHTML 1.1
-
-   该 DTD 等同于 XHTML 1.0 Strict，但允许添加模型（例如提供对东亚语系的 ruby 支持）。
-
-   ```
-   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-   ```
-   参考 http://www.w3school.com.cn/tags/tag_doctype.asp
+`<!DOCTYPE>` 声明必须是 HTML 文档的**第一行**，位于 `<html>` 标签之前。
+`<!DOCTYPE>` 并不属于 HTML 标签，它只是标示当前 HTML 文档的版本信息 
 
 
+HTML 5中的写法（上面的例子就是 html5 中的写法）
+
+```html
+<!DOCTYPE html>
+```
+
+在 HTML5 之前还有 N 种写法，大家可以点击[这里](http://www.w3school.com.cn/tags/tag_doctype.asp)查看；这些大家看一遍就可以忘记了，以后写 HTML5 中的写法就行了
+
+## `<html>`
+
+此标签为 HTML 文档的根元素，只能有**一个**。
+
+## `<head>`
+
+`<html>`的直接子元素，`<head>`中可以设置文档的元(meta)数据，不会显示在窗口中，可以在其中设置如 浏览器标题 等属性
+
+可以放置如下子元素：
+
+- `<title>` 标签定义了不同文档的标题,在 HTML/XHTML 文档中是必须的,浏览器工具栏的标题。
+- `<base>` 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接。
+  ```html
+  <base href="http://www.mafengshe.com/a/" target="_blank">
+  ```
+- `<link>` 标签定义了文档与外部资源之间的关系,通常用于链接到样式表
+  ```html
+  <link rel="stylesheet" type="text/css" href="style.css">
+  ```
+- `<style>` 标签定义了HTML文档的样式文件引用地址,指定样式文件来渲染HTML文档
+  ```html
+  <style type="text/css">
+    body {background-color:yellow}
+    p {color:blue}
+  </style>
+  ```
+- `<meta>` 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。META元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。元数据可以使用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务。一般放置于 `<head>`区域
+  - 定义文档的字符集
+    ```html
+    <meta charset="utf-8">
+    ```
+  - 为网页定义描述内容
+    ```html
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    ```
+  - 定义网页作者
+    ```html
+    <meta name="author" content="mafengshe">
+    ```
+  - 定时刷新当前页面（30秒）
+    ```html
+    <meta http-equiv="refresh" content="30">
+    ```
+  - `<script>`标签用于加载脚本文件，如： JavaScript。在标签内部书写脚本或引入脚本文件位置
+    ```html
+    <script type="text/javascript">
+      document.write("Hello World!")
+    </script>
+    ```
+
+    ```html
+    <script type="text/javascript" src="scripts.js"></script>
+    ```
+
+## `<body>`
+
+`<html>`的直接子元素，`<body>`中的元素都会显示在浏览器窗口中。
+
+详细元素将在下节讲解
+
+
+HTML 所有元素大家可以参考[这里](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
