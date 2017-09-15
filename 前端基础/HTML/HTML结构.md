@@ -18,8 +18,8 @@
 
 * `<!DOCTYPE html>` 声明为 HTML5 文档
 * `<html>` 元素是 HTML 页面的根元素
-* `<head>` 元素包含了文档的元（meta）数据，不会在浏览器窗口中显示，定义文档的标题、编码格式、引入样式文件和脚本以及其他元数据。
-* `<body>` 元素包含了可见的页面内容，body里的元素在浏览器窗口中
+* `<head>` 元素包含了文档的元（meta）数据，不会在浏览器视图中显示，定义文档的标题、编码格式、引入样式文件和脚本以及其他元数据。
+* `<body>` 元素包含了可见的页面内容，body里的元素在浏览器视图中
 
 
 ## <!DOCTYPE>声明
@@ -42,7 +42,7 @@ HTML 5中的写法（上面的例子就是 html5 中的写法）
 
 ## `<head>`
 
-`<html>`的直接子元素，`<head>`中可以设置文档的元(meta)数据，不会显示在窗口中，可以在其中设置如 浏览器标题 等属性
+`<html>`的直接子元素，`<head>`中可以设置文档的元(meta)数据，不会显示在视图中，可以在其中设置如 浏览器标题 等属性
 
 可以放置如下子元素：
 
@@ -79,20 +79,20 @@ HTML 5中的写法（上面的例子就是 html5 中的写法）
     ```html
     <meta http-equiv="refresh" content="30">
     ```
-  - `<script>`标签用于加载脚本文件，如： JavaScript。在标签内部书写脚本或引入脚本文件位置
-    ```html
-    <script type="text/javascript">
-      document.write("Hello World!")
-    </script>
-    ```
+- `<script>`标签用于加载脚本文件，如： JavaScript。在标签内部书写脚本或引入脚本文件位置
+  ```html
+  <script type="text/javascript">
+    document.write("Hello World!")
+  </script>
+  ```
 
-    ```html
-    <script type="text/javascript" src="scripts.js"></script>
-    ```
+  ```html
+  <script type="text/javascript" src="scripts.js"></script>
+  ```
 
 ## `<body>`
 
-`<html>`的直接子元素，`<body>`中的元素都会显示在浏览器窗口中。
+`<html>`的直接子元素，`<body>`中的元素都会显示在浏览器视图中。
 
 详细元素将在下节讲解
 
