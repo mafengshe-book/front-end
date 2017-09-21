@@ -17,13 +17,13 @@ npm install
 ### 运行
 
 ```
-npm start
+gitbook sever
 ```
 
 ### 构建
 
 ```
-npm run build
+gitbook build
 ```
 
 ### 部署
