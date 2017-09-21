@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "serve": "gitbook serve",
-    "build": "gitbook build",
     "deploy": "gulp deploy",
-    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
