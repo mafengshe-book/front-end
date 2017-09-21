@@ -1351,11 +1351,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8868;&#x5355;&#xFF08;&#x4E8C;&#xFF09;">&#x8868;&#x5355;&#xFF08;&#x4E8C;&#xFF09;</h1>
+                                <h1 id="&#x8868;&#x5355;&#x4E8C;">&#x8868;&#x5355;&#x4E8C;</h1>
 <h2 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807;</h2>
 <ul>
 <li>POST/GET&#x8BF7;&#x6C42;</li>
-<li>HTML&#x8868;&#x5355;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;</li>
 <li>HTML5&#x8868;&#x5355;&#x65B0;&#x7279;&#x6027;</li>
 </ul>
 <h2 id="getpost-&#x8BF7;&#x6C42;">GET/POST &#x8BF7;&#x6C42;</h2>
@@ -1368,10 +1367,10 @@ URL&#x5168;&#x79F0;&#x662F;&#x8D44;&#x6E90;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x62
 <h3 id="get&#x5E94;&#x8BE5;&#x662F;&#x5B89;&#x5168;&#x7684;&#x548C;&#x5E42;&#x7B49;&#x7684;">GET&#x5E94;&#x8BE5;&#x662F;&#x5B89;&#x5168;&#x7684;&#x548C;&#x5E42;&#x7B49;&#x7684;</h3>
 <ul>
 <li>&#x6240;&#x8C13;&#x5B89;&#x5168;&#x7684;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x64CD;&#x4F5C;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x800C;&#x975E;&#x4FEE;&#x6539;&#x4FE1;&#x606F;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;GET &#x8BF7;&#x6C42;&#x4E00;&#x822C;&#x4E0D;&#x5E94;&#x4EA7;&#x751F;&#x526F;&#x4F5C;&#x7528;&#x3002;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x83B7;&#x53D6;&#x8D44;&#x6E90;&#x4FE1;&#x606F;&#xFF0C;&#x5C31;&#x50CF;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x4E00;&#x6837;&#xFF0C;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#xFF0C;&#x589E;&#x52A0;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x8D44;&#x6E90;&#x7684;&#x72B6;&#x6001;&#x3002;</li>
-<li>&#x5E42;&#x7B49;&#x7684;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x540C;&#x4E00;URL&#x7684;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x518D;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x5E42;&#x7B49;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF1A;<pre><code>&#x3000;&#x3000;&#x5E42;&#x7B49;&#xFF08;idempotent&#x3001;idempotence&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B66;&#x6216;&#x8BA1;&#x7B97;&#x673A;&#x5B66;&#x6982;&#x5FF5;&#xFF0C;&#x5E38;&#x89C1;&#x4E8E;&#x62BD;&#x8C61;&#x4EE3;&#x6570;&#x4E2D;&#x3002;
-&#x3000;&#x3000;&#x5E42;&#x7B49;&#x6709;&#x4E00;&#x4E0B;&#x51E0;&#x79CD;&#x5B9A;&#x4E49;&#xFF1A;
-&#x3000;&#x3000;&#x5BF9;&#x4E8E;&#x5355;&#x76EE;&#x8FD0;&#x7B97;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x5BF9;&#x4E8E;&#x5728;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6240;&#x6709;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x591A;&#x6B21;&#x8FDB;&#x884C;&#x8BE5;&#x8FD0;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x548C;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x8BE5;&#x8FD0;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x79F0;&#x8BE5;&#x8FD0;&#x7B97;&#x662F;&#x5E42;&#x7B49;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x7EDD;&#x5BF9;&#x503C;&#x8FD0;&#x7B97;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;&#x5B9E;&#x6570;&#x96C6;&#x4E2D;&#xFF0C;&#x6709;abs(a)=abs(abs(a))&#x3002;
-&#x3000;&#x3000;&#x5BF9;&#x4E8E;&#x53CC;&#x76EE;&#x8FD0;&#x7B97;&#xFF0C;&#x5219;&#x8981;&#x6C42;&#x5F53;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x662F;&#x7B49;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6EE1;&#x8DB3;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x4E0E;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x79F0;&#x8BE5;&#x8FD0;&#x7B97;&#x5E42;&#x7B49;&#xFF0C;&#x5982;&#x6C42;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6709;&#x5728;&#x5728;&#x5B9E;&#x6570;&#x96C6;&#x4E2D;&#x5E42;&#x7B49;&#xFF0C;&#x5373;max(x,x) = x&#x3002;
+<li>&#x5E42;&#x7B49;&#x7684;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x540C;&#x4E00;URL&#x7684;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x518D;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x5E42;&#x7B49;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF1A;<pre><code>&#x5E42;&#x7B49;&#xFF08;idempotent&#x3001;idempotence&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B66;&#x6216;&#x8BA1;&#x7B97;&#x673A;&#x5B66;&#x6982;&#x5FF5;&#xFF0C;&#x5E38;&#x89C1;&#x4E8E;&#x62BD;&#x8C61;&#x4EE3;&#x6570;&#x4E2D;&#x3002;
+&#x5E42;&#x7B49;&#x6709;&#x4E00;&#x4E0B;&#x51E0;&#x79CD;&#x5B9A;&#x4E49;&#xFF1A;
+&#x5BF9;&#x4E8E;&#x5355;&#x76EE;&#x8FD0;&#x7B97;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x5BF9;&#x4E8E;&#x5728;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6240;&#x6709;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x591A;&#x6B21;&#x8FDB;&#x884C;&#x8BE5;&#x8FD0;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x548C;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x8BE5;&#x8FD0;&#x7B97;&#x6240;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x79F0;&#x8BE5;&#x8FD0;&#x7B97;&#x662F;&#x5E42;&#x7B49;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x7EDD;&#x5BF9;&#x503C;&#x8FD0;&#x7B97;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;&#x5B9E;&#x6570;&#x96C6;&#x4E2D;&#xFF0C;&#x6709;abs(a)=abs(abs(a))&#x3002;
+&#x5BF9;&#x4E8E;&#x53CC;&#x76EE;&#x8FD0;&#x7B97;&#xFF0C;&#x5219;&#x8981;&#x6C42;&#x5F53;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x662F;&#x7B49;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6EE1;&#x8DB3;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x4E0E;&#x53C2;&#x4E0E;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x79F0;&#x8BE5;&#x8FD0;&#x7B97;&#x5E42;&#x7B49;&#xFF0C;&#x5982;&#x6C42;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x6700;&#x5927;&#x503C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6709;&#x5728;&#x5728;&#x5B9E;&#x6570;&#x96C6;&#x4E2D;&#x5E42;&#x7B49;&#xFF0C;&#x5373;max(x,x) = x&#x3002;
 </code></pre></li>
 </ul>
 <h3 id="post&#x8868;&#x793A;&#x53EF;&#x80FD;&#x6539;&#x53D8;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#x7684;&#x8BF7;&#x6C42;">POST&#x8868;&#x793A;&#x53EF;&#x80FD;&#x6539;&#x53D8;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#x7684;&#x8BF7;&#x6C42;</h3>
@@ -1401,52 +1400,6 @@ URL&#x5168;&#x79F0;&#x662F;&#x8D44;&#x6E90;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x62
 <p>&#x662F;&#x7684;&#xFF0C; POST&#x8981;&#x6BD4;GET&#x5B89;&#x5168;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x662F;&#x4E00;&#x70B9;&#x70B9;</p>
 <p>GET&#x7684;URL&#x4F1A;&#x88AB;&#x653E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5386;&#x53F2;&#x548C;WEB &#x670D;&#x52A1;&#x5668;&#x65E5;&#x5FD7;&#x91CC;&#x9762;&#x3002;
 POST &#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#x653E;&#x5728;&#x8BF7;&#x6C42;&#x4F53;&#x91CC;&#xFF0C;&#x53D1;&#x5B8C;&#x5C31;&#x6CA1;&#x6709;&#x4E86;&#x3002;</p>
-<h2 id="html&#x8868;&#x5355;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;">HTML&#x8868;&#x5355;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;</h2>
-<h3 id="&#x8868;&#x683C;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;">&#x8868;&#x683C;&#x9AD8;&#x7EA7;&#x7528;&#x6CD5;</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x6807;&#x7B7E;</th>
-<th style="text-align:left">&#x4F7F;&#x7528;&#x573A;&#x666F;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>caption</code></td>
-<td style="text-align:left">&#x8868;&#x683C;&#x6807;&#x9898;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x6574;&#x4E2A;&#x8868;&#x683C;&#x7684;&#x4E0A;&#x65B9;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>thead</code></td>
-<td style="text-align:left">&#x8868;&#x5934;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>tbody</code></td>
-<td style="text-align:left">&#x4E3B;&#x4F53;</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>tfoot</code></td>
-<td style="text-align:left">&#x8868;&#x5C3E;</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><strong>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</strong>&#xFF1A;</p>
-<ul>
-<li><code>thead</code>&#x548C;<code>tfoot</code>&#x5728;&#x4E00;&#x5F20;&#x8868;&#x4E2D;&#x90FD;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#xFF0C;&#x800C;tbody&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x3002;</li>
-<li><code>tfoot</code>&#x5FC5;&#x987B;&#x51FA;&#x73B0;&#x5728;<code>tbody</code>&#x524D;&#x9762;&#xFF0C;&#x8FD9;&#x6837;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x63A5;&#x6536;&#x4E3B;&#x4F53;&#x6570;&#x636E;&#x4E4B;&#x524D;&#xFF0C;&#x5C31;&#x80FD;&#x6E32;&#x67D3;&#x8868;&#x5C3E;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x52A0;&#x5FEB;&#x8868;&#x683C;&#x7684;&#x663E;&#x793A;&#x901F;&#x5EA6;&#x3002;&#x8FD9;&#x4E00;&#x70B9;&#x5BF9;&#x5927;&#x578B;&#x8868;&#x683C;&#x5C24;&#x5176;&#x91CD;&#x8981;&#x3002;</li>
-<li><code>thead</code>&#x3001;<code>tbody</code>&#x548C;<code>tfoot</code>&#x91CC;&#x9762;&#x90FD;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>tr</code>&#x6807;&#x7B7E;&#x3002;</li>
-</ul>
-</li>
-</ul>
-<h3 id="&#x8868;&#x5355;&#x6570;&#x636E;&#x5206;&#x7EC4;">&#x8868;&#x5355;&#x6570;&#x636E;&#x5206;&#x7EC4;</h3>
-<ul>
-<li><p><code>fieldset</code> &#x6807;&#x7B7E;</p>
-<p><code>fieldset</code>&#x6807;&#x7B7E;&#x662F;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#x7684;,&#x4EE5;<code>&lt;fieldset&gt;</code>&#x5F00;&#x59CB;,&#x4EE5;<code>&lt;/fieldset&gt;</code>&#x7ED3;&#x675F;, &#x4E00;&#x4E2A;&#x8868;&#x5355;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;<code>&lt;fieldset&gt;</code>,&#x6BCF;&#x5BF9;<code>&lt;fieldset&gt;</code>&#x4E3A;&#x4E00;&#x7EC4;</p>
-</li>
-<li><p><code>legend</code> &#x6807;&#x7B7E;</p>
-<p>&#x5BF9;&#x8868;&#x5355;&#x7684;&#x6BCF;&#x7EC4;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x8BF4;&#x660E;&#xFF0C;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#xFF0C;&#x4EE5;<code>&lt;legend&gt;</code>&#x5F00;&#x59CB;,&#x4EE5;<code>&lt;/legend&gt;</code>&#x7ED3;&#x675F;,&#x6B64;&#x6807;&#x7B7E;&#x5728;<code>&lt;fieldset&gt;</code>&#x6807;&#x7B7E;&#x5185;</p>
-</li>
-</ul>
 <h2 id="html5&#x8868;&#x5355;&#x65B0;&#x7279;&#x6027;">HTML5&#x8868;&#x5355;&#x65B0;&#x7279;&#x6027;</h2>
 <p>HTML5 &#x4E3A;&#x6807;&#x51C6;&#x7684; Web &#x8868;&#x5355;&#x589E;&#x6DFB;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x65B0;&#x529F;&#x80FD;&#x3002;</p>
 <h3 id="placeholder">Placeholder</h3>
@@ -1585,7 +1538,7 @@ POST &#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#x653E;&#x5728;&#x
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2.5. 表单二","level":"1.2.2.5","depth":3,"next":{"title":"1.2.6. iframe","level":"1.2.2.6","depth":3,"ref":"","articles":[]},"previous":{"title":"1.2.4. 表单一","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/表单一.md","ref":"./前端基础/HTML/表单一.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/表单二.md","mtime":"2017-09-21T11:54:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-21T12:01:13.867Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2.5. 表单二","level":"1.2.2.5","depth":3,"next":{"title":"1.2.6. iframe","level":"1.2.2.6","depth":3,"ref":"","articles":[]},"previous":{"title":"1.2.4. 表单一","level":"1.2.2.4","depth":3,"path":"前端基础/HTML/表单一.md","ref":"./前端基础/HTML/表单一.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/HTML/表单二.md","mtime":"2017-09-21T13:22:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-21T13:22:45.925Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
