@@ -11,15 +11,13 @@ iframe 也是html的一个标签，不过不是往页面上添加一个元素那
 </head>
 <body>
     <p>下面放置一个iframe</p>
-
     <iframe src="./frames/inner.html" width="500" height="300" frameborder="1"></iframe>
 </body>
 </html>
-
 ```
+
 <body>
     <p>下面放置一个iframe</p>
-
     <iframe src="./frames/inner.html" width="500" height="300" frameborder="1"></iframe>
 </body>
 
@@ -42,6 +40,7 @@ iframe的高级用法要涉及 JS 用法，这里我们只需有个基本的概�
 ## 结合 `<a>` 标签使用
 
 iframe 可以通过配合 `<a>` 标签的 target 属性实现动态切换 iframe 打开的网页
+
 ```html
 <html>
 <head>
@@ -120,7 +119,6 @@ frameset 也可以实现嵌入其他网页。但是由于布局不够灵活，**
 		<frame name="frame1" src="./frames/inner.html"/> 
 		<frame name="frame2" src="./frames/inner.html"/> 
 </frameset>
-
 ```
 
 frameset的属性
@@ -138,7 +136,6 @@ frame 和 iframe 看似只有一个字母只差，实则差别很大：
 1. frame不能脱离frameSet单独使用，iframe可以。
 2. frame不能放在body中,否则不能正常显示。
 3. frame的高度只能通过frameSet控制；iframe可以自己控制，不能通过frameSet控制。
-
 	```
 	<!--<body>-->
 	<frameset rows="50%,*">
