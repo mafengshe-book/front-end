@@ -3,11 +3,82 @@
 
 ## HTML5 中的一些有趣的新特性：
 
-* 用于绘画的 canvas 元素
+* 用于绘画的 canvas 元素和可伸缩矢量图形 SVG
 * 用于媒介回放的 video 和 audio 元素
 * 对本地离线存储的更好的支持
 * 新的特殊内容元素，比如 article、footer、header、nav、section
 * 新的表单控件，比如 calendar、date、time、email、url、search
+
+## HTML5 Canvas
+
+HTML5 的 canvas 元素使用 JavaScript 在网页上绘制图像。
+
+画布是一个矩形区域，您可以控制其每一像素。
+
+canvas 拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。
+
+```html
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
+
+Canvas 需要使用 JavaScript 来绘制，在这里不再展开介绍。著名数据可视化工具 [echarts](http://echarts.baidu.com/) 就是基于 Canvas
+
+
+## HTML5 内联 SVG
+
+### 什么是 SVG
+
+- SVG 指可伸缩矢量图形 (Scalable Vector Graphics)
+- SVG 用于定义用于网络的基于矢量的图形
+- SVG 使用 XML 格式定义图形
+- SVG 图像在放大或改变尺寸的情况下其图形质量不会有损失
+- SVG 是万维网联盟的标准
+
+### SVG 的优势
+
+- SVG 图像可通过文本编辑器来创建和修改
+- SVG 图像可被搜索、索引、脚本化或压缩
+- SVG 是可伸缩的
+- SVG 图像可在任何的分辨率下被高质量地打印
+- SVG 可在图像质量不下降的情况下被放大
+
+把下面代码放入 html 中试试
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+  <polygon points="100,10 40,180 190,60 10,60 160,180"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+```
+
+
+## HTML 视频
+
+`<video>` 是 HTML 5 中的新标签。
+`<video>` 标签的作用是在 HTML 页面中嵌入视频元素。
+
+把下面代码放入 html 中试试
+
+```html
+<video width="320" height="240" controls>
+  <source src="http://static.mafengshe.com/video/2017-05-13-%E6%AF%8D%E4%BA%B2%E8%8A%82&520%E4%B8%93%E9%A2%98-%E5%9B%BE%E7%89%87%E5%A2%99.mp4" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+```
+
+
+## HTML 音频
+
+`<audio>` 元素是一个 HTML5 元素，在 HTML 4 中是非法的，但在所有浏览器中都有效。
+
+把下面代码放入 html 中试试
+
+```html
+<audio controls>
+  <source src="https://static.mafengshe.com/audio/%E4%BD%A0%E8%BF%98%E8%A6%81%E6%88%91%E6%80%8E%E6%A0%B7.mp3" type="audio/mp3" />
+Your browser does not support this audio format.
+</audio>
+```
 
 ## HTML5新的结构元素
 
