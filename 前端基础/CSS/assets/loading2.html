@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body, ul, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgb(13, 206, 203);
+        }
+
+        .loading2, .loading2:before, .loading2:after {
+
+            height: 40px;
+            width: 10px;
+            background: white;
+            animation: load2 1s linear infinite;
+        }
+
+        .loading2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .loading2:before {
+            height: 80px;
+            position: absolute;
+            left: -20px;
+            content: " ";
+            animation-delay: -150ms;
+        }
+
+        .loading2:after {
+            height: 80px;
+            position: absolute;
+            left: 20px;
+            content: " ";
+            animation-delay: 150ms;
+        }
+
+        @keyframes load2 {
+            0%,
+            60%,
+            100% {
+                height: 40px;
+            }
+            10% {
+                height: 80px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="loading2"></div>
+</body>
+</html>
