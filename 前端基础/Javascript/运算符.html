@@ -1579,11 +1579,37 @@ OR = <span class="hljs-number">0000</span> <span class="hljs-number">0000</span>
 <p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5728;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x4E2D;&#xFF0C;&#x5171;&#x6709; 4 &#x4E2A;&#x6570;&#x4F4D;&#x5B58;&#x653E;&#x7684;&#x662F; 1&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x4F4D;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x7ED3;&#x679C;&#x3002;&#x4E8C;&#x8FDB;&#x5236;&#x4EE3;&#x7801; 11011 &#x7B49;&#x4E8E; 27&#x3002;</p>
 <h3 id="&#x4F4D;&#x8FD0;&#x7B97;-xor">&#x4F4D;&#x8FD0;&#x7B97; XOR</h3>
 <p>&#x4F4D;&#x8FD0;&#x7B97; XOR &#x7531;&#x7B26;&#x53F7;&#xFF08;^&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x662F;&#x76F4;&#x63A5;&#x5BF9;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x3002;XOR &#x4E0D;&#x540C;&#x4E8E; OR&#xFF0C;&#x5F53;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x4F4D;&#x5B58;&#x653E;&#x7684;&#x662F; 1 &#x65F6;&#xFF0C;&#x5B83;&#x624D;&#x8FD4;&#x56DE; 1&#x3002;&#x771F;&#x503C;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>|&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6570;&#x4F4D;|    &#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6570;&#x4F4D;|    &#x7ED3;&#x679C;|
-|1    |1|    0|
-|1    |0|    1|
-|0    |1|    1|
-|0    |0|    0|</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6570;&#x4F4D;</th>
+<th style="text-align:left">&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6570;&#x4F4D;</th>
+<th style="text-align:left">&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+</tr>
+</tbody>
+</table>
 <p>&#x5BF9; 25 &#x548C; 3 &#x8FDB;&#x884C; XOR &#x8FD0;&#x7B97;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">25</span> ^ <span class="hljs-number">3</span>;
 <span class="hljs-built_in">console</span>.log(iResult);    <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;26&quot;</span>
@@ -1626,7 +1652,411 @@ XOR = 0000 0000 0000 0000 0000 0000 0001 1010
 </code></pre>
 <p>&#x8FD9;&#x5C06;&#x751F;&#x6210; 11111111111111111111111111000000&#xFF0C;&#x5373;&#x6709;&#x7B26;&#x53F7;&#x6574;&#x6570; -64 &#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8865;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B83;&#x7B49;&#x4E8E;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570; 4294967232&#x3002;
 &#x51FA;&#x4E8E;&#x8FD9;&#x79CD;&#x539F;&#x56E0;&#xFF0C;&#x4F7F;&#x7528;&#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;&#x8981;&#x5C0F;&#x5FC3;&#x3002;</p>
-<p>&#x672A;&#x5B8C;&#x5F85;&#x7EED;</p>
+<h2 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>Boolean &#x8FD0;&#x7B97;&#x7B26;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x5B83;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x5F97;&#x4EE5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;</p>
+<p>Boolean &#x8FD0;&#x7B97;&#x7B26;&#x6709;&#x4E09;&#x79CD;&#xFF1A;NOT&#x3001;AND &#x548C; OR&#x3002;</p>
+<h3 id="toboolean-&#x64CD;&#x4F5C;">ToBoolean &#x64CD;&#x4F5C;</h3>
+<p>&#x5728;&#x5B66;&#x4E60;&#x5404;&#x79CD;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x4E4B;&#x524D;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5148;&#x4E86;&#x89E3;&#x4E00;&#x4E0B; ECMAScript-262 v5 &#x89C4;&#x8303;&#x4E2D;&#x63CF;&#x8FF0;&#x7684; ToBoolean &#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x62BD;&#x8C61;&#x64CD;&#x4F5C; ToBoolean &#x5C06;&#x5176;&#x53C2;&#x6570;&#x6309;&#x7167;&#x4E0B;&#x8868;&#x4E2D;&#x7684;&#x89C4;&#x5219;&#x8F6C;&#x6362;&#x4E3A;&#x903B;&#x8F91;&#x503C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Undefined</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">Null</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">&#x7ED3;&#x679C;&#x7B49;&#x4E8E;&#x8F93;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF08;&#x4E0D;&#x8F6C;&#x6362;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x53C2;&#x6570;&#x4E3A; +0, -0 &#x6216; NaN&#xFF0C;&#x5219;&#x7ED3;&#x679C;&#x4E3A; false&#xFF1B;&#x5426;&#x5219;&#x4E3A; true&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x7ED3;&#x679C;&#x4E3A; false&#xFF1B;&#x5426;&#x5219;&#x4E3A; true&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">Object</td>
+<td style="text-align:left">true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="not-&#x8FD0;&#x7B97;&#x7B26;">NOT &#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x5728; ECMAScript &#x4E2D;&#xFF0C;&#x903B;&#x8F91; NOT &#x8FD0;&#x7B97;&#x7B26;&#x4E0E; C &#x548C; Java &#x4E2D;&#x7684;&#x903B;&#x8F91; NOT &#x8FD0;&#x7B97;&#x7B26;&#x76F8;&#x540C;&#xFF0C;&#x90FD;&#x7531;&#x611F;&#x53F9;&#x53F7;&#xFF08;!&#xFF09;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x4E0E;&#x903B;&#x8F91; OR &#x548C;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x903B;&#x8F91; NOT &#x8FD0;&#x7B97;&#x7B26;&#x8FD4;&#x56DE;&#x7684;&#x4E00;&#x5B9A;&#x662F; Boolean &#x503C;&#x3002;</p>
+<p>&#x903B;&#x8F91; NOT &#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x884C;&#x4E3A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE; false</li>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x6570;&#x5B57; 0&#xFF0C;&#x8FD4;&#x56DE; true</li>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F; 0 &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x5B57;&#xFF0C;&#x8FD4;&#x56DE; false</li>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F; null&#xFF0C;&#x8FD4;&#x56DE; true</li>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x8FD4;&#x56DE; true</li>
+<li>&#x5982;&#x679C;&#x8FD0;&#x7B97;&#x6570;&#x662F; undefined&#xFF0C;&#x53D1;&#x751F;&#x9519;&#x8BEF;</li>
+</ul>
+<p>&#x5224;&#x65AD; ECMAScript &#x53D8;&#x91CF;&#x7684; Boolean &#x503C;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x903B;&#x8F91; NOT &#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x9700;&#x8981;&#x5728;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x4E24;&#x4E2A; NOT &#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x65E0;&#x8BBA;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A; NOT &#x8FD0;&#x7B97;&#x7B26;&#x8FD4;&#x56DE; Boolean &#x503C;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A; NOT &#x5C06;&#x5BF9;&#x8BE5; Boolean &#x503C;&#x6C42;&#x8D1F;&#xFF0C;&#x4ECE;&#x800C;&#x7ED9;&#x51FA;&#x53D8;&#x91CF;&#x771F;&#x6B63;&#x7684; Boolean &#x503C;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bFalse = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> sRed = <span class="hljs-string">&quot;red&quot;</span>;
+<span class="hljs-keyword">var</span> iZero = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> iThreeFourFive = <span class="hljs-number">345</span>;
+<span class="hljs-keyword">var</span> oObject = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;bFalse &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; &quot;</span> + (!!bFalse));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;sRed &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; &quot;</span> + (!!sRed));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;iZero &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; &quot;</span> + (!!iZero));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;iThreeFourFive &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; &quot;</span> + (!!iThreeFourFive));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;oObject &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; &quot;</span> + (!!oObject));
+</code></pre>
+<p>&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-javascript">bFalse &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; <span class="hljs-literal">false</span>
+sRed &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; <span class="hljs-literal">true</span>
+iZero &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; <span class="hljs-literal">false</span>
+iThreeFourFive &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; <span class="hljs-literal">true</span>
+oObject &#x7684;&#x903B;&#x8F91;&#x503C;&#x662F; <span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="and-&#x8FD0;&#x7B97;&#x7B26;">AND &#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x5728; ECMAScript &#x4E2D;&#xFF0C;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7B26;&#x7528;&#x53CC;&#x548C;&#x53F7;&#xFF08;&amp;&amp;&#xFF09;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bTrue = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">var</span> bFalse = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> bResult = bTrue &amp;&amp; bFalse;
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x771F;&#x503C;&#x8868;&#x63CF;&#x8FF0;&#x4E86;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x6570; 1</th>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x6570; 2</th>
+<th style="text-align:left">&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">true</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">true</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">false</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7684;&#x8FD0;&#x7B97;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x4E0D;&#x6B62;&#x662F; Boolean &#x503C;&#x3002;</strong></p>
+<p>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E0D;&#x662F;&#x539F;&#x59CB;&#x7684; Boolean &#x578B;&#x503C;&#xFF0C;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x8FD4;&#x56DE; Boolean &#x503C;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F; Boolean &#x503C;&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; null&#xFF0C;&#x8FD4;&#x56DE; null&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x8FD4;&#x56DE; NaN&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; undefined&#xFF0C;&#x8FD4;&#x56DE; undefined&#x3002;</li>
+</ul>
+<p>&#x4E0E; Java &#x4E2D;&#x7684;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x76F8;&#x4F3C;&#xFF0C;ECMAScript &#x4E2D;&#x7684;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x4E5F;&#x662F;&#x7B80;&#x4FBF;&#x8FD0;&#x7B97;&#xFF08;&#x4E5F;&#x79F0;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#xFF09;&#xFF0C;&#x5373;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x51B3;&#x5B9A;&#x4E86;&#x7ED3;&#x679C;&#xFF0C;&#x5C31;&#x4E0D;&#x518D;&#x8BA1;&#x7B97;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x3002;&#x5BF9;&#x4E8E;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; false&#xFF0C;&#x90A3;&#x4E48;&#x65E0;&#x8BBA;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x7684;&#x503C;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x7ED3;&#x679C;&#x90FD;&#x4E0D;&#x53EF;&#x80FD;&#x7B49;&#x4E8E; true&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bFalse = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> bResult = (bFalse &amp;&amp; bUnknown); <span class="hljs-comment">// &#x5F15;&#x7528;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF; bUnknown </span>
+<span class="hljs-built_in">console</span>.log(bResult);            <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;false&quot;</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x811A;&#x672C;&#x5C06;&#x8F93;&#x51FA;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#xFF0C;&#x5373;&#x5B57;&#x7B26;&#x4E32; &quot;false&quot;&#xFF0C;bUnknown &#x672A;&#x88AB;&#x5B9A;&#x4E49;&#xFF0C;&#x5B83;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x7684;&#x503C;&#x662F; false&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x5C31;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<h3 id="or-&#x8FD0;&#x7B97;&#x7B26;">OR &#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>ECMAScript &#x4E2D;&#x7684;&#x903B;&#x8F91; OR &#x8FD0;&#x7B97;&#x7B26;&#x4E0E; Java &#x4E2D;&#x7684;&#x76F8;&#x540C;&#xFF0C;&#x90FD;&#x7531;&#x53CC;&#x7AD6;&#x7EBF;&#xFF08;||&#xFF09;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bTrue = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">var</span> bFalse = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> bResult = bTrue || bFalse;
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x771F;&#x503C;&#x8868;&#x63CF;&#x8FF0;&#x4E86;&#x903B;&#x8F91; OR &#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x6570; 1</th>
+<th style="text-align:left">&#x8FD0;&#x7B97;&#x6570; 2</th>
+<th style="text-align:left">&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">true</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">true</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">false</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">false</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0E;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7B26;&#x76F8;&#x4F3C;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E0D;&#x662F; Boolean &#x503C;&#xFF0C;&#x903B;&#x8F91; OR &#x8FD0;&#x7B97;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x8FD4;&#x56DE; Boolean &#x503C;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x5BF9;&#x8C61;&#x5DE6;&#x8FB9;&#x7684;&#x8FD0;&#x7B97;&#x6570;&#x503C;&#x5747;&#x4E3A; false&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; null&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x6570;&#x503C;&#x5747;&#x4E3A; false&#xFF0C;&#x5219;&#x8FD4;&#x56DE; null&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x6570;&#x503C;&#x5747;&#x4E3A; false&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NaN&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; undefined&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x4ED6;&#x8FD0;&#x7B97;&#x6570;&#x503C;&#x5747;&#x4E3A; false&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NaN&#x3002;</li>
+</ul>
+<p>&#x4E0E;&#x903B;&#x8F91; AND &#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x6837;&#xFF0C;&#x903B;&#x8F91; OR &#x8FD0;&#x7B97;&#x4E5F;&#x662F;&#x7B80;&#x4FBF;&#x8FD0;&#x7B97;&#xFF08;&#x4E5F;&#x79F0;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x903B;&#x8F91; OR &#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x503C;&#x4E3A; true&#xFF0C;&#x5C31;&#x4E0D;&#x518D;&#x8BA1;&#x7B97;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bTrue = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">var</span> bResult = (bTrue || bUnknown); <span class="hljs-comment">// &#x5F15;&#x7528;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF; bUnknown </span>
+alert(bResult);            <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;true&quot;</span>
+</code></pre>
+<h2 id="&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;">&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>ECMAScript &#x7684;&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x4E0E; Java&#x3001;C&#x3001;Perl &#x7B49;&#x4E8E;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x540C;&#x7C7B;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD0;&#x7B97;&#x65B9;&#x5F0F;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x8FD8;&#x5177;&#x6709;&#x4E00;&#x4E9B;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;">&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x7531;&#x661F;&#x53F7;&#xFF08;*&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x7528;&#x4E8E;&#x4E24;&#x6570;&#x76F8;&#x4E58;&#x3002;</p>
+<p>ECMAScript &#x4E2D;&#x7684;&#x4E58;&#x6CD5;&#x8BED;&#x6CD5;&#x4E0E; C &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x76F8;&#x540C;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">12</span> * <span class="hljs-number">34</span>
+</code></pre>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x7279;&#x6B8A;&#x503C;&#x65F6;&#xFF0C;ECMAScript &#x4E2D;&#x7684;&#x4E58;&#x6CD5;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x7ED3;&#x679C;&#x592A;&#x5927;&#x6216;&#x592A;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x662F; Infinity &#x6216; -Infinity&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x4E58;&#x4EE5; 0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x4E58;&#x4EE5; 0 &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x5B57;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; Infinity &#x6216; -Infinity&#x3002;</li>
+<li>Infinity &#x4E58;&#x4EE5; Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; Infinity&#x3002;</li>
+</ul>
+<h3 id="&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;">&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x7531;&#x659C;&#x6760;&#xFF08;/&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">88</span> /<span class="hljs-number">11</span>;
+</code></pre>
+<p>&#x4E0E;&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x76F8;&#x4F3C;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x7279;&#x6B8A;&#x503C;&#x65F6;&#xFF0C;&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x7ED3;&#x679C;&#x592A;&#x5927;&#x6216;&#x592A;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x662F; Infinity &#x6216; -Infinity&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x88AB; Infinity &#x9664;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x88AB;&#x4EFB;&#x4F55;&#x6570;&#x5B57;&#x9664;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; Infinity&#x3002;</li>
+<li>0 &#x9664;&#x4E00;&#x4E2A;&#x4EFB;&#x4F55;&#x975E;&#x65E0;&#x7A77;&#x5927;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x88AB; 0 &#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x5B57;&#x9664;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; Infinity &#x6216; -Infinity&#x3002;</li>
+</ul>
+<h3 id="&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x7B26;">&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x7B26;&#x7531;&#x767E;&#x5206;&#x53F7;&#xFF08;%&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">26</span>%<span class="hljs-number">5</span>; <span class="hljs-comment">//&#x7B49;&#x4E8E; 1</span>
+</code></pre>
+<p>&#x4E0E;&#x5176;&#x4ED6;&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x76F8;&#x4F3C;&#xFF0C;&#x5BF9;&#x4E8E;&#x7279;&#x6B8A;&#x503C;&#xFF0C;&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x88AB;&#x9664;&#x6570;&#x662F; Infinity&#xFF0C;&#x6216;&#x9664;&#x6570;&#x662F; 0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x88AB; Infinity &#x9664;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>&#x5982;&#x679C;&#x9664;&#x6570;&#x662F;&#x65E0;&#x7A77;&#x5927;&#x7684;&#x6570;&#xFF0C;&#x7ED3;&#x679C;&#x4E3A;&#x88AB;&#x9664;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x88AB;&#x9664;&#x6570;&#x4E3A; 0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; 0&#x3002;</li>
+</ul>
+<h2 id="&#x52A0;&#x6027;&#x8FD0;&#x7B97;&#x7B26;">&#x52A0;&#x6027;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<h3 id="&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;">&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x7531;&#x52A0;&#x53F7;&#xFF08;+&#xFF09;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">1</span> + <span class="hljs-number">2</span>
+</code></pre>
+<p>&#x4E0E;&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x7279;&#x6B8A;&#x503C;&#x65F6;&#xFF0C;ECMAScript &#x4E2D;&#x7684;&#x52A0;&#x6CD5;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>-Infinity &#x52A0; -Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; -Infinity&#x3002;</li>
+<li>Infinity &#x52A0; -Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>+0 &#x52A0; +0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; +0&#x3002;</li>
+<li>-0 &#x52A0; +0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; +0&#x3002;</li>
+<li>-0 &#x52A0; -0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; -0&#x3002;</li>
+</ul>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;&#x91C7;&#x7528;&#x4E0B;&#x5217;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x628A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x4E0A;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x628A;&#x53E6;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> result = <span class="hljs-number">5</span> + <span class="hljs-number">5</span>;    <span class="hljs-comment">//&#x4E24;&#x4E2A;&#x6570;&#x5B57;</span>
+alert(result);        <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;10&quot;</span>
+<span class="hljs-keyword">var</span> result2 = <span class="hljs-number">5</span> + <span class="hljs-string">&quot;5&quot;</span>;    <span class="hljs-comment">//&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x548C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</span>
+alert(result);        <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;55&quot;</span>
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x8BF4;&#x660E;&#x4E86;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x522B;&#x3002;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;5+5 &#x7B49;&#x4E8E; 10&#xFF08;&#x539F;&#x59CB;&#x6570;&#x503C;&#xFF09;&#xFF0C;&#x5982;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E2D;&#x524D;&#x4E24;&#x884C;&#x6240;&#x793A;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x628A;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x6539;&#x4E3A;&#x5B57;&#x7B26;&#x4E32; &quot;5&quot;&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x5C06;&#x53D8;&#x4E3A; &quot;55&quot;&#xFF08;&#x539F;&#x59CB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E5F;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h3 id="&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;">&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<p>&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;-&#xFF09;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x7528;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iResult = <span class="hljs-number">2</span> - <span class="hljs-number">1</span>;
+</code></pre>
+<p>&#x4E0E;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x5904;&#x7406;&#x7279;&#x6B8A;&#x503C;&#x65F6;&#xFF0C;&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x884C;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x51CF; Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>-Infinity &#x51CF; -Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+<li>Infinity &#x51CF; -Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; Infinity&#x3002;</li>
+<li>-Infinity &#x51CF; Infinity&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; -Infinity&#x3002;</li>
+<li>+0 &#x51CF; +0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; +0&#x3002;</li>
+<li>-0 &#x51CF; -0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; -0&#x3002;</li>
+<li>+0 &#x51CF; -0&#xFF0C;&#x7ED3;&#x679C;&#x4E3A; +0&#x3002;</li>
+<li>&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x4E0D;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;</li>
+</ul>
+<h2 id="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;">&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x6267;&#x884C;&#x7684;&#x662F;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x3002;&#x6BCF;&#x4E2A;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#x3002;</p>
+<h3 id="&#x5E38;&#x89C4;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;">&#x5E38;&#x89C4;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;</h3>
+<p>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x5C0F;&#x4E8E;&#x3001;&#x5927;&#x4E8E;&#x3001;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x548C;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#x6267;&#x884C;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x6570;&#x7684;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#xFF0C;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;&#x4E0E;&#x7B97;&#x672F;&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bResult1 = <span class="hljs-number">2</span> &gt; <span class="hljs-number">1</span>    <span class="hljs-comment">//true</span>
+<span class="hljs-keyword">var</span> bResult2 = <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>    <span class="hljs-comment">//false</span>
+</code></pre>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x5BF9;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5E94;&#x7528;&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x884C;&#x4E3A;&#x5219;&#x4E0D;&#x540C;&#x3002;&#x8BB8;&#x591A;&#x4EBA;&#x8BA4;&#x4E3A;&#x5C0F;&#x4E8E;&#x8868;&#x793A;&#x201C;&#x5728;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x4E0A;&#x9760;&#x524D;&#x201D;&#xFF0C;&#x5927;&#x4E8E;&#x8868;&#x793A;&#x201C;&#x5728;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x4E0A;&#x9760;&#x540E;&#x201D;&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x5E76;&#x975E;&#x5982;&#x6B64;&#x3002;&#x5BF9;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x4E0E;&#x4F1A;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6570;&#x503C;&#x6BD4;&#x8F83;&#x3002;&#x5B8C;&#x6210;&#x8FD9;&#x79CD;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; Boolean &#x503C;&#x3002;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x5C0F;&#x4E8E;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x8FD9;&#x7740;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x4E0B;&#x5217;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bResult = <span class="hljs-string">&quot;Blue&quot;</span> &lt; <span class="hljs-string">&quot;alpha&quot;</span>;
+<span class="hljs-built_in">console</span>.log(bResult);    <span class="hljs-comment">//&#x8F93;&#x51FA; true</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B57;&#x7B26;&#x4E32; &quot;Blue&quot; &#x5C0F;&#x4E8E; &quot;alpha&quot;&#xFF0C;&#x56E0;&#x4E3A;&#x5B57;&#x6BCD; B &#x7684;&#x5B57;&#x7B26;&#x4EE3;&#x7801;&#x662F; 66&#xFF0C;&#x5B57;&#x6BCD; a &#x7684;&#x5B57;&#x7B26;&#x4EE3;&#x7801;&#x662F; 97&#x3002;&#x8981;&#x5F3A;&#x5236;&#x6027;&#x5F97;&#x5230;&#x6309;&#x7167;&#x771F;&#x6B63;&#x7684;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x6BD4;&#x8F83;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5FC5;&#x987B;&#x628A;&#x4E24;&#x4E2A;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x76F8;&#x540C;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x5F62;&#x5F0F;&#xFF08;&#x5168;&#x5927;&#x5199;&#x6216;&#x5168;&#x5C0F;&#x5199;&#x7684;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bResult = <span class="hljs-string">&quot;Blue&quot;</span>.toLowerCase() &lt; <span class="hljs-string">&quot;alpha&quot;</span>.toLowerCase();
+<span class="hljs-built_in">console</span>.log(bResult);    <span class="hljs-comment">//&#x8F93;&#x51FA; false</span>
+</code></pre>
+<p>&#x628A;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x90FD;&#x8F6C;&#x6362;&#x6210;&#x5C0F;&#x5199;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x6B63;&#x786E;&#x8BC6;&#x522B;&#x51FA; &quot;alpha&quot; &#x5728;&#x5B57;&#x6BCD;&#x987A;&#x5E8F;&#x4E0A;&#x4F4D;&#x4E8E; &quot;Blue&quot; &#x4E4B;&#x524D;&#x3002;</p>
+<h2 id="&#x7B49;&#x6027;&#x8FD0;&#x7B97;&#x7B26;">&#x7B49;&#x6027;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x662F;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x4E2D;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x8FD0;&#x7B97;&#x3002;&#x5728;&#x5904;&#x7406;&#x539F;&#x59CB;&#x503C;&#x65F6;&#xFF0C;&#x8FD9;&#x79CD;&#x8FD0;&#x7B97;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x6D89;&#x53CA;&#x5BF9;&#x8C61;&#xFF0C;&#x4EFB;&#x52A1;&#x5C31;&#x7A0D;&#x6709;&#x70B9;&#x590D;&#x6742;&#x3002;</p>
+<p>ECMAScript &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x5957;&#x7B49;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x7B49;&#x53F7;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x5168;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x5168;&#x7B49;&#x53F7;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="&#x7B49;&#x53F7;&#x548C;&#x975E;&#x7B49;&#x53F7;">&#x7B49;&#x53F7;&#x548C;&#x975E;&#x7B49;&#x53F7;</h3>
+<p>&#x5728; ECMAScript &#x4E2D;&#xFF0C;&#x7B49;&#x53F7;&#x7531;&#x53CC;&#x7B49;&#x53F7;&#xFF08;==&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x76F8;&#x7B49;&#x65F6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE; true&#x3002;&#x975E;&#x7B49;&#x53F7;&#x7531;&#x611F;&#x53F9;&#x53F7;&#x52A0;&#x7B49;&#x53F7;&#xFF08;!=&#xFF09;&#x8868;&#x793A;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E0D;&#x76F8;&#x7B49;&#x65F6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE; true&#x3002;&#x4E3A;&#x786E;&#x5B9A;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x90FD;&#x4F1A;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;
+&#x6267;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x7684;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; Boolean &#x503C;&#xFF0C;&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x628A;&#x5B83;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;&#x503C;&#x3002;false &#x8F6C;&#x6362;&#x6210; 0&#xFF0C;true &#x4E3A; 1&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x8981;&#x5C1D;&#x8BD5;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x8981;&#x5C1D;&#x8BD5;&#x628A;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x8981;&#x5C1D;&#x8BD5;&#x628A;&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;&#x3002;</li>
+</ul>
+<p>&#x5728;&#x6BD4;&#x8F83;&#x65F6;&#xFF0C;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x8FD8;&#x9075;&#x5B88;&#x4E0B;&#x5217;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li>&#x503C; null &#x548C; undefined &#x76F8;&#x7B49;&#x3002;</li>
+<li>&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x628A; null &#x548C; undefined &#x8F6C;&#x6362;&#x6210;&#x5176;&#x4ED6;&#x503C;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F; NaN&#xFF0C;&#x7B49;&#x53F7;&#x5C06;&#x8FD4;&#x56DE; false&#xFF0C;&#x975E;&#x7B49;&#x53F7;&#x5C06;&#x8FD4;&#x56DE; true&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x6BD4;&#x8F83;&#x7684;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x5F15;&#x7528;&#x503C;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x6307;&#x5411;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x7B49;&#x53F7;&#x8FD4;&#x56DE; true&#xFF0C;&#x5426;&#x5219;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x4E0D;&#x7B49;&#x3002;</li>
+</ul>
+<p><strong>&#x91CD;&#x8981;&#x63D0;&#x793A;&#xFF1A;&#x5373;&#x4F7F;&#x4E24;&#x4E2A;&#x6570;&#x90FD;&#x662F; NaN&#xFF0C;&#x7B49;&#x53F7;&#x4ECD;&#x7136;&#x8FD4;&#x56DE; false&#xFF0C;&#x56E0;&#x4E3A;&#x6839;&#x636E;&#x89C4;&#x5219;&#xFF0C;NaN &#x4E0D;&#x7B49;&#x4E8E; NaN&#x3002;</strong></p>
+<p>&#x4E0B;&#x8868;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th style="text-align:left">&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">null == undefined</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">&quot;NaN&quot; == NaN</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">5 == NaN</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">NaN == NaN</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">NaN != NaN</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">false == 0</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">true == 1</td>
+<td style="text-align:left">true</td>
+</tr>
+<tr>
+<td style="text-align:left">true == 2</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">undefined == 0</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">null == 0</td>
+<td style="text-align:left">false</td>
+</tr>
+<tr>
+<td style="text-align:left">&quot;5&quot; == 5</td>
+<td style="text-align:left">true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x5168;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x5168;&#x7B49;&#x53F7;">&#x5168;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x5168;&#x7B49;&#x53F7;</h3>
+<p>&#x7B49;&#x53F7;&#x548C;&#x975E;&#x7B49;&#x53F7;&#x7684;&#x540C;&#x7C7B;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x5168;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x5168;&#x7B49;&#x53F7;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x6240;&#x505A;&#x7684;&#x4E0E;&#x7B49;&#x53F7;&#x548C;&#x975E;&#x7B49;&#x53F7;&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;&#x5B83;&#x4EEC;&#x5728;&#x68C0;&#x67E5;&#x76F8;&#x7B49;&#x6027;&#x524D;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x5168;&#x7B49;&#x53F7;&#x7531;&#x4E09;&#x4E2A;&#x7B49;&#x53F7;&#x8868;&#x793A;&#xFF08;===&#xFF09;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x65E0;&#x9700;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x6570;&#x5C31;&#x76F8;&#x7B49;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x624D;&#x8FD4;&#x56DE; true&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> sNum = <span class="hljs-string">&quot;66&quot;</span>;
+<span class="hljs-keyword">var</span> iNum = <span class="hljs-number">66</span>;
+<span class="hljs-built_in">console</span>.log(sNum == iNum);    <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;true&quot;</span>
+<span class="hljs-built_in">console</span>.log(sNum === iNum);    <span class="hljs-comment">//&#x8F93;&#x51FA; &quot;false&quot;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A; alert &#x4F7F;&#x7528;&#x975E;&#x7B49;&#x53F7;&#xFF0C;&#x628A;&#x5B57;&#x7B26;&#x4E32; &quot;66&quot; &#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57; 66&#xFF0C;&#x4F7F;&#x5F97;&#x5B83;&#x4E0E;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FD0;&#x7B97;&#x6570; 66 &#x76F8;&#x7B49;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E3A; &quot;false&quot;&#xFF0C;&#x56E0;&#x4E3A;&#x4E24;&#x4E2A;&#x8FD0;&#x7B97;&#x6570;&#x662F;&#x76F8;&#x7B49;&#x7684;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A; alert &#x4F7F;&#x7528;&#x7684;&#x975E;&#x5168;&#x7B49;&#x53F7;&#x3002;&#x8BE5;&#x8FD0;&#x7B97;&#x662F;&#x5728;&#x95EE;&#xFF1A;&quot;sNum&quot; &#x4E0E; &quot;iNum&quot; &#x4E0D;&#x540C;&#x5417;&#xFF1F;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x7B54;&#x6848;&#x662F;&#xFF1A;&#x662F;&#x7684;&#xFF08;true&#xFF09;&#xFF0C;&#x56E0;&#x4E3A; sNum &#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C; iNum &#x662F;&#x6570;&#x5B57;&#xFF0C;&#x5B83;&#x4EEC;&#x5F53;&#x7136;&#x4E0D;&#x540C;&#x3002;</p>
+<h2 id="&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;">&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#x662F; ECMAScript &#x4E2D;&#x529F;&#x80FD;&#x6700;&#x591A;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5B83;&#x7684;&#x5F62;&#x5F0F;&#x4E0E; Java &#x4E2D;&#x7684;&#x76F8;&#x540C;&#x3002;</p>
+<pre><code class="lang-javascript">variable = boolean_expression ? true_value : false_value;
+</code></pre>
+<p>&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x4E3B;&#x8981;&#x662F;&#x6839;&#x636E; boolean_expression &#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x6709;&#x6761;&#x4EF6;&#x5730;&#x4E3A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x3002;&#x5982;&#x679C; Boolean_expression &#x4E3A; true&#xFF0C;&#x5C31;&#x628A; true_value &#x8D4B;&#x7ED9;&#x53D8;&#x91CF;&#xFF1B;&#x5982;&#x679C;&#x5B83;&#x662F; false&#xFF0C;&#x5C31;&#x628A; false_value &#x8D4B;&#x7ED9;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iMax = (iNum1 &gt; iNum2) ? iNum1 : iNum2;
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;iMax &#x5C06;&#x88AB;&#x8D4B;&#x4E88;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002;&#x8868;&#x8FBE;&#x5F0F;&#x58F0;&#x660E;&#x5982;&#x679C; iNum1 &#x5927;&#x4E8E; iNum2&#xFF0C;&#x5219;&#x628A; iNum1 &#x8D4B;&#x4E88; iMax&#x3002;&#x4F46;&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A; false&#xFF08;&#x5373; iNum2 &#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E; iNum1&#xFF09;&#xFF0C;&#x5219;&#x628A; iNum2 &#x8D4B;&#x4E88; iMax&#x3002;</p>
+<h2 id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;">&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x7B80;&#x5355;&#x7684;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x7531;&#x7B49;&#x53F7;&#xFF08;=&#xFF09;&#x5B9E;&#x73B0;&#xFF0C;&#x53EA;&#x662F;&#x628A;&#x7B49;&#x53F7;&#x53F3;&#x8FB9;&#x7684;&#x503C;&#x8D4B;&#x4E88;&#x7B49;&#x53F7;&#x5DE6;&#x8FB9;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iNum = <span class="hljs-number">10</span>;
+</code></pre>
+<p>&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x662F;&#x7531;&#x4E58;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x3001;&#x52A0;&#x6027;&#x8FD0;&#x7B97;&#x7B26;&#x6216;&#x4F4D;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;&#x52A0;&#x7B49;&#x53F7;&#xFF08;=&#xFF09;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x662F;&#x4E0B;&#x5217;&#x8FD9;&#x4E9B;&#x5E38;&#x89C1;&#x60C5;&#x51B5;&#x7684;&#x7F29;&#x5199;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iNum = <span class="hljs-number">10</span>;
+iNum = iNum + <span class="hljs-number">10</span>&#xFF1B;
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#x6539;&#x5199;&#x7B2C;&#x4E8C;&#x884C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iNum = <span class="hljs-number">10</span>
+iNum += <span class="hljs-number">10</span>
+</code></pre>
+<p>&#x6BCF;&#x79CD;&#x4E3B;&#x8981;&#x7684;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x51E0;&#x4E2A;&#x8FD0;&#x7B97;&#x90FD;&#x6709;&#x590D;&#x5408;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<ul>
+<li>&#x4E58;&#x6CD5;/&#x8D4B;&#x503C;&#xFF08;*=&#xFF09;</li>
+<li>&#x9664;&#x6CD5;/&#x8D4B;&#x503C;&#xFF08;/=&#xFF09;</li>
+<li>&#x53D6;&#x6A21;/&#x8D4B;&#x503C;&#xFF08;%=&#xFF09;</li>
+<li>&#x52A0;&#x6CD5;/&#x8D4B;&#x503C;&#xFF08;+=&#xFF09;</li>
+<li>&#x51CF;&#x6CD5;/&#x8D4B;&#x503C;&#xFF08;-=&#xFF09;</li>
+<li>&#x5DE6;&#x79FB;/&#x8D4B;&#x503C;&#xFF08;&lt;&lt;=&#xFF09;</li>
+<li>&#x6709;&#x7B26;&#x53F7;&#x53F3;&#x79FB;/&#x8D4B;&#x503C;&#xFF08;&gt;&gt;=&#xFF09;</li>
+<li>&#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;/&#x8D4B;&#x503C;&#xFF08;&gt;&gt;&gt;=&#xFF09;</li>
+</ul>
+<h2 id="&#x9017;&#x53F7;&#x8FD0;&#x7B97;&#x7B26;">&#x9017;&#x53F7;&#x8FD0;&#x7B97;&#x7B26;</h2>
+<p>&#x7528;&#x9017;&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x4E2D;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x8FD0;&#x7B97;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iNum1 = <span class="hljs-number">1</span>, iNum = <span class="hljs-number">2</span>, iNum3 = <span class="hljs-number">3</span>;
+</code></pre>
+<p>&#x9017;&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#x5E38;&#x7528;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E2D;&#x3002;</p>
+<p>&#x9017;&#x53F7;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x4F1A;&#x53D6;&#x5F97;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x53E5;&#x7684;&#x503C;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = (<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>) <span class="hljs-comment">// 3</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#x8BF7;&#x6CE8;&#x610F;</p>
+<pre><code class="lang-javascript">a = <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> <span class="hljs-comment">// a = 1</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x89E3;&#x6790;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-javascript">(a = <span class="hljs-number">1</span>),(<span class="hljs-number">2</span>),(<span class="hljs-number">3</span>) <span class="hljs-comment">// a = 1&#xFF0C;&#x6B64;&#x53E5;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;3</span>
+</code></pre>
 
                                 
                                 </section>
@@ -1670,7 +2100,7 @@ XOR = 0000 0000 0000 0000 0000 0000 0001 1010
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.2.7.运算符","level":"1.2.4.2.7","depth":4,"next":{"title":"1.4.2.8.流程控制语句","level":"1.2.4.2.8","depth":4,"path":"前端基础/Javascript/流程控制语句.md","ref":"./前端基础/Javascript/流程控制语句.md","articles":[]},"previous":{"title":"1.4.2.6.对象","level":"1.2.4.2.6","depth":4,"path":"前端基础/Javascript/对象.md","ref":"./前端基础/Javascript/对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/运算符.md","mtime":"2017-12-04T12:07:21.866Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-04T12:07:30.837Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.2.7.运算符","level":"1.2.4.2.7","depth":4,"next":{"title":"1.4.2.8.流程控制语句","level":"1.2.4.2.8","depth":4,"path":"前端基础/Javascript/流程控制语句.md","ref":"./前端基础/Javascript/流程控制语句.md","articles":[]},"previous":{"title":"1.4.2.6.对象","level":"1.2.4.2.6","depth":4,"path":"前端基础/Javascript/对象.md","ref":"./前端基础/Javascript/对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/运算符.md","mtime":"2017-12-07T12:01:57.962Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T12:02:05.710Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
