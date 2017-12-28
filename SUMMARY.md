@@ -42,7 +42,7 @@
             * [**1.4.7.2.**元素操作](./前端基础/Javascript/元素操作.md)
             * [**1.4.7.3.**Canvas](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API)
             * [**1.4.7.4.**事件处理](./前端基础/Javascript/事件处理.md)
-            * [**1.4.7.10.**一个案例]()         
+            * [**1.4.7.5.**DOM实战](./前端基础/Javascript/Dom实战.md)         
         * [**1.4.4**BOM模型]()
             * [**1.4.8.1.**BOM模型概述]()   
             * [**1.4.8.2.**window对象]()         
