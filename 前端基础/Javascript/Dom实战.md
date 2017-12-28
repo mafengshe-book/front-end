@@ -4,8 +4,8 @@
 
 ```javascript
 <!-- HTML结构 -->
-<form action="#" target="_blank">
-    <p id="test-error" style="color:red"></p>
+<form id="signin" action="#" target="_blank">
+    <p id="sigin-error" style="color:red"></p>
     <p>
         用户名: <input type="text" id="username" name="username">
     </p>
