@@ -1178,22 +1178,22 @@
                                 
                                 <h1 id="dom-&#x5B9E;&#x6218;">DOM &#x5B9E;&#x6218;</h1>
 <h2 id="&#x8868;&#x5355;&#x9A8C;&#x8BC1;">&#x8868;&#x5355;&#x9A8C;&#x8BC1;</h2>
-<pre><code class="lang-javascript">&lt;!-- HTML&#x7ED3;&#x6784; --&gt;
-&lt;form id=&quot;signin&quot; action=&quot;#&quot; target=&quot;_blank&quot;&gt;
-    &lt;p id=&quot;sigin-error&quot; style=&quot;color:red&quot;&gt;&lt;/p&gt;
-    &lt;p&gt;
-        &#x7528;&#x6237;&#x540D;: &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        &#x53E3;&#x4EE4;: &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot;&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        &#x91CD;&#x590D;&#x53E3;&#x4EE4;: &lt;input type=&quot;password&quot; id=&quot;password-2&quot;&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        &lt;button type=&quot;submit&quot;&gt;&#x63D0;&#x4EA4;&lt;/button&gt; &lt;button type=&quot;reset&quot;&gt;&#x91CD;&#x7F6E;&lt;/button&gt;
-    &lt;/p&gt;
-&lt;/form&gt;
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- HTML&#x7ED3;&#x6784; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;signin&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;sigin-error&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        &#x7528;&#x6237;&#x540D;: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        &#x53E3;&#x4EE4;: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        &#x91CD;&#x590D;&#x53E3;&#x4EE4;: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password-2&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>&#x63D0;&#x4EA4;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;reset&quot;</span>&gt;</span>&#x91CD;&#x7F6E;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
 </code></pre>
 <p>&#x5229;&#x7528;JavaScript&#x68C0;&#x67E5;&#x7528;&#x6237;&#x6CE8;&#x518C;&#x4FE1;&#x606F;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF0C;&#x5728;&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#x4E0D;&#x6EE1;&#x8DB3;&#x65F6;&#x62A5;&#x9519;&#x5E76;&#x963B;&#x6B62;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#xFF1A;</p>
 <ul>
@@ -1246,7 +1246,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.7.5.DOM实战","level":"1.2.4.3.5","depth":4,"next":{"title":"1.4.4BOM模型","level":"1.2.4.4","depth":3,"ref":"","articles":[{"title":"1.4.8.1.BOM模型概述","level":"1.2.4.4.1","depth":4,"ref":"","articles":[]},{"title":"1.4.8.2.window对象","level":"1.2.4.4.2","depth":4,"ref":"","articles":[]},{"title":"1.4.8.3.History对象","level":"1.2.4.4.3","depth":4,"ref":"","articles":[]},{"title":"1.4.8.4.Cookie","level":"1.2.4.4.4","depth":4,"ref":"","articles":[]},{"title":"1.4.8.5.Web Storage：浏览器端数据储存机制","level":"1.2.4.4.5","depth":4,"ref":"","articles":[]},{"title":"1.4.8.6.同源政策","level":"1.2.4.4.6","depth":4,"ref":"","articles":[]},{"title":"1.4.8.7.Ajax","level":"1.2.4.4.7","depth":4,"ref":"","articles":[]},{"title":"1.4.8.8.CORS","level":"1.2.4.4.8","depth":4,"ref":"","articles":[]}]},"previous":{"title":"1.4.7.4.事件处理","level":"1.2.4.3.4","depth":4,"path":"前端基础/Javascript/事件处理.md","ref":"./前端基础/Javascript/事件处理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/Dom实战.md","mtime":"2017-12-28T11:58:06.523Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-28T11:58:24.857Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.7.5.DOM实战","level":"1.2.4.3.5","depth":4,"next":{"title":"1.4.4BOM模型","level":"1.2.4.4","depth":3,"ref":"","articles":[{"title":"1.4.8.1.BOM模型概述","level":"1.2.4.4.1","depth":4,"ref":"","articles":[]},{"title":"1.4.8.2.window对象","level":"1.2.4.4.2","depth":4,"ref":"","articles":[]},{"title":"1.4.8.3.History对象","level":"1.2.4.4.3","depth":4,"ref":"","articles":[]},{"title":"1.4.8.4.Cookie","level":"1.2.4.4.4","depth":4,"ref":"","articles":[]},{"title":"1.4.8.5.Web Storage：浏览器端数据储存机制","level":"1.2.4.4.5","depth":4,"ref":"","articles":[]},{"title":"1.4.8.6.同源政策","level":"1.2.4.4.6","depth":4,"ref":"","articles":[]},{"title":"1.4.8.7.Ajax","level":"1.2.4.4.7","depth":4,"ref":"","articles":[]},{"title":"1.4.8.8.CORS","level":"1.2.4.4.8","depth":4,"ref":"","articles":[]}]},"previous":{"title":"1.4.7.4.事件处理","level":"1.2.4.3.4","depth":4,"path":"前端基础/Javascript/事件处理.md","ref":"./前端基础/Javascript/事件处理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/Dom实战.md","mtime":"2017-12-28T12:00:35.957Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-28T12:00:42.083Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1254,10 +1254,6 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
