@@ -2,7 +2,7 @@
 
 ## 表单验证
 
-```javascript
+```html
 <!-- HTML结构 -->
 <form id="signin" action="#" target="_blank">
     <p id="sigin-error" style="color:red"></p>
