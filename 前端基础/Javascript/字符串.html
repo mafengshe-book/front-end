@@ -704,14 +704,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.4.4.1" >
+        <li class="chapter " data-level="1.2.4.4.1" data-path="BOM模型简介.html">
             
-                <span>
+                <a href="BOM模型简介.html">
             
                     
                     1.4.8.1.BOM模型概述
             
-                </span>
+                </a>
             
 
             
@@ -1286,7 +1286,7 @@ line 3
 </code></pre>
 <p>&#x4E5F;&#x6709;&#x7B80;&#x5355;&#x7684;&#x529E;&#x6CD5;&#xFF0C;&#x50CF;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#x53D6;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> theChar = myStr[<span class="hljs-number">8</span>;<span class="hljs-comment">// &quot;o&quot;,&#x540C;&#x6837;&#x4ECE;0&#x5F00;&#x59CB;</span>
+<span class="hljs-keyword">var</span> theChar = myStr[<span class="hljs-number">8</span>];<span class="hljs-comment">// &quot;o&quot;,&#x540C;&#x6837;&#x4ECE;0&#x5F00;&#x59CB;</span>
 </code></pre>
 <p>&#x540C;&#x6837;&#xFF0C;&#x5B83;&#x7684;&#x4E00;&#x4E2A;&#x5144;&#x5F1F;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x503C;&#xFF0C;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
@@ -1304,15 +1304,16 @@ line 3
 <span class="hljs-keyword">var</span> str = str1.concat(str2); <span class="hljs-comment">//&quot;I,love,you!Do,you,love,me?&quot;</span>
 </code></pre>
 <h3 id="&#x5207;&#x5272;&#x548C;&#x63D0;&#x53D6;">&#x5207;&#x5272;&#x548C;&#x63D0;&#x53D6;</h3>
-<p>&#x6709;&#x4E09;&#x79CD;&#x53EF;&#x4EE5;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x62BD;&#x53D6;&#x548C;&#x5207;&#x5272;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#xFF1A;</p>
+<p>&#x6709;&#x4E09;&#x79CD;&#x53EF;&#x4EE5;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x62BD;&#x53D6;&#x548C;&#x5207;&#x5272;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; slice():</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
 <span class="hljs-keyword">var</span> subStr = myStr.slice(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>);<span class="hljs-comment">//&quot;,lov&quot;</span>
 </code></pre>
-<p>&#x7B2C;&#x4E8C;&#x79CD;&#xFF0C;&#x4F7F;&#x7528;substring():</p>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; substring():</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
 <span class="hljs-keyword">var</span> subStr = myStr.substring(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">//&quot;,lov&quot;</span>
 </code></pre>
-<p>&#x7B2C;&#x4E09;&#x79CD;&#xFF0C;&#x4F7F;&#x7528;substr():</p>
+<p>&#x7B2C;&#x4E09;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; substr():</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
 <span class="hljs-keyword">var</span> subStr = myStr.substr(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">//&quot;,love&quot;</span>
 </code></pre>
@@ -1383,7 +1384,7 @@ first = myStr.localeCompare(<span class="hljs-string">&quot;apple&quot;</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.2.3.字符串","level":"1.2.4.2.3","depth":4,"next":{"title":"1.4.2.4.数组","level":"1.2.4.2.4","depth":4,"path":"前端基础/Javascript/数组.md","ref":"./前端基础/Javascript/数组.md","articles":[]},"previous":{"title":"1.4.2.2.数据类型","level":"1.2.4.2.2","depth":4,"path":"前端基础/Javascript/数据类型.md","ref":"./前端基础/Javascript/数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/字符串.md","mtime":"2017-11-27T11:57:46.355Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-28T12:00:42.083Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.2.3.字符串","level":"1.2.4.2.3","depth":4,"next":{"title":"1.4.2.4.数组","level":"1.2.4.2.4","depth":4,"path":"前端基础/Javascript/数组.md","ref":"./前端基础/Javascript/数组.md","articles":[]},"previous":{"title":"1.4.2.2.数据类型","level":"1.2.4.2.2","depth":4,"path":"前端基础/Javascript/数据类型.md","ref":"./前端基础/Javascript/数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/字符串.md","mtime":"2017-12-31T13:00:00.631Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-04T11:58:00.753Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
