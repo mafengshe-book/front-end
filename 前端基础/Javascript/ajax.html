@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.4.3.4.事件处理 · GitBook</title>
+        <title>1.4.4.3.AJAX · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -47,8 +47,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Dom实战.html" />
+    <link rel="next" href="跨域.html" />
     
+    
+    <link rel="prev" href="浏览器存储.html" />
     
 
     </head>
@@ -657,7 +659,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4.3.4" data-path="事件处理.html">
+        <li class="chapter " data-level="1.2.4.3.4" data-path="事件处理.html">
             
                 <a href="事件处理.html">
             
@@ -728,7 +730,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.4.3" data-path="ajax.html">
+        <li class="chapter active" data-level="1.2.4.4.3" data-path="ajax.html">
             
                 <a href="ajax.html">
             
@@ -1109,7 +1111,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.4.3.4.事件处理</a>
+        <a href="../.." >1.4.4.3.AJAX</a>
     </h1>
 </div>
 
@@ -1124,181 +1126,155 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dom-&#x4E8B;&#x4EF6;&#x5904;&#x7406;">DOM &#x4E8B;&#x4EF6;&#x5904;&#x7406;</h1>
-<p>HTML DOM &#x4F7F; JavaScript &#x6709;&#x80FD;&#x529B;&#x5BF9; HTML &#x4E8B;&#x4EF6;&#x505A;&#x51FA;&#x53CD;&#x5E94;&#x3002;</p>
-<h2 id="&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;">&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h2>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6267;&#x884C; JavaScript&#xFF0C;&#x5728;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x544A;&#x8BC9;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x5F53;&#x67D0;&#x4EF6;&#x4E8B;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6267;&#x884C;&#x54EA;&#x4E9B;&#x4EE3;&#x7801;&#xFF09;&#xFF1B;&#x8FD9;&#x4E2A;&#x6307;&#x5B9A;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x3002;</p>
-<h3 id="&#x5143;&#x7D20;&#x4E8B;&#x4EF6;&#x5C5E;&#x6027;">&#x5143;&#x7D20;&#x4E8B;&#x4EF6;&#x5C5E;&#x6027;</h3>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;HTML&#x5143;&#x7D20;&#x5C5E;&#x6027; <code>onXXXX</code> &#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6BD4;&#x5982; <code>onClick</code>&#xFF1A;</p>
-<pre><code class="lang-javascript">&lt;div onclick=&quot;this.innerHTML=&apos;&#x8C22;&#x8C22;!&apos;&quot;&gt;&#x8BF7;&#x70B9;&#x51FB;&#x8BE5;&#x6587;&#x672C;&lt;/div&gt;
-</code></pre>
-<p>&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6267;&#x884C;&#x5F88;&#x591A;&#x884C;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x51FD;&#x6570;&#xFF1A;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changetext</span><span class="hljs-params">(element)</span></span>{
-      element.innerHTML=<span class="hljs-string">&quot;&#x8C22;&#x8C22;!&quot;</span>;
+                                <h1 id="ajax">Ajax</h1>
+<p>Ajax&#x662F;Asynchronous JavaScript and XML&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x8FD9;&#x4E00;&#x6280;&#x672F;&#x80FD;&#x591F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x989D;&#x5916;&#x7684;&#x6570;&#x636E;&#x800C;&#x65E0;&#x9700;&#x5378;&#x8F7D;&#x6574;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x4F1A;&#x5E26;&#x6765;&#x826F;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;&#x4F20;&#x7EDF;&#x7684;HTTP&#x8BF7;&#x6C42;&#x6D41;&#x7A0B;&#x5927;&#x6982;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF0C;</p>
+<ol>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x6839;&#x636E;&#x6D4F;&#x89C8;&#x5668;&#x4F20;&#x6765;&#x6570;&#x636E;&#x751F;&#x6210;response</li>
+<li>&#x670D;&#x52A1;&#x5668;&#x628A;response&#x8FD4;&#x56DE;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;</li>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x5237;&#x65B0;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x663E;&#x793A;&#x6700;&#x65B0;&#x6570;&#x636E;</li>
+</ol>
+<p>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x662F;&#x540C;&#x6B65;&#x7684;&#xFF0C;&#x987A;&#x5E8F;&#x6267;&#x884C;</p>
+<p>AJAX &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0E; Web &#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x6570;&#x636E;&#x4F20;&#x8F93;&#xFF08;HTTP &#x8BF7;&#x6C42;&#xFF09;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x6570;&#x636E;</p>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x5F02;&#x6B65;&#x662F;&#x6307;&#x8131;&#x79BB;&#x5F53;&#x524D;&#x6D4F;&#x89C8;&#x5668;&#x9875;&#x9762;&#x7684;&#x8BF7;&#x6C42;&#x3001;&#x52A0;&#x8F7D;&#x7B49;&#x5355;&#x72EC;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6574;&#x4E2A;&#x7F51;&#x9875;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x8FC7;JavaScript&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3001;&#x63A5;&#x53D7;&#x670D;&#x52A1;&#x5668;&#x4F20;&#x6765;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x64CD;&#x4F5C;DOM&#x5C06;&#x65B0;&#x6570;&#x636E;&#x5BF9;&#x7F51;&#x9875;&#x7684;&#x67D0;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#xFF0C;&#x4F7F;&#x7528;Ajax&#x6700;&#x76F4;&#x89C2;&#x7684;&#x611F;&#x53D7;&#x662F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x65B0;&#x6570;&#x636E;&#x4E0D;&#x9700;&#x8981;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7B49;&#x5F85;&#x4E86;</p>
+<h2 id="&#x8C03;&#x8BD5;">&#x8C03;&#x8BD5;</h2>
+<p>&#x73B0;&#x4EE3;&#x524D;&#x7AEF;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x91C7;&#x7528;&#x524D;&#x540E;&#x5206;&#x79BB;&#x7684;&#x5F00;&#x53D1;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x53EF;&#x80FD;&#xFF08;&#x5E76;&#x4E14;&#x662F;&#x5F88;&#x5927;&#x53EF;&#x80FD;&#x6027;&#xFF09;&#x9700;&#x8981;&#x524D;&#x7AEF;&#x5728;&#x5F00;&#x53D1;&#x65F6;&#xFF1A;&#x81EA;&#x5DF1;&#x642D;&#x8BBE;&#x4E00;&#x4E2A;&#x7B80;&#x6613;&#x540E;&#x7AEF;&#xFF0C;&#x6765;&#x4E3A;&#x524D;&#x7AEF;&#x6E32;&#x67D3;&#x6240;&#x9700;&#x8981;&#x7684;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E00;&#x8FC7;&#x7A0B;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A; Mock &#x6570;&#x636E;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x524D;&#x7AEF;&#x4F7F;&#x7528; Node.js &#x642D;&#x5EFA;&#x7B80;&#x6613;&#x540E;&#x7AEF;&#x6765;&#x5B9E;&#x73B0; Mock &#x6570;&#x636E;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8BFE;&#x7A0B;&#x4E2D;&#x4E5F;&#x91C7;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="xmlhttprequest-&#x5BF9;&#x8C61;">XMLHttpRequest &#x5BF9;&#x8C61;</h2>
+<p>Ajax&#x7684;&#x6838;&#x5FC3;&#x662F;JavaScript&#x5BF9;&#x8C61;<code>XmlHttpRequest</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E3A;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x548C;&#x89E3;&#x6790;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x63D0;&#x4F9B;&#x4E86;&#x6D41;&#x7545;&#x7684;&#x63A5;&#x53E3;&#x3002;XmlHttpRequest&#x53EF;&#x4EE5;&#x4F7F;&#x7528;JavaScript&#x5411;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x51FA;&#x8BF7;&#x6C42;&#x5E76;&#x5904;&#x7406;&#x54CD;&#x5E94;&#xFF0C;&#x800C;&#x4E0D;&#x963B;&#x585E;&#x7528;&#x6237;&#x3002;</p>
+<p>XHR&#x5BF9;&#x8C61;&#x7531;IE5&#x7387;&#x5148;&#x5F15;&#x5165;&#xFF0C;&#x5728;IE5&#x4E2D;XHR&#x5BF9;&#x8C61;&#x662F;&#x901A;&#x8FC7;MSXML&#x5E93;&#x4E2D;&#x4E00;&#x4E2A;ActiveX&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6839;&#x636E;IE&#x7248;&#x672C;&#x4E0D;&#x540C;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x4E0D;&#x540C;&#x7248;&#x672C;XHR&#x5BF9;&#x8C61;&#xFF0C;&#x800C;IE7+&#x4E0E;&#x5176;&#x5B83;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x5747;&#x652F;&#x6301;&#x539F;&#x751F;&#x7684;XHR&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x8FD9;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x4F7F;&#x7528;XMLHttpRequest&#x6784;&#x9020;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x6784;&#x9020;XHR&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x7684;&#x521B;&#x5EFA;XHR&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;&#x5199;&#x6CD5;&#x5927;&#x6982;&#x662F;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createXHR</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> xhr = <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">// Firefox, Opera 8.0+, Safari&#xFF0C;IE7+</span>
+        xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
     }
-  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;changetext(this)&quot;</span>&gt;</span>&#x8BF7;&#x70B9;&#x51FB;&#x8BE5;&#x6587;&#x672C;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-keyword">catch</span> (e) {
+        <span class="hljs-comment">// Internet Explorer</span>
+        <span class="hljs-keyword">try</span> {
+            xhr = <span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">&quot;Msxml2.XMLHTTP&quot;</span>);
+        }
+        <span class="hljs-keyword">catch</span> (e) {
+            <span class="hljs-keyword">try</span> {
+                xhr = <span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">&quot;Microsoft.XMLHTTP&quot;</span>);
+            }
+            <span class="hljs-keyword">catch</span> (e) {
+                xhr = <span class="hljs-literal">null</span>;
+            }
+        }
+    }
+    <span class="hljs-keyword">return</span> xhr;
+}
 </code></pre>
-<p>&#x6CE8;&#x610F;&#xFF1A;<code>changetext</code> &#x7684;&#x53C2;&#x6570; <code>this</code> &#x662F;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x4F20;&#x5165;&#x7684;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5176;&#x6307;&#x5411;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x3002;</p>
-<h3 id="&#x4F7F;&#x7528;-dom-&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x51FD;&#x6570;">&#x4F7F;&#x7528; DOM &#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x51FD;&#x6570;</h3>
-<p>&#x9664;&#x4E86;&#x914D;&#x7F6E;&#x5143;&#x7D20;&#x5C5E;&#x6027;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; DOM &#x6765;&#x52A8;&#x6001;&#x7684;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x51FD;&#x6570;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C; <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>displayDate()<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> &#x51FD;&#x6570;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myBtn&quot;</span>&gt;</span>&#x70B9;&#x51FB;&#x8FD9;&#x91CC;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).onclick = displayDate;
-
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">displayDate</span>(<span class="hljs-params"></span>)
-  </span>{
-    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = <span class="hljs-built_in">Date</span>();
-  }
-  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;demo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5BF9;&#x4E8E;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7B80;&#x5316;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createXHR</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> XMLHttpRequest()
+}
 </code></pre>
-<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x540D;&#x4E3A; displayDate &#x7684;&#x51FD;&#x6570;&#x88AB;&#x5206;&#x914D;&#x7ED9; id=myButn&quot; &#x7684; HTML &#x5143;&#x7D20;&#x3002;</p>
-<p>&#x5F53;&#x6309;&#x94AE;&#x88AB;&#x70B9;&#x51FB;&#x65F6;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x8BE5;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x4F7F;&#x7528; DOM &#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7075;&#x6D3B;&#x591A;&#x53D8;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x589E;&#x52A0;&#x7A0B;&#x5E8F;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x5B9E;&#x9645;&#x4E2D;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x5224;&#x65AD;&#x662F;&#x5426;&#x91C7;&#x7528;&#x3002;</p>
-<h3 id="&#x4F7F;&#x7528;-addeventlistener-&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x51FD;&#x6570;">&#x4F7F;&#x7528; addEventListener() &#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x54CD;&#x5E94;&#x51FD;&#x6570;</h3>
-<p>&#x601D;&#x8003;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C; <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>displayDate()<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> &#x51FD;&#x6570;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myBtn&quot;</span>&gt;</span>&#x70B9;&#x51FB;&#x8FD9;&#x91CC;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).onclick = displayDate;
-
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">displayDate</span>(<span class="hljs-params"></span>)
-  </span>{
-    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = <span class="hljs-built_in">Date</span>();
-  }
-
-  <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x6709;&#x5F88;&#x591A;&#x4EE3;&#x7801;</span>
-  <span class="hljs-comment">// &#x9879;&#x76EE;&#x591A;&#x4EBA;&#x5199;&#x5B8C;&#x6210;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x522B;&#x4EBA;&#x5199;&#x7684;</span>
-
-  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).onclick = other;
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">other</span>(<span class="hljs-params"></span>)
-  </span>{
-    alert(<span class="hljs-string">&quot;other code&quot;</span>)
-  }
-  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;demo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<h2 id="xhr&#x5BF9;&#x8C61;&#x7528;&#x6CD5;">XHR&#x5BF9;&#x8C61;&#x7528;&#x6CD5;</h2>
+<p>XHR&#x5BF9;&#x8C61;&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x65B9;&#x6CD5; open&#x4E0E;send</p>
+<p>&#x5728;&#x4F7F;&#x7528;XHR&#x5BF9;&#x8C61;&#x65F6;&#x8981;&#x8C03;&#x7528;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;open&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-javascript">xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;default.html&apos;</span>, <span class="hljs-literal">true</span>)
 </code></pre>
-<p>&#x5F53;&#x6211;&#x518D;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x5417;&#xFF1F;</p>
-<p>&#x5728;&#x5927;&#x578B;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x4F7F;&#x7528; <code>addEventListener</code> &#x7ED9;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x4ECE;&#x800C;&#x907F;&#x514D;&#x4EE5;&#x4E0A;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
-<p>addEventListener() &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5411;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x53E5;&#x67C4;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3A; <code>&lt;button&gt;</code> &#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = <span class="hljs-string">&quot;Hello World&quot;</span>;
-});
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x9488;&#x5BF9;default.html&#x9875;&#x9762;&#x53D1;&#x9001;get&#x8BF7;&#x6C42;&#xFF0C;&#x5173;&#x4E8E;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x6709;&#x4E09;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li><p>URL&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</p>
+</li>
+<li><p>&#x8C03;&#x7528;open&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x4F1A;&#x771F;&#x6B63;&#x7684;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF0C;&#x800C;&#x662F;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x51C6;&#x5907;&#x53D1;&#x9001;</p>
+</li>
+<li><p>&#x53EA;&#x80FD;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x57DF;&#x4E2D;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x534F;&#x8BAE;&#x548C;&#x7AEF;&#x53E3;&#x7684;URL&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x56E0;&#x4E3A;&#x5B89;&#x5168;&#x539F;&#x56E0;&#x62A5;&#x9519;&#xFF08;&#x540C;&#x6E90;&#x7B56;&#x7565;&#xFF09;</p>
+</li>
+</ol>
+<p>&#x8981;&#x60F3;&#x628A;&#x8BF7;&#x6C42;&#x53D1;&#x5F80;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x8C03;&#x7528;send&#x65B9;&#x6CD5;&#xFF0C;send&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8BF7;&#x6C42;&#x4E3B;&#x4F53;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x53D1;&#x9001;&#x6570;&#x636E;&#x5219;&#x4F20;&#x5165;null&#xFF0C;&#x5728;&#x8C03;&#x7528;send&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#x8BF7;&#x6C42;&#x88AB;&#x53D1;&#x5F80;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-javascript">xhr.send(<span class="hljs-literal">null</span>);
 </code></pre>
-<p>&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7ED9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x6DFB;&#x52A0;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-  alert(<span class="hljs-string">&quot;other code&quot;</span>)
-});
+<p>&#x8BF7;&#x6C42;&#x53D1;&#x5F80;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6839;&#x636E;&#x8BF7;&#x6C42;&#x751F;&#x6210;&#x54CD;&#x5E94;&#xFF08;Response&#xFF09;&#xFF0C;&#x4F20;&#x56DE;&#x7ED9;XHR&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x540E;&#x76F8;&#x5E94;&#x6570;&#x636E;&#x4F1A;&#x586B;&#x5145;&#x5230;XHR&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x6709;&#x56DB;&#x4E2A;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x4F1A;&#x88AB;&#x586B;&#x5145;&#xFF1A;</p>
+<ol>
+<li><p>responseText&#xFF1A;&#x4F5C;&#x4E3A;&#x54CD;&#x5E94;&#x4E3B;&#x4F53;&#x88AB;&#x8FD4;&#x56DE;&#x7684;&#x6587;&#x672C;</p>
+</li>
+<li><p>responseXML&#xFF1A;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x201D;text/xml&#x201D;&#x6216;&#x201D;application/xml&#x201D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5C06;&#x4FDD;&#x5B58;&#x5305;&#x542B;&#x7740;&#x76F8;&#x5E94;&#x6570;&#x636E;&#x7684;XML&#x6587;&#x6863;</p>
+</li>
+<li><p>status&#xFF1A;&#x54CD;&#x5E94;&#x7684;HTTP&#x72B6;&#x6001;&#xFF08;200,404,500&#x7B49;&#xFF09;</p>
+</li>
+<li><p>statusText&#xFF1A;HTTP&#x72B6;&#x6001;&#x8BF4;&#x660E;</p>
+</li>
+</ol>
+<p>&#x5728;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x540E;&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x68C0;&#x67E5;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#xFF0C;&#x786E;&#x4FDD;&#x54CD;&#x5E94;&#x662F;&#x5426;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#xFF08;&#x72B6;&#x6001;&#x4E3A;200&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6210;&#x529F;responseText&#x548C;responseXML&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#xFF0C;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x54CD;&#x5E94;&#x6709;&#x6548;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x7801;</p>
+<pre><code class="lang-javascript">xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;default.html, false&apos;</span>); <span class="hljs-comment">//&#x51C6;&#x5907;&#x540C;&#x6B65;&#x8BF7;&#x6C42;</span>
+xhr.send();
+<span class="hljs-keyword">if</span>(xhr.status &gt;= <span class="hljs-number">200</span> &amp;&amp; xhr.status &lt; <span class="hljs-number">300</span> || xhr.status == <span class="hljs-number">304</span>){
+    <span class="hljs-comment">//do something</span>
+}<span class="hljs-keyword">else</span>{
+    <span class="hljs-comment">//error handler</span>
+}
 </code></pre>
-<p>&#x4EE5;&#x4E0B;&#x662F; <code>addEventListener</code> &#x7684;&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x53C2;&#x6570;</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">event</td>
-<td style="text-align:left">&#x5FC5;&#x987B;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x540D;&#x3002; &#x6CE8;&#x610F;: &#x4E0D;&#x8981;&#x4F7F;&#x7528; &quot;on&quot; &#x524D;&#x7F00;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528; &quot;click&quot; ,&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; &quot;onclick&quot;&#x3002; &#x63D0;&#x793A;&#xFF1A; &#x6240;&#x6709; HTML DOM &#x4E8B;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6211;&#x4EEC;&#x5B8C;&#x6574;&#x7684; HTML DOM Event &#x5BF9;&#x8C61;&#x53C2;&#x8003;&#x624B;&#x518C;&#x3002;</td>
-</tr>
-<tr>
-<td style="text-align:left">function</td>
-<td style="text-align:left">&#x5FC5;&#x987B;&#x3002;&#x6307;&#x5B9A;&#x8981;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x3002;  &#x5F53;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4F1A;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x51FD;&#x6570;&#x3002; &#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x53D6;&#x51B3;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x4E8B;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#xFF0C; &quot;click&quot; &#x4E8B;&#x4EF6;&#x5C5E;&#x4E8E; MouseEvent(&#x9F20;&#x6807;&#x4E8B;&#x4EF6;) &#x5BF9;&#x8C61;&#x3002;</td>
-</tr>
-<tr>
-<td style="text-align:left">useCapture</td>
-<td style="text-align:left">&#x53EF;&#x9009;&#x3002;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x662F;&#x5426;&#x5728;&#x6355;&#x83B7;&#x6216;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x6267;&#x884C;&#x3002; &#x53EF;&#x80FD;&#x503C;: true - &#x4E8B;&#x4EF6;&#x53E5;&#x67C4;&#x5728;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#x6267;&#x884C; false- false- &#x9ED8;&#x8BA4;&#x3002;&#x4E8B;&#x4EF6;&#x53E5;&#x67C4;&#x5728;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x6267;&#x884C;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x5BF9;&#x4E8E; <code>addEventListener</code> &#x6DFB;&#x52A0;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>removeEventListener</code> &#x5220;&#x9664;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// &#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</span>
-<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myDIV&quot;</span>).addEventListener(<span class="hljs-string">&quot;mousemove&quot;</span>, myFunction);
-<span class="hljs-comment">// &#x5220;&#x9664;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</span>
-<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myDIV&quot;</span>).removeEventListener(<span class="hljs-string">&quot;mousemove&quot;</span>, myFunction);
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5728;&#x53D1;&#x9001;&#x540C;&#x6B65;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x53EA;&#x6709;&#x5F97;&#x5230;&#x54CD;&#x5E94;&#x540E;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x68C0;&#x67E5;status&#x8BED;&#x53E5;</p>
+<p>&#x4F46;&#x662F;&#x5728;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;JavaScript&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x7B49;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x5C31;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x7801;&#x8BED;&#x53E5;&#x662F;&#x5728;&#x5F97;&#x5230;&#x54CD;&#x5E94;&#x540E;&#x6267;&#x884C;&#xFF08;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x51E0;&#x4E4E;&#x4E0D;&#x53EF;&#x80FD;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x518D;&#x5FEB;&#x4E00;&#x4E2A;HTTP&#x8BF7;&#x6C42;&#x4E5F;&#x4E0D;&#x4F1A;&#x5FEB;&#x8FC7;&#x4E00;&#x6761;JavaScript&#x6267;&#x884C;&#x901F;&#x5EA6;&#xFF09;</p>
+<p>&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;XHR&#x5BF9;&#x8C61;&#x7684;<code>readyState</code>&#x5C5E;&#x6027;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x8868;&#x793A;&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x9636;&#x6BB5;&#xFF0C;&#x6BCF;&#x5F53;readyState&#x503C;&#x6539;&#x53D8;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;<code>onreadystatechange</code>&#x4E8B;&#x4EF6;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x68C0;&#x67E5;&#x6BCF;&#x6B21;readyState&#x53D8;&#x5316;&#x7684;&#x503C;&#xFF0C;&#x5F53;&#x4E3A;4&#x7684;&#x65F6;&#x5019;&#x8868;&#x793A;&#x6240;&#x6709;&#x6570;&#x636E;&#x51C6;&#x5907;&#x5C31;&#x7EEA;&#xFF0C;&#x6709;&#x4E00;&#x70B9;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF1A;<strong>&#x5FC5;&#x987B;&#x5728;open&#x65B9;&#x6CD5;&#x4E4B;&#x524D;&#x6307;&#x5B9A;onreadtstatechange&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> xhr = createXHR();
+xhr.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (xhr.readyState == <span class="hljs-number">4</span> &amp;&amp; xhr.status == <span class="hljs-number">200</span>) {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Original Ajax: &apos;</span> + xhr.responseText);
+    }
+}
+xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;ajax.aspx?action=getTime&apos;</span>, <span class="hljs-literal">true</span>);
+xhr.send();
 </code></pre>
-<h2 id="&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;">&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</h2>
-<p>&#x6709;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x83B7;&#x5F97;&#x5F53;&#x524D;&#x4E8B;&#x4EF6;&#x7684;&#x5177;&#x4F53;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;</p>
-<p>Event &#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E8B;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6BD4;&#x5982;&#x4E8B;&#x4EF6;&#x5728;&#x5176;&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x5143;&#x7D20;&#x3001;&#x952E;&#x76D8;&#x6309;&#x952E;&#x7684;&#x72B6;&#x6001;&#x3001;&#x9F20;&#x6807;&#x7684;&#x4F4D;&#x7F6E;&#x3001;&#x9F20;&#x6807;&#x6309;&#x94AE;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
-<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x6709;&#x7A0D;&#x52A0;&#x4FEE;&#x6539;&#x5373;&#x53EF;&#x83B7;&#x5F97;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x3002;</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C; <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>displayDate()<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> &#x51FD;&#x6570;&#x3002;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;myBtn&quot;</span>&gt;</span>&#x70B9;&#x51FB;&#x8FD9;&#x91CC;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>).onclick = displayDate;
-
-  <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x7684; event &#x4F1A;&#x7531;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x6784;&#x5EFA;&#x5E76;&#x4F20;&#x5165;</span>
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">displayDate</span>(<span class="hljs-params">event</span>)
-  </span>{
-    <span class="hljs-built_in">console</span>.log(event)
-    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = <span class="hljs-built_in">Date</span>();
-  }
-  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;demo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x63A5;&#x53D7;&#x54CD;&#x5E94;&#x4E4B;&#x524D;&#x8C03;&#x7528;abort&#x65B9;&#x6CD5;&#x53D6;&#x6D88;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#xFF1A;</p>
+<pre><code class="lang-javascript">xhr.abort();
 </code></pre>
-<p>&#x5B8C;&#x6574;&#x7684;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://www.w3school.com.cn/jsref/dom_obj_event.asp" target="_blank">&#x8FD9;&#x91CC;</a></p>
-<h2 id="dom-&#x4E8B;&#x4EF6;&#x5217;&#x8868;">DOM &#x4E8B;&#x4EF6;&#x5217;&#x8868;</h2>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x9664;&#x4E86;&#x7ED1;&#x5B9A; <code>click</code> &#x4E8B;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;,&#x5982;&#xFF1A;</p>
-<ul>
-<li>&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x65F6;</li>
-<li>&#x5F53;&#x7F51;&#x9875;&#x5DF2;&#x52A0;&#x8F7D;&#x65F6;</li>
-<li>&#x5F53;&#x56FE;&#x50CF;&#x5DF2;&#x52A0;&#x8F7D;&#x65F6;</li>
-<li>&#x5F53;&#x9F20;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x5143;&#x7D20;&#x4E0A;&#x65F6;</li>
-<li>&#x5F53;&#x8F93;&#x5165;&#x5B57;&#x6BB5;&#x88AB;&#x6539;&#x53D8;&#x65F6;</li>
-<li>&#x5F53;&#x63D0;&#x4EA4; HTML &#x8868;&#x5355;&#x65F6;</li>
-<li>&#x5F53;&#x7528;&#x6237;&#x89E6;&#x53D1;&#x6309;&#x952E;&#x65F6;</li>
-</ul>
-<p>&#x5B8C;&#x6574;&#x7684;&#x4E8B;&#x4EF6;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://www.runoob.com/jsref/dom-obj-event.html" target="_blank">&#x8FD9;&#x91CC;</a></p>
-<h2 id="&#x5B9E;&#x6218;-tabs">&#x5B9E;&#x6218; Tabs</h2>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; DOM &#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;<a href="http://www.material-ui.com/#/components/tabs" target="_blank">&#x6807;&#x7B7E;&#x9875;&#x5207;&#x6362;&#x6548;&#x679C;</a></p>
+<h2 id="http-header">HTTP Header</h2>
+<p>&#x6BCF;&#x4E2A;HTTP&#x8BF7;&#x6C42;&#x90FD;&#x4F1A;&#x5E26;&#x6709;Header&#x4FE1;&#x606F;&#xFF0C;XHR&#x5BF9;&#x8C61;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x64CD;&#x4F5C;&#x8FD9;&#x8BF7;&#x6C42;Header&#x548C;&#x54CD;&#x5E94;Header&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53D1;&#x9001;HTTP&#x8BF7;&#x6C42;&#x8FD8;&#x4F1A;&#x53D1;&#x9001;&#x4E0B;&#x5217;&#x5934;&#x90E8;&#x4FE1;&#x606F;</p>
+<ol>
+<li><p>Accept&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x5185;&#x5BB9;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>Accept-Charset&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x5B57;&#x7B26;&#x96C6;</p>
+</li>
+<li><p>Accept-Encoding&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x538B;&#x7F29;&#x7F16;&#x7801;</p>
+</li>
+<li><p>Accept-Language&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#x7684;&#x8BED;&#x8A00;</p>
+</li>
+<li><p>Connection&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FDE;&#x63A5;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>Cookie&#xFF1A;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;cookie</p>
+</li>
+<li><p>Referer:&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x7684;URI</p>
+</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>setRequestHeader</code>&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BF7;&#x6C42;Header&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ol>
+<li>&#x5934;&#x90E8;&#x5B57;&#x6BB5;&#x7684;&#x540D;&#x79F0;</li>
+<li>&#x5934;&#x90E8;&#x5B57;&#x6BB5;&#x7684;&#x503C;</li>
+</ol>
+<p>&#x8981;&#x60F3;&#x6210;&#x529F;&#x53D1;&#x9001;&#x5934;&#x90E8;&#x4FE1;&#x606F;&#xFF0C;&#x5FC5;&#x987B;&#x5728;<strong>&#x8C03;&#x7528;open&#x65B9;&#x6CD5;&#x4E4B;&#x540E;</strong>&#xFF0C;<strong>&#x8C03;&#x7528;send&#x65B9;&#x6CD5;&#x4E4B;&#x524D;</strong>&#x8C03;&#x7528;setRequestHeader&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getTime</span>(<span class="hljs-params">callback</span>) </span>{
+    <span class="hljs-keyword">var</span> xhr = createXHR();
+    xhr.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">if</span> (xhr.readyState == <span class="hljs-number">4</span> &amp;&amp; xhr.status == <span class="hljs-number">200</span>) {
+            callback(xhr.responseText);
+        }
+    }
+    xhr.open(<span class="hljs-string">&apos;get&apos;</span>, <span class="hljs-string">&apos;ajax.aspx?action=getTime&apos;</span>, <span class="hljs-literal">true</span>);
+    xhr.setRequestHeader(myHeader,myValue)
+    xhr.send();
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; <code>callback</code> &#x98CE;&#x683C;&#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x8BF7;&#x6C42;&#x4E0E; dom &#x64CD;&#x4F5C;&#x5206;&#x79BB;&#xFF1A;&#x6240;&#x6709;&#x7684; dom &#x64CD;&#x4F5C;&#x653E;&#x5728; callback &#x4E2D;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8BF7;&#x6C42;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x65F6;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539; <code>getTime()</code>&#xFF1B;&#x540C;&#x7406;&#x5F53;&#x4FEE;&#x6539; dom &#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539; <code>callback</code></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x63A5;&#x6536;&#x81EA;&#x5B9A;&#x4E49;Header&#x7136;&#x540E;&#x505A;&#x54CD;&#x5E94;&#x64CD;&#x4F5C;&#x3002;&#x540C;&#x65F6;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4E5F;&#x53EF;&#x4EE5;&#x5411;&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;&#x989D;&#x5916;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x4FE1;&#x606F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x9ED8;&#x8BA4;<code>response header</code></p>
+<ol>
+<li><p>Date&#xFF1A;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</p>
+</li>
+<li><p>Server&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>Very&#xFF1A;&#x9A8C;&#x8BC1;Encoding&#x7C7B;&#x578B;</p>
+</li>
+<li><p>X-Power-By&#xFF1A;&#x8BED;&#x8A00;</p>
+</li>
+</ol>
+<h2 id="get&#x548C;post&#x8BF7;&#x6C42;">GET&#x548C;POST&#x8BF7;&#x6C42;</h2>
+<p>GET&#x8BF7;&#x6C42;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;&#xFF0C;&#x7528;&#x4E8E;&#x5411;&#x670D;&#x52A1;&#x5668;&#x67E5;&#x8BE2;&#x4FE1;&#x606F;&#xFF0C;&#x5FC5;&#x8981;&#x65F6;&#x53EF;&#x4EE5;&#x5C06;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#x653E;&#x5728;URL&#x5C3E;&#x90E8;&#x53D1;&#x9001;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x53C2;&#x6570;&#x6709;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x6B63;&#x786E;&#x7F16;&#x7801;&#x3002;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#x90FD;&#x662F;&#x4F7F;&#x7528;GET&#x8BF7;&#x6C42;&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BE2;&#x95EE;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002;</p>
+<p>POST&#x8BF7;&#x6C42;&#x7528;&#x4E8E;&#x628A;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x4E3B;&#x4F53;&#x5411;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4EA4;&#xFF0C;POST&#x8BF7;&#x6C42;&#x4E3B;&#x4F53;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x5728;open&#x65B9;&#x6CD5;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x201D;POST&#x201D;&#x5C31;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;POST&#x8BF7;&#x6C42;&#x3002;&#x53D1;&#x9001;POST&#x8BF7;&#x6C42;&#x7B2C;&#x4E8C;&#x6B65;&#x5C31;&#x662F;&#x5411;send&#x65B9;&#x6CD5;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;xml&#x6216;&#x8005;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;json&#x7B49;&#x3002;</p>
 
                                 
                                 </section>
@@ -1326,8 +1302,12 @@
 
             
                 
+                <a href="浏览器存储.html" class="navigation navigation-prev " aria-label="Previous page: 1.4.4.2.浏览器存储">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="Dom实战.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1.4.3.5.DOM实战">
+                
+                <a href="跨域.html" class="navigation navigation-next " aria-label="Next page: 1.4.4.4.跨域">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1338,7 +1318,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.3.4.事件处理","level":"1.2.4.3.4","depth":4,"next":{"title":"1.4.3.5.DOM实战","level":"1.2.4.3.5","depth":4,"path":"前端基础/Javascript/Dom实战.md","ref":"./前端基础/Javascript/Dom实战.md","articles":[]},"previous":{"title":"1.4.3.3.Canvas","level":"1.2.4.3.3","depth":4,"url":"https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API","ref":"https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/事件处理.md","mtime":"2017-12-25T12:01:32.811Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-11T11:06:46.754Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.4.3.AJAX","level":"1.2.4.4.3","depth":4,"next":{"title":"1.4.4.4.跨域","level":"1.2.4.4.4","depth":4,"path":"前端基础/Javascript/跨域.md","ref":"./前端基础/Javascript/跨域.md","articles":[]},"previous":{"title":"1.4.4.2.浏览器存储","level":"1.2.4.4.2","depth":4,"path":"前端基础/Javascript/浏览器存储.md","ref":"./前端基础/Javascript/浏览器存储.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/ajax.md","mtime":"2018-01-11T10:56:55.264Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-11T11:06:46.754Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
