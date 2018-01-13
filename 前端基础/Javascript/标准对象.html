@@ -1,0 +1,1551 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.4.5.1.标准对象 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="正则表达式.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    本书介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. 前端基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../学前准备/">
+            
+                <a href="../学前准备/">
+            
+                    
+                    1.1. 学前准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML/">
+            
+                <a href="../HTML/">
+            
+                    
+                    1.2. HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../HTML/HTMl结构.html">
+            
+                <a href="../HTML/HTMl结构.html">
+            
+                    
+                    1.2.1. HTML 结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../HTML/HTMl语法.html">
+            
+                <a href="../HTML/HTMl语法.html">
+            
+                    
+                    1.2.2. HTML 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../HTML/常见标签及其属性.html">
+            
+                <a href="../HTML/常见标签及其属性.html">
+            
+                    
+                    1.2.3. 常见标签及其属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../HTML/表单一.html">
+            
+                <a href="../HTML/表单一.html">
+            
+                    
+                    1.2.4. 表单一
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../HTML/表单二.html">
+            
+                <a href="../HTML/表单二.html">
+            
+                    
+                    1.2.5. 表单二
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../HTML/iframe.html">
+            
+                <a href="../HTML/iframe.html">
+            
+                    
+                    1.2.6. iframe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../HTML/外部资源引入.html">
+            
+                <a href="../HTML/外部资源引入.html">
+            
+                    
+                    1.2.7. 外部资源引入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../HTML/语义化标签.html">
+            
+                <a href="../HTML/语义化标签.html">
+            
+                    
+                    1.2.8. 语义化标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../HTML/URL.html">
+            
+                <a href="../HTML/URL.html">
+            
+                    
+                    1.2.9. URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../HTML/HTML5新特性.html">
+            
+                <a href="../HTML/HTML5新特性.html">
+            
+                    
+                    1.2.10. HTML5 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../HTML/常见问题总结.html">
+            
+                <a href="../HTML/常见问题总结.html">
+            
+                    
+                    1.2.11. 常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    1.3. CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../CSS/语法.html">
+            
+                <a href="../CSS/语法.html">
+            
+                    
+                    1.3.1. 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../CSS/选择器.html">
+            
+                <a href="../CSS/选择器.html">
+            
+                    
+                    1.3.2. 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../CSS/常用属性.html">
+            
+                <a href="../CSS/常用属性.html">
+            
+                    
+                    1.3.3. 常用属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../CSS/盒模型.html">
+            
+                <a href="../CSS/盒模型.html">
+            
+                    
+                    1.3.4. 盒模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../CSS/浮动.html">
+            
+                <a href="../CSS/浮动.html">
+            
+                    
+                    1.3.5. 浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" >
+            
+                <a target="_blank" href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">
+            
+                    
+                    1.3.5. flex 布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../CSS/定位和z-index.html">
+            
+                <a href="../CSS/定位和z-index.html">
+            
+                    
+                    1.3.6. 定位和z-index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../CSS/媒体查询.html">
+            
+                <a href="../CSS/媒体查询.html">
+            
+                    
+                    1.3.7. 媒体查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../CSS/常见布局.html">
+            
+                <a href="../CSS/常见布局.html">
+            
+                    
+                    1.3.8. 常见布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../CSS/渐变和动画.html">
+            
+                <a href="../CSS/渐变和动画.html">
+            
+                    
+                    1.3.9. 渐变和动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    1.4. Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="javascript简介.html">
+            
+                <a href="javascript简介.html">
+            
+                    
+                    1.4.1JavaScript简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" >
+            
+                <span>
+            
+                    
+                    1.4.2语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.2.1" data-path="基础概念.html">
+            
+                <a href="基础概念.html">
+            
+                    
+                    1.4.2.1.基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.2" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    1.4.2.2.数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.3" data-path="字符串.html">
+            
+                <a href="字符串.html">
+            
+                    
+                    1.4.2.3.字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.4" data-path="数组.html">
+            
+                <a href="数组.html">
+            
+                    
+                    1.4.2.4.数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.5" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    1.4.2.5.函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.6" data-path="对象.html">
+            
+                <a href="对象.html">
+            
+                    
+                    1.4.2.6.对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.7" data-path="运算符.html">
+            
+                <a href="运算符.html">
+            
+                    
+                    1.4.2.7.运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.8" data-path="流程控制语句.html">
+            
+                <a href="流程控制语句.html">
+            
+                    
+                    1.4.2.8.流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.9" data-path="错误处理.html">
+            
+                <a href="错误处理.html">
+            
+                    
+                    1.4.2.9.错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2.10" >
+            
+                <a target="_blank" href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html">
+            
+                    
+                    1.4.2.10.严格模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" >
+            
+                <span>
+            
+                    
+                    1.4.3DOM模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.3.1" data-path="Dom模型简介.html">
+            
+                <a href="Dom模型简介.html">
+            
+                    
+                    1.4.3.1.DOM模型简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.2" data-path="元素操作.html">
+            
+                <a href="元素操作.html">
+            
+                    
+                    1.4.3.2.元素操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.3" >
+            
+                <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API">
+            
+                    
+                    1.4.3.3.Canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.4" data-path="事件处理.html">
+            
+                <a href="事件处理.html">
+            
+                    
+                    1.4.3.4.事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3.5" data-path="Dom实战.html">
+            
+                <a href="Dom实战.html">
+            
+                    
+                    1.4.3.5.DOM实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" >
+            
+                <span>
+            
+                    
+                    1.4.4BOM模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.4.1" data-path="BOM基础.html">
+            
+                <a href="BOM基础.html">
+            
+                    
+                    1.4.4.1.BOM基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4.2" data-path="浏览器存储.html">
+            
+                <a href="浏览器存储.html">
+            
+                    
+                    1.4.4.2.浏览器存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4.3" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    1.4.4.3.AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4.4" data-path="跨域.html">
+            
+                <a href="跨域.html">
+            
+                    
+                    1.4.4.4.跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" >
+            
+                <span>
+            
+                    
+                    1.4.5标准对象与编程模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.4.5.1" data-path="标准对象.html">
+            
+                <a href="标准对象.html">
+            
+                    
+                    1.4.5.1.标准对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.2" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    1.4.5.2.正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5.3" data-path="单线程模型与事件循环.md">
+            
+                <span>
+            
+                    
+                    1.4.5.3单线程模型与事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" >
+            
+                <span>
+            
+                    
+                    1.4.6函数高级
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.6.1" >
+            
+                <span>
+            
+                    
+                    1.4.3.1. 函数作用域
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6.2" >
+            
+                <span>
+            
+                    
+                    1.4.3.2. 闭包
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6.3" >
+            
+                <span>
+            
+                    
+                    1.4.3.3. 函数式编程
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" >
+            
+                <span>
+            
+                    
+                    1.4.7面向对象编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.7.1" >
+            
+                <span>
+            
+                    
+                    1.4.4.1.类、原型与构造函数
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.2" >
+            
+                <span>
+            
+                    
+                    1.4.4.2.this关键字
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.3" >
+            
+                <span>
+            
+                    
+                    1.4.4.3.Object对象与继承
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.4" >
+            
+                <span>
+            
+                    
+                    1.4.4.4.Javascript中的面向对象技术
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7.5" >
+            
+                <span>
+            
+                    
+                    1.4.4.5.一个案例
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2. 前端进阶
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3. 前端高级
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.4.5.1.标准对象</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6807;&#x51C6;&#x5BF9;&#x8C61;">&#x6807;&#x51C6;&#x5BF9;&#x8C61;</h1>
+<p>&#x6807;&#x51C6;&#x5BF9;&#x8C61;&#x5373;&#x4E3A;JavaScript&#x8BED;&#x8A00;&#x6807;&#x51C6;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x662F;&#x7531;&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x7684;&#x5BF9;&#x8C61;&#x6216;&#x662F;&#x51FD;&#x6570;&#x3002;&#x6807;&#x51C6;&#x5BF9;&#x8C61;&#x4E00;&#x822C;&#x5C01;&#x88C5;&#x4E86;&#x5E38;&#x89C1;&#x64CD;&#x4F5C;&#x6216;&#x8005;&#x8FD0;&#x7B97;&#xFF0C;&#x5408;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x5B83;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x4E8B;&#x534A;&#x529F;&#x500D;&#x3002;</p>
+<p>&#x6807;&#x51C6;&#x5BF9;&#x8C61;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x8BE6;&#x7EC6;&#x53EF;&#x53C2;&#x770B;<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;&#x672C;&#x7BC7;&#x4ECB;&#x7ECD;&#x5E38;&#x89C1;&#x7684;&#x4E09;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1A;<code>Math</code>&#xFF0C;<code>Date</code>&#xFF0C;<code>JSON</code></p>
+<h2 id="math&#x5BF9;&#x8C61;">Math&#x5BF9;&#x8C61;</h2>
+<p>Math &#x5BF9;&#x8C61;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x6570;&#x5B66;&#x4EFB;&#x52A1;&#x3002;&#x6CE8;&#x610F;&#xFF1A;<code>Math</code>&#x4E00;&#x822C;&#x4E3A;&#x9759;&#x6001;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#xFF0C;&#x65E0;&#x9700;&#x4F7F;&#x7528; <code>new</code></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x83B7;&#x53D6;&#x3C0;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.PI) <span class="hljs-comment">// 3.1415...</span>
+
+<span class="hljs-comment">// &#x6C42;&#x5F00;&#x65B9;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.sqrt(<span class="hljs-number">2</span>)) <span class="hljs-comment">// 1.414...</span>
+</code></pre>
+<h3 id="math-&#x5BF9;&#x8C61;&#x5C5E;&#x6027;">Math &#x5BF9;&#x8C61;&#x5C5E;&#x6027;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">E</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x7B97;&#x672F;&#x5E38;&#x91CF; e&#xFF0C;&#x5373;&#x81EA;&#x7136;&#x5BF9;&#x6570;&#x7684;&#x5E95;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E;2.718&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">LN2</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; 2 &#x7684;&#x81EA;&#x7136;&#x5BF9;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E;0.693&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">LN10</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; 10 &#x7684;&#x81EA;&#x7136;&#x5BF9;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E;2.302&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">LOG2E</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x4EE5; 2 &#x4E3A;&#x5E95;&#x7684; e &#x7684;&#x5BF9;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E; 1.414&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">LOG10E</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x4EE5; 10 &#x4E3A;&#x5E95;&#x7684; e &#x7684;&#x5BF9;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E;0.434&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">PI</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x5706;&#x5468;&#x7387;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E;3.14159&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">SQRT1_2</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x8FD4;&#x56DE; 2 &#x7684;&#x5E73;&#x65B9;&#x6839;&#x7684;&#x5012;&#x6570;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E; 0.707&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">SQRT2</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; 2 &#x7684;&#x5E73;&#x65B9;&#x6839;&#xFF08;&#x7EA6;&#x7B49;&#x4E8E; 1.414&#xFF09;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="math-&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;">Math &#x5BF9;&#x8C61;&#x65B9;&#x6CD5;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">abs(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">acos(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x53CD;&#x4F59;&#x5F26;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">asin(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x53CD;&#x6B63;&#x5F26;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">atan(x)</td>
+<td style="text-align:left">&#x4EE5;&#x4ECB;&#x4E8E; -PI/2 &#x4E0E; PI/2 &#x5F27;&#x5EA6;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x503C;&#x6765;&#x8FD4;&#x56DE; x &#x7684;&#x53CD;&#x6B63;&#x5207;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">atan2(y,x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x4ECE; x &#x8F74;&#x5230;&#x70B9; (x,y) &#x7684;&#x89D2;&#x5EA6;&#xFF08;&#x4ECB;&#x4E8E; -PI/2 &#x4E0E; PI/2 &#x5F27;&#x5EA6;&#x4E4B;&#x95F4;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">ceil(x)</td>
+<td style="text-align:left">&#x5BF9;&#x6570;&#x8FDB;&#x884C;&#x4E0A;&#x820D;&#x5165;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">cos(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x4F59;&#x5F26;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">exp(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; e &#x7684;&#x6307;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">floor(x)</td>
+<td style="text-align:left">&#x5BF9;&#x6570;&#x8FDB;&#x884C;&#x4E0B;&#x820D;&#x5165;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">log(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x81EA;&#x7136;&#x5BF9;&#x6570;&#xFF08;&#x5E95;&#x4E3A;e&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">max(x,y)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; x &#x548C; y &#x4E2D;&#x7684;&#x6700;&#x9AD8;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">min(x,y)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; x &#x548C; y &#x4E2D;&#x7684;&#x6700;&#x4F4E;&#x503C;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">pow(x,y)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; x &#x7684; y &#x6B21;&#x5E42;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">random()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; 0 ~ 1 &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">round(x)</td>
+<td style="text-align:left">&#x628A;&#x6570;&#x56DB;&#x820D;&#x4E94;&#x5165;&#x4E3A;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x6574;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">sin(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x6B63;&#x5F26;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">sqrt(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x6570;&#x7684;&#x5E73;&#x65B9;&#x6839;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">tan(x)</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x89D2;&#x7684;&#x6B63;&#x5207;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toSource()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">valueOf()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Math &#x5BF9;&#x8C61;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="date&#x5BF9;&#x8C61;">Date&#x5BF9;&#x8C61;</h2>
+<p>Date &#x5BF9;&#x8C61;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;&#x521B;&#x5EFA; Date &#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myDate=  <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x65E0;&#x53C2;&#x6570;&#x7684;Date &#x5BF9;&#x8C61;&#x6784;&#x9020;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x65E5;&#x671F;&#x8BBE;&#x7F6E;&#x4E3A;&#x5F53;&#x524D;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;</p>
+<h3 id="date-&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;">Date &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65B9;&#x6CD5;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">getDate()</td>
+<td style="text-align:left">&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6708;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x5929; (1 ~ 31)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getDay()</td>
+<td style="text-align:left">&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x4E00;&#x5468;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x5929; (0 ~ 6)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getMonth()</td>
+<td style="text-align:left">&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x6708;&#x4EFD; (0 ~ 11)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getFullYear()</td>
+<td style="text-align:left">&#x4ECE; Date &#x5BF9;&#x8C61;&#x4EE5;&#x56DB;&#x4F4D;&#x6570;&#x5B57;&#x8FD4;&#x56DE;&#x5E74;&#x4EFD;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getYear()</td>
+<td style="text-align:left">&#x8BF7;&#x4F7F;&#x7528; getFullYear() &#x65B9;&#x6CD5;&#x4EE3;&#x66FF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getHours()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x5C0F;&#x65F6; (0 ~ 23)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getMinutes()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x5206;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getSeconds()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x79D2;&#x6570; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getMilliseconds()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x6BEB;&#x79D2;(0 ~ 999)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getTime()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; 1970 &#x5E74; 1 &#x6708; 1 &#x65E5;&#x81F3;&#x4ECA;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getTimezoneOffset()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x4E0E;&#x683C;&#x6797;&#x5A01;&#x6CBB;&#x6807;&#x51C6;&#x65F6;&#x95F4; (GMT) &#x7684;&#x5206;&#x949F;&#x5DEE;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCDate()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x6708;&#x4E2D;&#x7684;&#x4E00;&#x5929; (1 ~ 31)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCDay()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x5468;&#x4E2D;&#x7684;&#x4E00;&#x5929; (0 ~ 6)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCMonth()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x6708;&#x4EFD; (0 ~ 11)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCFullYear()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x4ECE; Date &#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x56DB;&#x4F4D;&#x6570;&#x7684;&#x5E74;&#x4EFD;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCHours()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x5C0F;&#x65F6; (0 ~ 23)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCMinutes()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x5206;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCSeconds()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x79D2;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">getUTCMilliseconds()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x6BEB;&#x79D2;(0 ~ 999)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">parse()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;1970&#x5E74;1&#x6708;1&#x65E5;&#x5348;&#x591C;&#x5230;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setDate()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x6708;&#x7684;&#x67D0;&#x4E00;&#x5929; (1 ~ 31)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setMonth()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x6708;&#x4EFD; (0 ~ 11)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setFullYear()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5E74;&#x4EFD;&#xFF08;&#x56DB;&#x4F4D;&#x6570;&#x5B57;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setYear()</td>
+<td style="text-align:left">&#x8BF7;&#x4F7F;&#x7528; setFullYear() &#x65B9;&#x6CD5;&#x4EE3;&#x66FF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setHours()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5C0F;&#x65F6; (0 ~ 23)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setMinutes()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5206;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setSeconds()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x79D2;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setMilliseconds()</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6BEB;&#x79D2; (0 ~ 999)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setTime()</td>
+<td style="text-align:left">&#x4EE5;&#x6BEB;&#x79D2;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCDate()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x6708;&#x4EFD;&#x7684;&#x4E00;&#x5929; (1 ~ 31)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCMonth()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6708;&#x4EFD; (0 ~ 11)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCFullYear()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5E74;&#x4EFD;&#xFF08;&#x56DB;&#x4F4D;&#x6570;&#x5B57;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCHours()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5C0F;&#x65F6; (0 ~ 23)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCMinutes()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5206;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCSeconds()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x79D2;&#x949F; (0 ~ 59)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">setUTCMilliseconds()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8BBE;&#x7F6E; Date &#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6BEB;&#x79D2; (0 ~ 999)&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toSource()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toString()</td>
+<td style="text-align:left">&#x628A; Date &#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toTimeString()</td>
+<td style="text-align:left">&#x628A; Date &#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x95F4;&#x90E8;&#x5206;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toDateString()</td>
+<td style="text-align:left">&#x628A; Date &#x5BF9;&#x8C61;&#x7684;&#x65E5;&#x671F;&#x90E8;&#x5206;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toGMTString()</td>
+<td style="text-align:left">&#x8BF7;&#x4F7F;&#x7528; toUTCString() &#x65B9;&#x6CD5;&#x4EE3;&#x66FF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toUTCString()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#xFF0C;&#x628A; Date &#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toLocaleString()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#xFF0C;&#x628A; Date &#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toLocaleTimeString()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#xFF0C;&#x628A; Date &#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x95F4;&#x90E8;&#x5206;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">toLocaleDateString()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#xFF0C;&#x628A; Date &#x5BF9;&#x8C61;&#x7684;&#x65E5;&#x671F;&#x90E8;&#x5206;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">UTC()</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x4E16;&#x754C;&#x65F6;&#x8FD4;&#x56DE; 1970 &#x5E74; 1 &#x6708; 1 &#x65E5; &#x5230;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x7684;&#x6BEB;&#x79D2;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">valueOf()</td>
+<td style="text-align:left">&#x8FD4;&#x56DE; Date &#x5BF9;&#x8C61;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="json&#x5BF9;&#x8C61;">JSON&#x5BF9;&#x8C61;</h2>
+<p>JSON &#x5BF9;&#x8C61;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316; <code>JavaScript</code> &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x4E3B;&#x8981;&#x7531;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x7EC4;&#x6210;&#xFF1A;</p>
+<ul>
+<li>JSON.parse()</li>
+<li>JSON.stringify()</li>
+</ul>
+<h3 id="parse">parse()</h3>
+<p>JSON.parse() &#x65B9;&#x6CD5;&#x7528;&#x6765;&#x89E3;&#x6790;JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6784;&#x9020;&#x7531;&#x5B57;&#x7B26;&#x4E32;&#x63CF;&#x8FF0;&#x7684;JavaScript&#x503C;&#x6216;&#x5BF9;&#x8C61;&#x3002;&#x63D0;&#x4F9B;&#x53EF;&#x9009;&#x7684;reviver&#x51FD;&#x6570;&#x7528;&#x4EE5;&#x5728;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x5BF9;&#x6240;&#x5F97;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x6267;&#x884C;&#x53D8;&#x6362;(&#x64CD;&#x4F5C;)&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.parse(text[, reviver])
+</code></pre>
+<ul>
+<li><p>text </p>
+<p>&#x8981;&#x88AB;&#x89E3;&#x6790;&#x6210;JavaScript&#x503C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x67E5;&#x770B; JSON &#x5BF9;&#x8C61;&#x5B66;&#x4E60;&#x7684;JSON &#x8BED;&#x6CD5;&#x7684;&#x8BF4;&#x660E;&#x3002;</p>
+</li>
+<li><p>reviver &#x53EF;&#x9009; </p>
+<p>&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x89C4;&#x5B9A;&#x4E86;&#x539F;&#x59CB;&#x503C;&#x5982;&#x4F55;&#x88AB;&#x89E3;&#x6790;&#x6539;&#x9020;&#xFF0C;&#x5728;&#x88AB;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x3002;</p>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;{}&apos;</span>);              <span class="hljs-comment">// {}</span>
+<span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;true&apos;</span>);            <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;&quot;foo&quot;&apos;</span>);           <span class="hljs-comment">// &quot;foo&quot;</span>
+<span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;[1, 5, &quot;false&quot;]&apos;</span>); <span class="hljs-comment">// [1, 5, &quot;false&quot;]</span>
+<span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;null&apos;</span>);            <span class="hljs-comment">// null</span>
+<span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;1&apos;</span>);               <span class="hljs-comment">//  1</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; reviver &#x51FD;&#x6570;&#xFF0C;&#x5219;&#x89E3;&#x6790;&#x51FA;&#x7684; JavaScript &#x503C;&#xFF08;&#x89E3;&#x6790;&#x503C;&#xFF09;&#x4F1A;&#x7ECF;&#x8FC7;&#x4E00;&#x6B21;&#x8F6C;&#x6362;&#x540E;&#x624D;&#x5C06;&#x88AB;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#xFF08;&#x8FD4;&#x56DE;&#x503C;&#xFF09;&#x3002;&#x66F4;&#x5177;&#x4F53;&#x70B9;&#x8BB2;&#x5C31;&#x662F;&#xFF1A;&#x89E3;&#x6790;&#x503C;&#x672C;&#x8EAB;&#x4EE5;&#x53CA;&#x5B83;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x4F1A;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#xFF08;&#x4ECE;&#x6700;&#x6700;&#x91CC;&#x5C42;&#x7684;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x4E00;&#x7EA7;&#x7EA7;&#x5F80;&#x5916;&#xFF0C;&#x6700;&#x7EC8;&#x5230;&#x8FBE;&#x9876;&#x5C42;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x89E3;&#x6790;&#x503C;&#x672C;&#x8EAB;&#xFF09;&#x5206;&#x522B;&#x7684;&#x53BB;&#x8C03;&#x7528; reviver &#x51FD;&#x6570;&#xFF0C;&#x5728;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x6240;&#x5C5E;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x4F5C;&#x4E3A; this &#x503C;&#xFF0C;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x5C5E;&#x6027;&#x503C;&#x4F1A;&#x5206;&#x522B;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165; reviver &#x4E2D;&#x3002;&#x5982;&#x679C; reviver &#x8FD4;&#x56DE; undefined&#xFF0C;&#x5219;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x4F1A;&#x4ECE;&#x6240;&#x5C5E;&#x5BF9;&#x8C61;&#x4E2D;&#x5220;&#x9664;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x4E86;&#x5176;&#x4ED6;&#x503C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x4F1A;&#x6210;&#x4E3A;&#x5F53;&#x524D;&#x5C5E;&#x6027;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x904D;&#x5386;&#x5230;&#x6700;&#x9876;&#x5C42;&#x7684;&#x503C;&#xFF08;&#x89E3;&#x6790;&#x503C;&#xFF09;&#x65F6;&#xFF0C;&#x4F20;&#x5165; reviver &#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x662F;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &quot;&quot;&#xFF08;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;&#x5DF2;&#x7ECF;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x7684;&#x5C5E;&#x6027;&#xFF09;&#x548C;&#x5F53;&#x524D;&#x7684;&#x89E3;&#x6790;&#x503C;&#xFF08;&#x6709;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x88AB;&#x4FEE;&#x6539;&#x8FC7;&#x4E86;&#xFF09;&#xFF0C;&#x5F53;&#x524D;&#x7684; this &#x503C;&#x4F1A;&#x662F; {&quot;&quot;: &#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x89E3;&#x6790;&#x503C;}&#xFF0C;&#x5728;&#x7F16;&#x5199; reviver &#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x5230;&#x8FD9;&#x4E2A;&#x7279;&#x4F8B;&#x3002;&#xFF08;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x904D;&#x5386;&#x987A;&#x5E8F;&#x4F9D;&#x7167;&#xFF1A;&#x4ECE;&#x6700;&#x5185;&#x5C42;&#x5F00;&#x59CB;&#xFF0C;&#x6309;&#x7167;&#x5C42;&#x7EA7;&#x987A;&#x5E8F;&#xFF0C;&#x4F9D;&#x6B21;&#x5411;&#x5916;&#x904D;&#x5386;&#xFF09;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.parse(<span class="hljs-string">&apos;{&quot;p&quot;: 5}&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">k, v</span>) </span>{
+    <span class="hljs-keyword">if</span>(k === <span class="hljs-string">&apos;&apos;</span>) <span class="hljs-keyword">return</span> v;     <span class="hljs-comment">// &#x5982;&#x679C;&#x5230;&#x4E86;&#x6700;&#x9876;&#x5C42;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5C5E;&#x6027;&#x503C;&#xFF0C;</span>
+    <span class="hljs-keyword">return</span> v * <span class="hljs-number">2</span>;              <span class="hljs-comment">// &#x5426;&#x5219;&#x5C06;&#x5C5E;&#x6027;&#x503C;&#x53D8;&#x4E3A;&#x539F;&#x6765;&#x7684; 2 &#x500D;&#x3002;</span>
+});                            <span class="hljs-comment">// { p: 10 }</span>
+</code></pre>
+<h3 id="stringify">stringify()</h3>
+<p><code>JSON.stringify()</code> &#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x4E00;&#x4E2A;JavaScript&#x503C;(&#x5BF9;&#x8C61;&#x6216;&#x8005;&#x6570;&#x7EC4;)&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A; JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;replacer&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;replacer&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x4EC5;&#x5305;&#x62EC;&#x6307;&#x5B9A;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.stringify(value[, replacer [, space]])
+</code></pre>
+<ul>
+<li><p>value</p>
+<p>&#x5C06;&#x8981;&#x5E8F;&#x5217;&#x5316;&#x6210; &#x4E00;&#x4E2A;JSON &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x3002;</p>
+</li>
+<li><p>replacer &#x53EF;&#x9009;</p>
+<p>&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x503C;&#x7684;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x4F1A;&#x7ECF;&#x8FC7;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8F6C;&#x6362;&#x548C;&#x5904;&#x7406;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5305;&#x542B;&#x5728;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x624D;&#x4F1A;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x5230;&#x6700;&#x7EC8;&#x7684; JSON &#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x4E3A;null&#x6216;&#x8005;&#x672A;&#x63D0;&#x4F9B;&#xFF0C;&#x5219;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x4F1A;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#xFF1B;&#x5173;&#x4E8E;&#x8BE5;&#x53C2;&#x6570;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x89E3;&#x91CA;&#x548C;&#x793A;&#x4F8B;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x4F7F;&#x7528;&#x539F;&#x751F;&#x7684; JSON &#x5BF9;&#x8C61;&#x4E00;&#x6587;&#x3002;</p>
+</li>
+<li><p>space &#x53EF;&#x9009;</p>
+<p>&#x6307;&#x5B9A;&#x7F29;&#x8FDB;&#x7528;&#x7684;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7528;&#x4E8E;&#x7F8E;&#x5316;&#x8F93;&#x51FA;&#xFF08;pretty-print&#xFF09;&#xFF1B;&#x5982;&#x679C;&#x53C2;&#x6570;&#x662F;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5B83;&#x4EE3;&#x8868;&#x6709;&#x591A;&#x5C11;&#x7684;&#x7A7A;&#x683C;&#xFF1B;&#x4E0A;&#x9650;&#x4E3A;10&#x3002;&#x8BE5;&#x503C;&#x82E5;&#x5C0F;&#x4E8E;1&#xFF0C;&#x5219;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x7A7A;&#x683C;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;(&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;&#x5341;&#x4E2A;&#x5B57;&#x6BCD;)&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x88AB;&#x4F5C;&#x4E3A;&#x7A7A;&#x683C;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF08;&#x6216;&#x8005;&#x4E3A;null&#xFF09;&#x5C06;&#x6CA1;&#x6709;&#x7A7A;&#x683C;&#x3002;</p>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.stringify({});                        <span class="hljs-comment">// &apos;{}&apos;</span>
+<span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-literal">true</span>);                      <span class="hljs-comment">// &apos;true&apos;</span>
+<span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-string">&quot;foo&quot;</span>);                     <span class="hljs-comment">// &apos;&quot;foo&quot;&apos;</span>
+<span class="hljs-built_in">JSON</span>.stringify([<span class="hljs-number">1</span>, <span class="hljs-string">&quot;false&quot;</span>, <span class="hljs-literal">false</span>]);       <span class="hljs-comment">// &apos;[1,&quot;false&quot;,false]&apos;</span>
+<span class="hljs-built_in">JSON</span>.stringify({ x: <span class="hljs-number">5</span> });                  <span class="hljs-comment">// &apos;{&quot;x&quot;:5}&apos;</span>
+
+<span class="hljs-built_in">JSON</span>.stringify({x: <span class="hljs-number">5</span>, y: <span class="hljs-number">6</span>});              
+<span class="hljs-comment">// &quot;{&quot;x&quot;:5,&quot;y&quot;:6}&quot;</span>
+
+<span class="hljs-built_in">JSON</span>.stringify([<span class="hljs-keyword">new</span> <span class="hljs-built_in">Number</span>(<span class="hljs-number">1</span>), <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;false&quot;</span>), <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">false</span>)]); 
+<span class="hljs-comment">// &apos;[1,&quot;false&quot;,false]&apos;</span>
+
+<span class="hljs-built_in">JSON</span>.stringify({x: <span class="hljs-literal">undefined</span>, y: <span class="hljs-built_in">Object</span>, z: <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;&quot;</span>)}); 
+<span class="hljs-comment">// &apos;{}&apos;</span>
+
+<span class="hljs-built_in">JSON</span>.stringify([<span class="hljs-literal">undefined</span>, <span class="hljs-built_in">Object</span>, <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;&quot;</span>)]);          
+<span class="hljs-comment">// &apos;[null,null,null]&apos;</span>
+</code></pre>
+<h4 id="replacer&#x53C2;&#x6570;">replacer&#x53C2;&#x6570;</h4>
+<p>replacer&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x3002;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x952E;(key)&#x503C;(value)&#x90FD;&#x4F1A;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">replacer</span>(<span class="hljs-params">key, value</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&quot;string&quot;</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+  }
+  <span class="hljs-keyword">return</span> value;
+}
+
+<span class="hljs-keyword">var</span> foo = {foundation: <span class="hljs-string">&quot;Mozilla&quot;</span>, model: <span class="hljs-string">&quot;box&quot;</span>, week: <span class="hljs-number">45</span>, transport: <span class="hljs-string">&quot;car&quot;</span>, month: <span class="hljs-number">7</span>};
+<span class="hljs-keyword">var</span> jsonString = <span class="hljs-built_in">JSON</span>.stringify(foo, replacer);s
+</code></pre>
+<h4 id="space-&#x53C2;&#x6570;">space &#x53C2;&#x6570;</h4>
+<p>space &#x53C2;&#x6570;&#x7528;&#x6765;&#x63A7;&#x5236;&#x7ED3;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x9762;&#x7684;&#x95F4;&#x8DDD;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;, &#x5219;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5316;&#x65F6;&#x6BCF;&#x4E00;&#x7EA7;&#x522B;&#x4F1A;&#x6BD4;&#x4E0A;&#x4E00;&#x7EA7;&#x522B;&#x7F29;&#x8FDB;&#x591A;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x503C;&#x7684;&#x7A7A;&#x683C;&#xFF08;&#x6700;&#x591A;10&#x4E2A;&#x7A7A;&#x683C;&#xFF09;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5219;&#x6BCF;&#x4E00;&#x7EA7;&#x522B;&#x4F1A;&#x6BD4;&#x4E0A;&#x4E00;&#x7EA7;&#x522B;&#x591A;&#x7F29;&#x8FDB;&#x7528;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x6216;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x524D;&#x5341;&#x4E2A;&#x5B57;&#x7B26;&#xFF09;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">JSON</span>.stringify({ a: <span class="hljs-number">2</span> }, <span class="hljs-literal">null</span>, <span class="hljs-string">&quot; &quot;</span>);   <span class="hljs-comment">// &apos;{\n &quot;a&quot;: 2\n}&apos;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="正则表达式.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1.4.5.2.正则表达式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.4.5.1.标准对象","level":"1.2.4.5.1","depth":4,"next":{"title":"1.4.5.2.正则表达式","level":"1.2.4.5.2","depth":4,"path":"前端基础/Javascript/正则表达式.md","ref":"./前端基础/Javascript/正则表达式.md","articles":[]},"previous":{"title":"1.4.5标准对象与编程模型","level":"1.2.4.5","depth":3,"ref":"","articles":[{"title":"1.4.5.1.标准对象","level":"1.2.4.5.1","depth":4,"path":"前端基础/Javascript/标准对象.md","ref":"./前端基础/Javascript/标准对象.md","articles":[]},{"title":"1.4.5.2.正则表达式","level":"1.2.4.5.2","depth":4,"path":"前端基础/Javascript/正则表达式.md","ref":"./前端基础/Javascript/正则表达式.md","articles":[]},{"title":"1.4.5.3单线程模型与事件循环","level":"1.2.4.5.3","depth":4,"path":"前端基础/Javascript/单线程模型与事件循环.md","ref":"./前端基础/Javascript/单线程模型与事件循环.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/标准对象.md","mtime":"2018-01-13T11:12:40.486Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-13T11:12:44.620Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
