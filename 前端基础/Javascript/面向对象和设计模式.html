@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.4.2.3.字符串 · GitBook</title>
+        <title>1.4.6.2.面向对象和设计模式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -47,10 +47,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="数组.html" />
     
-    
-    <link rel="prev" href="数据类型.html" />
+    <link rel="prev" href="原型链.html" />
     
 
     </head>
@@ -497,7 +495,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4.2.3" data-path="字符串.html">
+        <li class="chapter " data-level="1.2.4.2.3" data-path="字符串.html">
             
                 <a href="字符串.html">
             
@@ -846,7 +844,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4.6.2" data-path="面向对象和设计模式.html">
+        <li class="chapter active" data-level="1.2.4.6.2" data-path="面向对象和设计模式.html">
             
                 <a href="面向对象和设计模式.html">
             
@@ -988,7 +986,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.4.2.3.字符串</a>
+        <a href="../.." >1.4.6.2.面向对象和设计模式</a>
     </h1>
 </div>
 
@@ -1003,169 +1001,191 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5B57;&#x7B26;&#x4E32;">&#x5B57;&#x7B26;&#x4E32;</h1>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x662F; JavaScript &#x7684;&#x4E00;&#x79CD;&#x57FA;&#x672C;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
-<p>String &#x5BF9;&#x8C61;&#x7684; length &#x5C5E;&#x6027;&#x58F0;&#x660E;&#x4E86;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x3002;</p>
-<p>String &#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x63D0;&#x53D6;&#x5B57;&#x7B26;&#x6216;&#x5B50;&#x4E32;&#xFF0C;&#x6216;&#x8005;&#x68C0;&#x7D22;&#x5B57;&#x7B26;&#x6216;&#x5B50;&#x4E32;&#x3002;</p>
-<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;JavaScript &#x7684;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF08;immutable&#xFF09;&#xFF0C;String &#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x50CF; String.toUpperCase() &#x8FD9;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5168;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4FEE;&#x6539;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
-<h2 id="&#x521B;&#x5EFA;">&#x521B;&#x5EFA;</h2>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
-<pre><code class="lang-javascript">str = <span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;xxx&quot;</span>);
-str = <span class="hljs-built_in">String</span>(<span class="hljs-string">&quot;xxx&quot;</span>);
-str = <span class="hljs-string">&quot;xxx&quot;</span>
-</code></pre>
-<h2 id="&#x591A;&#x884C;&#x4E0E;&#x8F6C;&#x4E49;">&#x591A;&#x884C;&#x4E0E;&#x8F6C;&#x4E49;</h2>
-<p>&#x5982;&#x679C;&#x8981;&#x5728;&#x5355;&#x5F15;&#x53F7;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;&#xFF08;&#x6216;&#x8005;&#x5728;&#x53CC;&#x5F15;&#x53F7;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x4F7F;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#xFF09;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x5728;&#x5185;&#x90E8;&#x7684;&#x5355;&#x5F15;&#x53F7;&#xFF08;&#x6216;&#x8005;&#x53CC;&#x5F15;&#x53F7;&#xFF09;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x7528;&#x6765;&#x8F6C;&#x4E49;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-string">&apos;Did she say \&apos;Hello\&apos;?&apos;</span>
-<span class="hljs-comment">// &quot;Did she say &apos;Hello&apos;?&quot;</span>
-
-<span class="hljs-string">&quot;Did she say \&quot;Hello\&quot;?&quot;</span>
-<span class="hljs-comment">// &quot;Did she say &quot;Hello&quot;?&quot;</span>
-</code></pre>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x9ED8;&#x8BA4;&#x53EA;&#x80FD;&#x5199;&#x5728;&#x4E00;&#x884C;&#x5185;&#xFF0C;&#x5206;&#x6210;&#x591A;&#x884C;&#x5C06;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<pre><code class="lang-javascript">&apos;a
-b
-c&apos;
-// SyntaxError: Unexpected token ILLEGAL
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x6210;&#x4E09;&#x884C;&#xFF0C;JavaScript&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x5206;&#x6210;&#x591A;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x5C3E;&#x90E8;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> longString = <span class="hljs-string">&quot;Long \
-long \
-long \
-string&quot;</span>;
-
-longString
-<span class="hljs-comment">// &quot;Long long long string&quot;</span>
-</code></pre>
-<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x52A0;&#x4E86;&#x53CD;&#x659C;&#x6760;&#x4EE5;&#x540E;&#xFF0C;&#x539F;&#x6765;&#x5199;&#x5728;&#x4E00;&#x884C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x6210;&#x591A;&#x884C;&#xFF0C;&#x6548;&#x679C;&#x4E0E;&#x5199;&#x5728;&#x540C;&#x4E00;&#x884C;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x53CD;&#x659C;&#x6760;&#x7684;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x662F;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x6709;&#x5176;&#x4ED6;&#x5B57;&#x7B26;&#xFF08;&#x6BD4;&#x5982;&#x7A7A;&#x683C;&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
-<p>&#x8FDE;&#x63A5;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;<code>+</code>&#xFF09;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x591A;&#x4E2A;&#x5355;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7528;&#x6765;&#x6A21;&#x62DF;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> longString = <span class="hljs-string">&apos;Long &apos;</span>
-  + <span class="hljs-string">&apos;long &apos;</span>
-  + <span class="hljs-string">&apos;long &apos;</span>
-  + <span class="hljs-string">&apos;string&apos;</span>;
-</code></pre>
-<p>&#x53E6;&#x5916;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x5229;&#x7528;&#x591A;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x751F;&#x6210;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x53D8;&#x901A;&#x65B9;&#x6CD5;&#x3002;</p>
-<pre><code class="lang-javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">/*
-line 1
-line 2
-line 3
-*/</span>}).toString().split(<span class="hljs-string">&apos;\n&apos;</span>).slice(<span class="hljs-number">1</span>,<span class="hljs-number">-1</span>).join(<span class="hljs-string">&apos;\n&apos;</span>)
-<span class="hljs-comment">// &quot;line 1 line 2 line 3&quot;</span>
-</code></pre>
-<p>&#x53CD;&#x659C;&#x6760;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#xFF0C;&#x7528;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x6240;&#x4EE5;&#x53C8;&#x79F0;&#x4E3A;&#x8F6C;&#x4E49;&#x7B26;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6B63;&#x5E38;&#x5185;&#x5BB9;&#x4E4B;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x5305;&#x542B;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x5219;&#x53CD;&#x659C;&#x6760;&#x524D;&#x9700;&#x8981;&#x518D;&#x52A0;&#x4E00;&#x4E2A;&#x53CD;&#x659C;&#x6760;&#xFF0C;&#x7528;&#x6765;&#x5BF9;&#x81EA;&#x8EAB;&#x8F6C;&#x4E49;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-string">&quot;Prev \\ Next&quot;</span>
-<span class="hljs-comment">// &quot;Prev \ Next&quot;</span>
-</code></pre>
-<h2 id="&#x64CD;&#x4F5C;">&#x64CD;&#x4F5C;</h2>
-<h3 id="&#x8F6C;&#x6362;">&#x8F6C;&#x6362;</h3>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x662F;&#x6700;&#x57FA;&#x7840;&#x7684;&#x8981;&#x6C42;&#x548C;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x90FD;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> num= <span class="hljs-number">19</span>; <span class="hljs-comment">// 19</span>
-<span class="hljs-keyword">var</span> myStr = num.toString(); <span class="hljs-comment">// &quot;19&quot;</span>
-</code></pre>
-<p>&#x4F60;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x505A;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> num= <span class="hljs-number">19</span>; <span class="hljs-comment">// 19</span>
-<span class="hljs-keyword">var</span> myStr = <span class="hljs-built_in">String</span>(num); <span class="hljs-comment">// &quot;19&quot;</span>
-</code></pre>
-<p>&#x6216;&#x8005;&#xFF0C;&#x518D;&#x7B80;&#x5355;&#x70B9;&#x513F;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> num= <span class="hljs-number">19</span>; <span class="hljs-comment">// 19</span>
-<span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;&quot;</span> +num; <span class="hljs-comment">// &quot;19&quot;</span>
-</code></pre>
-<h3 id="&#x5206;&#x5272;">&#x5206;&#x5272;</h3>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x5272;&#xFF0C;&#x5373;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x5272;&#x4E3A;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;JavaScript&#x4E2D;&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x7684;&#x51FD;&#x6570;&#xFF0C;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,Love,You,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> substrArray = myStr.split(<span class="hljs-string">&quot;,&quot;</span>); <span class="hljs-comment">// [&quot;I&quot;, &quot;Love&quot;, &quot;You&quot;, &quot;Do&quot;, &quot;you&quot;, &quot;love&quot;, &quot;me&quot;];</span>
-<span class="hljs-keyword">var</span> arrayLimited = myStr.split(<span class="hljs-string">&quot;,&quot;</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// [&quot;I&quot;, &quot;Love&quot;, &quot;You&quot;];</span>
-</code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x957F;&#x5EA6;">&#x83B7;&#x53D6;&#x957F;&#x5EA6;</h3>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#x662F;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x7ECF;&#x5E38;&#x8981;&#x7528;&#x5230;&#x7684;&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,Love,You,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> myStrLength = myStr.length; <span class="hljs-comment">//25</span>
-</code></pre>
-<h3 id="&#x67E5;&#x8BE2;">&#x67E5;&#x8BE2;</h3>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x672C;&#x8EAB;&#x63D0;&#x4F9B;&#x5F88;&#x591A;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x67E5;&#x8BE2;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x4F4D;&#x7F6E;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
-<p>&#x5F88;&#x591A;&#x4EBA;&#x90FD;&#x4F1A;&#x5FD8;&#x8BB0;&#x8FD9;&#x51E0;&#x4E2A;JavaScript&#x7684;&#x81EA;&#x5E26;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8005;&#x5FD8;&#x8BB0;&#x5B83;&#x4EEC;&#x7684;&#x5177;&#x4F53;&#x7528;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x5728;&#x505A;&#x9898;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x5F97;&#x4E0D;&#x5D4C;&#x5957;for&#x5FAA;&#x73AF;&#x6765;&#x505A;&#x3002;</p>
-<p>&#x7B2C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;indexOf()&#xFF0C;&#x5B83;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x5934;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#xFF0C;&#x627E;&#x5230;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x5750;&#x6807;&#xFF0C;&#x627E;&#x4E0D;&#x5230;&#x8FD4;&#x56DE;-1&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,Love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> index = myStr.indexOf(<span class="hljs-string">&quot;you&quot;</span>); <span class="hljs-comment">// 7 ,&#x57FA;&#x4E8E;0&#x5F00;&#x59CB;,&#x627E;&#x4E0D;&#x5230;&#x8FD4;&#x56DE;-1</span>
-</code></pre>
-<p>&#x7B2C;&#x4E8C;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;lastIndexOf()&#xFF0C;&#x5B83;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x672B;&#x5C3E;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#xFF0C;&#x627E;&#x5230;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x5750;&#x6807;&#xFF0C;&#x627E;&#x4E0D;&#x5230;&#x8FD4;&#x56DE;-1&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,Love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> index = myStr.lastIndexOf(<span class="hljs-string">&quot;you&quot;</span>); <span class="hljs-comment">// 14</span>
-</code></pre>
-<p>&#x4EE5;&#x4E0A;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x540C;&#x6837;&#x63A5;&#x6536;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
-<h3 id="&#x66FF;&#x6362;">&#x66FF;&#x6362;</h3>
-<p>&#x5355;&#x5355;&#x67E5;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x5E94;&#x8BE5;&#x8FD8;&#x4E0D;&#x591F;&#xFF0C;&#x6709;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> replacedStr = myStr.replace(<span class="hljs-string">&quot;love&quot;</span>,<span class="hljs-string">&quot;hate&quot;</span>); <span class="hljs-comment">//&quot;I,hate,you,Do,you,love,me&quot;</span>
-</code></pre>
-<p>&#x9ED8;&#x8BA4;&#x53EA;&#x66FF;&#x6362;&#x7B2C;&#x4E00;&#x6B21;&#x67E5;&#x627E;&#x5230;&#x7684;&#xFF0C;&#x60F3;&#x8981;&#x5168;&#x5C40;&#x66FF;&#x6362;&#xFF0C;&#x9700;&#x8981;&#x7F6E;&#x4E0A;&#x6B63;&#x5219;&#x5168;&#x5C40;&#x6807;&#x8BC6;&#xFF0C;&#x5982;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> replacedStr = myStr.replace(<span class="hljs-regexp">/love/g</span>,<span class="hljs-string">&quot;hate&quot;</span>); <span class="hljs-comment">//&quot;I,hate,you,Do,you,hate,me&quot;</span>
-</code></pre>
-<h3 id="&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x6216;&#x5176;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x503C;">&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x6216;&#x5176;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x503C;</h3>
-<p>&#x60F3;&#x8981;&#x67E5;&#x627E;&#x7ED9;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> theChar = myStr.charAt(<span class="hljs-number">8</span>);<span class="hljs-comment">// &quot;o&quot;,&#x540C;&#x6837;&#x4ECE;0&#x5F00;&#x59CB;</span>
-</code></pre>
-<p>&#x4E5F;&#x6709;&#x7B80;&#x5355;&#x7684;&#x529E;&#x6CD5;&#xFF0C;&#x50CF;&#x64CD;&#x4F5C;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#x53D6;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> theChar = myStr[<span class="hljs-number">8</span>];<span class="hljs-comment">// &quot;o&quot;,&#x540C;&#x6837;&#x4ECE;0&#x5F00;&#x59CB;</span>
-</code></pre>
-<p>&#x540C;&#x6837;&#xFF0C;&#x5B83;&#x7684;&#x4E00;&#x4E2A;&#x5144;&#x5F1F;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x503C;&#xFF0C;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> theChar = myStr.charCodeAt(<span class="hljs-number">8</span>); <span class="hljs-comment">//111</span>
-</code></pre>
-<h3 id="&#x8FDE;&#x63A5;">&#x8FDE;&#x63A5;</h3>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5230;&#x7528;&#x4E00;&#x4E2A;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x7B26;&#x641E;&#x5B9A;&#xFF0C;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> str1 = <span class="hljs-string">&quot;I,love,you!&quot;</span>;
-<span class="hljs-keyword">var</span> str2 = <span class="hljs-string">&quot;Do,you,love,me?&quot;</span>;
-<span class="hljs-keyword">var</span> str = str1 + str2 + <span class="hljs-string">&quot;Yes!&quot;</span>; <span class="hljs-comment">//&quot;I,love,you!Do,you,love,me?Yes!&quot;</span>
-</code></pre>
-<p>&#x540C;&#x6837;&#xFF0C;JavaScript&#x4E5F;&#x81EA;&#x5E26;&#x4E86;&#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5982;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> str1 = <span class="hljs-string">&quot;I,love,you!&quot;</span>;
-<span class="hljs-keyword">var</span> str2 = <span class="hljs-string">&quot;Do,you,love,me?&quot;</span>;
-<span class="hljs-keyword">var</span> str = str1.concat(str2); <span class="hljs-comment">//&quot;I,love,you!Do,you,love,me?&quot;</span>
-</code></pre>
-<h3 id="&#x5207;&#x5272;&#x548C;&#x63D0;&#x53D6;">&#x5207;&#x5272;&#x548C;&#x63D0;&#x53D6;</h3>
-<p>&#x6709;&#x4E09;&#x79CD;&#x53EF;&#x4EE5;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x62BD;&#x53D6;&#x548C;&#x5207;&#x5272;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x7B2C;&#x4E00;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; slice():</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> subStr = myStr.slice(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>);<span class="hljs-comment">//&quot;,lov&quot;</span>
-</code></pre>
-<p>&#x7B2C;&#x4E8C;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; substring():</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> subStr = myStr.substring(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">//&quot;,lov&quot;</span>
-</code></pre>
-<p>&#x7B2C;&#x4E09;&#x79CD;&#xFF0C;&#x4F7F;&#x7528; substr():</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> subStr = myStr.substr(<span class="hljs-number">1</span>,<span class="hljs-number">5</span>); <span class="hljs-comment">//&quot;,love&quot;</span>
-</code></pre>
-<p>substring()&#x548C;substr()&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;substr()&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4EE3;&#x8868;&#x622A;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6700;&#x5927;&#x957F;&#x5EA6;</p>
-<p>&#x4E09;&#x8005;&#x8BE6;&#x7EC6;&#x4E0D;&#x540C;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://www.jb51.net/article/71719.htm" target="_blank">&#x8FD9;&#x91CC;</a></p>
-<h3 id="&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;">&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;I,love,you,Do,you,love,me&quot;</span>;
-<span class="hljs-keyword">var</span> lowCaseStr = myStr.toLowerCase(); <span class="hljs-comment">//&quot;i,love,you,do,you,love,me&quot;;</span>
-<span class="hljs-keyword">var</span> upCaseStr = myStr.toUpperCase(); <span class="hljs-comment">//&quot;I,LOVE,YOU,DO,YOU,LOVE,ME&quot;</span>
-</code></pre>
-<h3 id="&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;">&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;</h3>
-<p>&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BD4;&#x8F83;&#x662F;&#x89C4;&#x5219;&#x662F;&#x6309;&#x7167;&#x5B57;&#x6BCD;&#x8868;&#x987A;&#x5E8F;&#x6BD4;&#x8F83;&#x7684;&#xFF0C;&#x5982;&#xFF1A;</p>
-<p>&#x5B57;&#x7B26;&#x4E32;&#x5C31;&#x662F;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6392;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x653E;&#x5728;&#x5355;&#x5F15;&#x53F7;&#x6216;&#x53CC;&#x5F15;&#x53F7;&#x4E4B;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myStr = <span class="hljs-string">&quot;chicken&quot;</span>;
-<span class="hljs-keyword">var</span> myStrTwo = <span class="hljs-string">&quot;egg&quot;</span>;
-<span class="hljs-keyword">var</span> first = myStr.localeCompare(myStrTwo); <span class="hljs-comment">// -1</span>
-first = myStr.localeCompare(<span class="hljs-string">&quot;chicken&quot;</span>); <span class="hljs-comment">// 0</span>
-first = myStr.localeCompare(<span class="hljs-string">&quot;apple&quot;</span>); <span class="hljs-comment">// 1</span>
-</code></pre>
-<h2 id="&#x5B9E;&#x6218;">&#x5B9E;&#x6218;</h2>
-<ol>
-<li>&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x540D;&#xFF0C;&#x5982; <code>test.txt</code> &#x8FD4;&#x56DE; <code>txt</code></li>
-</ol>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSuffix</span>(<span class="hljs-params">file</span>)</span>{
-   <span class="hljs-keyword">return</span> file.slice(file.lastIndexOf(<span class="hljs-string">&quot;.&quot;</span>) + <span class="hljs-number">1</span>,file.length); 
+                                <h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x548C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x548C;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h1>
+<h2 id="&#x7C7B;&#x7684;&#x58F0;&#x660E;">&#x7C7B;&#x7684;&#x58F0;&#x660E;</h2>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x4EE5; ES5 &#x4E3A;&#x4F8B;&#xFF0C;ES6 &#x5F15;&#x5165; <code>class</code> &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x50CF;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E00;&#x6837;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>class</code> &#x58F0;&#x660E;&#x7C7B;</p>
+</blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; function &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Book</span>(<span class="hljs-params">name,writer,price</span>)</span>{
+    <span class="hljs-keyword">this</span>.name=name;
+    <span class="hljs-keyword">this</span>.writer=writer;
+    <span class="hljs-keyword">this</span>.price=price;
 }
 </code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6839;&#x636E;&#x547D;&#x540D;&#x89C4;&#x8303;&#xFF0C;&#x5982;&#x679C; function &#x58F0;&#x660E;&#x7684;&#x662F;&#x7C7B;&#xFF0C;&#x7C7B;&#x540D;&#x9996;&#x5B57;&#x6BCD;&#x9700;&#x8981;&#x5927;&#x5199;&#x3002;</p>
+<p>&#x58F0;&#x660E;&#x597D;&#x4E86;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>new</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> book = <span class="hljs-keyword">new</span> Book(<span class="hljs-string">&quot;book1&quot;</span>,<span class="hljs-string">&quot;Tom&quot;</span>,<span class="hljs-string">&quot;59.9&quot;</span>)
+</code></pre>
+<p>&#xCF;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7ED9; Book &#x7C7B;&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#xFF0C;&#x7ED9; &#x7C7B;&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x65B9;&#x6CD5; &#x4E00;&#x822C;&#x6709;&#x4E24;&#x79CD;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</p>
+<h3 id="&#x4F7F;&#x7528;-this-&#x8D4B;&#x503C;&#x6210;&#x5458;&#x65B9;&#x6CD5;">&#x4F7F;&#x7528; <code>this</code> &#x8D4B;&#x503C;&#x6210;&#x5458;&#x65B9;&#x6CD5;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x50CF;&#x58F0;&#x660E;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#x58F0;&#x660E;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD5;&#x7ADF; js &#x4E2D;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF0C;&#x53EF;&#x4EE5;&#x5F53;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Book</span>(<span class="hljs-params">name,writer,price</span>)</span>{
+    <span class="hljs-keyword">this</span>.name=name;
+    <span class="hljs-keyword">this</span>.writer=writer;
+    <span class="hljs-keyword">this</span>.price=price;
+    <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4FDD;&#x7559; Book &#x51FD;&#x6570;&#x57DF;&#x5185;&#x7684; this</span>
+    <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+    <span class="hljs-comment">// function &#x4E2D;&#x7684; this &#x662F;&#x6307;&#x5411;&#x81EA;&#x8EAB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x4F7F;&#x7528; that</span>
+    <span class="hljs-keyword">this</span>.getRMB = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> that.price+<span class="hljs-string">&quot;&#x5143;&quot;</span>;
+    }
+}
+
+<span class="hljs-keyword">var</span> book = <span class="hljs-keyword">new</span> Book(<span class="hljs-string">&quot;book1&quot;</span>,<span class="hljs-string">&quot;Tom&quot;</span>,<span class="hljs-string">&quot;59.9&quot;</span>)
+<span class="hljs-keyword">var</span> book2 = <span class="hljs-keyword">new</span> Book(<span class="hljs-string">&quot;book2&quot;</span>,<span class="hljs-string">&quot;jack&quot;</span>,<span class="hljs-string">&quot;29.9&quot;</span>)
+
+<span class="hljs-comment">// &#x8C03;&#x7528;&#x6210;&#x5458;&#x65B9;&#x6CD5;</span>
+book.getRMB()
+
+<span class="hljs-built_in">console</span>.log(book.getRMB == book2.getRMB) <span class="hljs-comment">//false&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x7684; getRMB &#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#x51FD;&#x6570;</span>
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;-prototype-&#x58F0;&#x660E;&#x6210;&#x5458;&#x65B9;&#x6CD5;">&#x4F7F;&#x7528; <code>prototype</code> &#x58F0;&#x660E;&#x6210;&#x5458;&#x65B9;&#x6CD5;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED9;&#x7C7B;&#x7684; constructor &#x6DFB;&#x52A0; <code>prototype</code> &#xFF0C;js &#x4F1A;&#x81EA;&#x52A8;&#x7ED9;&#x5176;&#x751F;&#x6210;&#x7684;&#x5BF9;&#x8C61;&#x6DFB;&#x52A0; <code>__proto__</code> &#x5C5E;&#x6027;&#xFF0C;&#x5F62;&#x6210;&#x539F;&#x578B;&#x94FE;.
+&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;&#x5171;&#x4EAB;&#x6210;&#x5458;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">BookP</span>(<span class="hljs-params">name,writer,price</span>)</span>{
+    <span class="hljs-keyword">this</span>.name=name;
+    <span class="hljs-keyword">this</span>.writer=writer;
+    <span class="hljs-keyword">this</span>.price=price;
+}
+
+<span class="hljs-comment">// &#x8BBE;&#x7F6E; BookP &#x7684; prototype &#x5C5E;&#x6027;</span>
+BookP.prototype.getRMB = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.price+<span class="hljs-string">&quot;&#x5143;&quot;</span>;
+}
+
+
+<span class="hljs-keyword">var</span> bookp = <span class="hljs-keyword">new</span> BookP(<span class="hljs-string">&quot;book1&quot;</span>,<span class="hljs-string">&quot;Tom&quot;</span>,<span class="hljs-string">&quot;59.9&quot;</span>)
+<span class="hljs-keyword">var</span> bookp2 =  <span class="hljs-keyword">new</span> BookP(<span class="hljs-string">&quot;book2&quot;</span>,<span class="hljs-string">&quot;jack&quot;</span>,<span class="hljs-string">&quot;29.9&quot;</span>)
+
+<span class="hljs-comment">// &#x8C03;&#x7528;&#x6210;&#x5458;&#x65B9;&#x6CD5;</span>
+bookp.getRMB()
+
+<span class="hljs-built_in">console</span>.log(bookp.getRMB == bookp2.getRMB) <span class="hljs-comment">// true&#xFF0C; &#x6240;&#x6709;&#x5BF9;&#x8C61;&#x5171;&#x7528;&#x4E00;&#x4E2A; getRMB</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;</p>
+<h2 id="&#x4EE3;&#x7801;&#x5C01;&#x88C5;">&#x4EE3;&#x7801;&#x5C01;&#x88C5;</h2>
+<p>&#x5B66;&#x4F1A;&#x4E86;&#x7C7B;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7C7B;&#x6765;&#x5C01;&#x88C5;&#x6A21;&#x5757;&#xFF0C;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x91CD;&#x7528;&#xFF0C;&#x540C;&#x65F6;&#x53C8;&#x5C4F;&#x853D;&#x4E86;&#x4EE3;&#x7801;&#x7684;&#x590D;&#x6742;&#x6027;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5C31;&#x4EE5; <code>&#x8FD4;&#x56DE;&#x9876;&#x90E8;</code> &#x4E3A;&#x4F8B;&#xFF0C;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x5C01;&#x88C5;</p>
+<h3 id="&#x76EE;&#x7684;">&#x76EE;&#x7684;</h3>
+<p>&#x6211;&#x4EEC;&#x5728;&#x5916;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x5373;&#x53EF;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x6DFB;&#x52A0; <code>&#x8FD4;&#x56DE;&#x9876;&#x90E8;</code> &#x6309;&#x94AE;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> ele = $(<span class="hljs-string">&quot;.back-top&quot;</span>)
+<span class="hljs-keyword">new</span> BackTop(ele);
+</code></pre>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">BackTop</span>(<span class="hljs-params">$node</span>)</span>{
+    <span class="hljs-keyword">var</span> timer;
+    $node.on(<span class="hljs-string">&quot;click&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-built_in">window</span>.scrollTo(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+    })
+    <span class="hljs-built_in">window</span>.onscroll = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;onscroll&quot;</span>)
+
+        <span class="hljs-comment">// &#x9632;&#x6B62;&#x4E8B;&#x4EF6;&#x8FC7;&#x591A;</span>
+        clearTimeout(timer)
+        timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">var</span> windowH = $(<span class="hljs-built_in">window</span>).height();
+            <span class="hljs-keyword">var</span> scrollTop = $(<span class="hljs-built_in">window</span>).scrollTop();
+            <span class="hljs-keyword">if</span>(scrollTop &gt; windowH *<span class="hljs-number">0.5</span>){
+                $node.addClass(<span class="hljs-string">&quot;show&quot;</span>)
+            }
+            <span class="hljs-keyword">if</span>(scrollTop &lt; windowH *<span class="hljs-number">0.5</span>){
+                $node.removeClass(<span class="hljs-string">&quot;show&quot;</span>)
+            }
+        }, <span class="hljs-number">50</span>)
+    }
+}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#x5305;&#x88C5;&#x5728; <code>BackTop</code>&#x8FD9;&#x4E2A;&#x7C7B;&#x91CC;</p>
+<p>&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x53C2;&#x770B;<a href="https://mafengshe.github.io/fe-demo/back-top.html" target="_blank">&#x8FD9;&#x91CC;</a></p>
+<h2 id="&#x5E38;&#x7528;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">&#x5E38;&#x7528;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h2>
+<h3 id="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">&#x5DE5;&#x5382;&#x6A21;&#x5F0F;</h3>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> employee1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+employee1.position = <span class="hljs-string">&quot;Front end engineer&quot;</span>;
+employee1.tool = <span class="hljs-string">&quot;I love vscode.&quot;</span>;
+employee1.introduction = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I am a &quot;</span> + <span class="hljs-keyword">this</span>.position + <span class="hljs-string">&quot;, and &quot;</span> + <span class="hljs-keyword">this</span>.tool);
+}
+<span class="hljs-keyword">var</span> employee2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+employee2.position = <span class="hljs-string">&quot;UI designer&quot;</span>;
+employee2.tool = <span class="hljs-string">&quot;I love photoshop.&quot;</span>;
+employee2.introduction = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I am a &quot;</span> + <span class="hljs-keyword">this</span>.position + <span class="hljs-string">&quot;, and &quot;</span> + <span class="hljs-keyword">this</span>.tool);
+}
+employee1.introduction(); <span class="hljs-comment">// I am a Front end engineer, and I love vscode.</span>
+employee2.introduction(); <span class="hljs-comment">// I am a UI designer, and I love photoshop.</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x8FB9;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x4E2A;employee&#xFF0C;&#x4E00;&#x4E2A;&#x662F;Front End Engineer&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;UI designer&#xFF0C;&#x4ED6;&#x4EEC;&#x90FD;&#x6709;position&#x5C5E;&#x6027;&#x548C;tool&#x5C5E;&#x6027;&#xFF0C;&#x4E5F;&#x90FD;&#x6709;introduction&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5F88;&#x591A;&#x4E2A;&#x7C7B;&#x4F3C;employee&#x7684;&#x5BF9;&#x8C61;&#x5462;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x91CD;&#x590D;&#x5F88;&#x591A;&#x7C7B;&#x4F3C;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x505A;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x4FEE;&#x6539;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Employee</span>(<span class="hljs-params">type</span>) </span>{
+    <span class="hljs-keyword">var</span> employee;
+    <span class="hljs-keyword">if</span> (type == <span class="hljs-string">&quot;programmer&quot;</span>) {
+        employee = <span class="hljs-keyword">new</span> Programmer();
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type == <span class="hljs-string">&quot;designer&quot;</span>) {
+        employee = <span class="hljs-keyword">new</span> Designer();
+    }
+    employee.introduction = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I am a &quot;</span> + <span class="hljs-keyword">this</span>.position + <span class="hljs-string">&quot;, and &quot;</span> + <span class="hljs-keyword">this</span>.tool);
+    }
+    <span class="hljs-keyword">return</span> employee;
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Programmer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.position = <span class="hljs-string">&quot;Front end engineer&quot;</span>;
+    <span class="hljs-keyword">this</span>.tool = <span class="hljs-string">&quot;I love vscode.&quot;</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Designer</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.position = <span class="hljs-string">&quot;UI designer&quot;</span>;
+    <span class="hljs-keyword">this</span>.tool = <span class="hljs-string">&quot;I love photoshop.&quot;</span>;
+}
+
+<span class="hljs-keyword">var</span> employee1 = Employee(<span class="hljs-string">&quot;programmer&quot;</span>);
+employee1.introduction();<span class="hljs-comment">//I am a Front end engineer, and I love vscode.</span>
+<span class="hljs-keyword">var</span> employee2 = Employee(<span class="hljs-string">&quot;designer&quot;</span>);
+employee2.introduction();<span class="hljs-comment">//I am a UI designer, and I love photoshop.</span>
+</code></pre>
+<h3 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;">&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h3>
+<p>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5C06;&#x4EE3;&#x7801;&#x7EC4;&#x7EC7;&#x4E3A;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x5355;&#x5143;&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x5355;&#x5143;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5355;&#x4E00;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x3002;
+&#x4F18;&#x70B9;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5212;&#x5206;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x51CF;&#x5C11;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x5355;&#x4F53;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x4EE3;&#x7801;&#x7EC4;&#x7EC7;&#x7684;&#x66F4;&#x4E3A;&#x4E00;&#x81F4;&#xFF0C;&#x4F7F;&#x4EE3;&#x7801;&#x5BB9;&#x6613;&#x9605;&#x8BFB;&#x548C;&#x7EF4;&#x62A4;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x4E14;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x6B21;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Singleton</span>(<span class="hljs-params">name</span>)</span>{
+    <span class="hljs-keyword">this</span>.name = name;
+};
+Singleton.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
+}
+<span class="hljs-comment">// &#x83B7;&#x53D6;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</span>
+Singleton.getInstance = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">this</span>.instance) {
+        <span class="hljs-keyword">this</span>.instance = <span class="hljs-keyword">new</span> Singleton();
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.instance;
+}
+<span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x5355;&#x4F53;&#x6A21;&#x5F0F;&#x7684;&#x5B9E;&#x4F8B;</span>
+<span class="hljs-keyword">var</span> a = Singleton.getInstance();
+<span class="hljs-keyword">var</span> b = Singleton.getInstance();
+
+<span class="hljs-built_in">console</span>.log(a == b) <span class="hljs-comment">// true&#xFF0C;&#x4E3A;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+</code></pre>
+<p>&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x5982;&#x9047;&#x6A21;&#x5F0F;&#x5BF9;&#x8BDD;&#x6846;&#x7B49;&#x573A;&#x666F;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</p>
+<h3 id="&#x5176;&#x4ED6;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">&#x5176;&#x4ED6;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h3>
+<p>&#x5176;&#x5B9E;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5982;</p>
+<ul>
+<li>&#x6A21;&#x5757;&#x6A21;&#x5F0F;</li>
+<li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</li>
+<li>&#x804C;&#x8D23;&#x94FE;&#x6A21;&#x5F0F;</li>
+<li>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;</li>
+<li>&#x6A21;&#x677F;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;</li>
+<li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;</li>
+<li>&#x8BA2;&#x9605;&#x6A21;&#x5F0F;</li>
+<li>&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;</li>
+</ul>
+<p>&#x5177;&#x4F53;&#x53EF;&#x4EE5;&#x53C2;&#x770B;<a href="http://www.cnblogs.com/tugenhua0707/p/5198407.html" target="_blank">&#x8FD9;&#x91CC;</a></p>
 
                                 
                                 </section>
@@ -1193,14 +1213,10 @@ first = myStr.localeCompare(<span class="hljs-string">&quot;apple&quot;</span>);
 
             
                 
-                <a href="数据类型.html" class="navigation navigation-prev " aria-label="Previous page: 1.4.2.2.数据类型">
+                <a href="原型链.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1.4.6.1.原型链">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="数组.html" class="navigation navigation-next " aria-label="Next page: 1.4.2.4.数组">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1209,7 +1225,7 @@ first = myStr.localeCompare(<span class="hljs-string">&quot;apple&quot;</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.2.3.字符串","level":"1.2.4.2.3","depth":4,"next":{"title":"1.4.2.4.数组","level":"1.2.4.2.4","depth":4,"path":"前端基础/Javascript/数组.md","ref":"./前端基础/Javascript/数组.md","articles":[]},"previous":{"title":"1.4.2.2.数据类型","level":"1.2.4.2.2","depth":4,"path":"前端基础/Javascript/数据类型.md","ref":"./前端基础/Javascript/数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/字符串.md","mtime":"2017-12-31T13:00:00.631Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T10:00:01.172Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.6.2.面向对象和设计模式","level":"1.2.4.6.2","depth":4,"next":{"title":"1.4.7.函数高级","level":"1.2.4.7","depth":3,"ref":"","articles":[{"title":"1.4.7.1. 函数作用域","level":"1.2.4.7.1","depth":4,"ref":"","articles":[]},{"title":"1.4.7.2. 闭包","level":"1.2.4.7.2","depth":4,"ref":"","articles":[]},{"title":"1.4.7.3. 函数式编程","level":"1.2.4.7.3","depth":4,"ref":"","articles":[]}]},"previous":{"title":"1.4.6.1.原型链","level":"1.2.4.6.1","depth":4,"path":"前端基础/Javascript/原型链.md","ref":"./前端基础/Javascript/原型链.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"前端基础/Javascript/面向对象和设计模式.md","mtime":"2018-01-25T09:59:46.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T10:00:01.172Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
